@@ -1,0 +1,7 @@
+/home/oem/Desktop/Ingenieria/Robotica/Proyecto-Robotica/ejemplo1_conThread/CMakeFiles/ejemplo1.dir
+/home/oem/Desktop/Ingenieria/Robotica/Proyecto-Robotica/ejemplo1_conThread/CMakeFiles/edit_cache.dir
+/home/oem/Desktop/Ingenieria/Robotica/Proyecto-Robotica/ejemplo1_conThread/CMakeFiles/rebuild_cache.dir
+/home/oem/Desktop/Ingenieria/Robotica/Proyecto-Robotica/ejemplo1_conThread/CMakeFiles/list_install_components.dir
+/home/oem/Desktop/Ingenieria/Robotica/Proyecto-Robotica/ejemplo1_conThread/CMakeFiles/install.dir
+/home/oem/Desktop/Ingenieria/Robotica/Proyecto-Robotica/ejemplo1_conThread/CMakeFiles/install/local.dir
+/home/oem/Desktop/Ingenieria/Robotica/Proyecto-Robotica/ejemplo1_conThread/CMakeFiles/install/strip.dir
