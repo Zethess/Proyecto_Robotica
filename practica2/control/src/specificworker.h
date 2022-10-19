@@ -34,6 +34,10 @@
 #include <ranges>
 #include <numeric>
 #include <functional>
+#include <chrono>
+
+using myclock = std::chrono::system_clock;
+using msec = std::chrono::duration<double, std::milli>;
 
 class SpecificWorker : public GenericWorker
 {
@@ -72,6 +76,8 @@ private:
 
     //Declaramos una tupla donde se alamacenarán los valores de adv, rot y State
     std::tuple<float, float> valores;
+
+
 
 };
 

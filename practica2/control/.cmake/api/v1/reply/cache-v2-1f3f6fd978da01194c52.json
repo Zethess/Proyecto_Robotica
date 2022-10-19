@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/manuel/Escritorio/ROBOTICA/GitHub_Actividades/Proyecto_Robotica/practica2/control"
+			"value" : "/home/alumno/robocomp/components/Proyecto_Robotica/practica2/control"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -79,7 +79,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "23"
+			"value" : "22"
 		},
 		{
 			"name" : "CMAKE_CACHE_PATCH_VERSION",
@@ -91,7 +91,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "2"
+			"value" : "1"
 		},
 		{
 			"name" : "CMAKE_CODEBLOCKS_COMPILER_ID",
@@ -155,7 +155,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/snap/clion/209/bin/cmake/linux/bin/cmake"
+			"value" : "/usr/bin/cmake"
 		},
 		{
 			"name" : "CMAKE_CPACK_COMMAND",
@@ -167,7 +167,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/snap/clion/209/bin/cmake/linux/bin/cpack"
+			"value" : "/usr/bin/cpack"
 		},
 		{
 			"name" : "CMAKE_CTEST_COMMAND",
@@ -179,7 +179,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/snap/clion/209/bin/cmake/linux/bin/ctest"
+			"value" : "/usr/bin/ctest"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER",
@@ -194,7 +194,7 @@
 					"value" : "CXX compiler"
 				}
 			],
-			"type" : "FILEPATH",
+			"type" : "STRING",
 			"value" : "/usr/bin/c++"
 		},
 		{
@@ -322,7 +322,7 @@
 					"value" : "C compiler"
 				}
 			],
-			"type" : "FILEPATH",
+			"type" : "STRING",
 			"value" : "/usr/bin/cc"
 		},
 		{
@@ -703,7 +703,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/manuel/Escritorio/ROBOTICA/GitHub_Actividades/Proyecto_Robotica/practica2/control"
+			"value" : "/home/alumno/robocomp/components/Proyecto_Robotica/practica2/control"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -991,7 +991,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/snap/clion/209/bin/cmake/linux/share/cmake-3.23"
+			"value" : "/usr/share/cmake-3.22"
 		},
 		{
 			"name" : "CMAKE_SHARED_LINKER_FLAGS",
@@ -2255,7 +2255,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "/home/manuel/Escritorio/ROBOTICA/GitHub_Actividades/Proyecto_Robotica/practica2/control"
+			"value" : "/home/alumno/robocomp/components/Proyecto_Robotica/practica2/control"
 		},
 		{
 			"name" : "RC_COMPONENT_INSTALL_PATH",
@@ -2279,7 +2279,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "/home/manuel/Escritorio/ROBOTICA/GitHub_Actividades/Proyecto_Robotica/practica2/control"
+			"value" : "/home/alumno/robocomp/components/Proyecto_Robotica/practica2/control"
 		},
 		{
 			"name" : "RoboComp_VERSION",
@@ -2343,7 +2343,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/manuel/Escritorio/ROBOTICA/GitHub_Actividades/Proyecto_Robotica/practica2/control"
+			"value" : "/home/alumno/robocomp/components/Proyecto_Robotica/practica2/control"
 		},
 		{
 			"name" : "control_IS_TOP_LEVEL",
@@ -2367,7 +2367,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/manuel/Escritorio/ROBOTICA/GitHub_Actividades/Proyecto_Robotica/practica2/control"
+			"value" : "/home/alumno/robocomp/components/Proyecto_Robotica/practica2/control"
 		}
 	],
 	"kind" : "cache",

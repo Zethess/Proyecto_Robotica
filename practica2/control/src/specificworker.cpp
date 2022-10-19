@@ -163,15 +163,28 @@ std::tuple<float, float> SpecificWorker::FORWARD_function(const RoboCompLaserMul
 std::tuple<float, float> SpecificWorker::TURN_function(const RoboCompLaserMulti::TLaserData &ldata) {
     std::cout << "Estado: TURN" << std::endl;
     std::tuple<float, float> tuplaAdevolver;
+    int partesVector = 3;
 
     //Inicializamos con los valores que ya tenia la tupla anteriormente por si no hay cambio
     tuplaAdevolver = make_tuple(get<0>(valores), get<1>(valores));
     if (hayQueSeguirLaPared(ldata))
     {
         state=State::FOLLOW_WALL;
+        RoboCompLaserMulti::TLaserData parteCentral(ldata.begin()+ldata.size()/partesVector, ldata.end()-ldata.size()/partesVector);
+        std::ranges::sort(parteCentral, {}, &RoboCompLaserMulti::TData::dist);
+
+        if(parteCentral.front().dist<1000) {
+            if (GirarIzquierda(ldata)) {
+                tuplaAdevolver = make_tuple(0, -0.4);
+                std::cout << "GIRARIZQUIERDA" << std::endl;
+            } else {
+                tuplaAdevolver = make_tuple(0, 0.4);
+                std::cout << "GIRARDERECHA" << std::endl;
+            }
+        }
     }
     else {
-        const int partesVector = 4;
+        partesVector = 4;
         //ordenar por distancia la sección control de lalser
         RoboCompLaserMulti::TLaserData parteCentral(ldata.begin() + ldata.size() / partesVector,ldata.end() - ldata.size() / partesVector);
         std::ranges::sort(parteCentral, {}, &RoboCompLaserMulti::TData::dist);
@@ -220,6 +233,9 @@ std::tuple<float, float> SpecificWorker::SPIRAL_function(const RoboCompLaserMult
 
 std::tuple<float, float> SpecificWorker:: follow_wall_method(const RoboCompLaserMulti::TLaserData &ldata)
 {
+    static bool first_time = true;
+    static auto start = std::chrono::system_clock::now();
+
     std::cout << "Estado: SEGUIR PARED" << std::endl;
     std::tuple<float, float> tuplaAdevolver;
     int partesVector=3;
@@ -227,18 +243,22 @@ std::tuple<float, float> SpecificWorker:: follow_wall_method(const RoboCompLaser
     RoboCompLaserMulti::TLaserData parteCentral(ldata.begin()+ldata.size()/partesVector, ldata.end()-ldata.size()/partesVector);
     std::ranges::sort(parteCentral, {}, &RoboCompLaserMulti::TData::dist);
 
+    if (first_time !=true)
+    {
+        auto end = std::chrono::system_clock::now();
+        std::chrono::duration<float,std::milli> duration = end - start;
+        if(duration.count() > 4000)
+        {
+            first_time=true;
+            state=State::STRAIGHT;
+            tuplaAdevolver = make_tuple(700, 0);
+        }
+    }
+
     if (parteCentral.front().dist < 1100)
     {
-        if (GirarIzquierda(ldata))
-        {
-            tuplaAdevolver= make_tuple(0, -0.5);
-            std::cout<<"GIRARIZQUIERDA"<<std::endl;
-        }
-        else
-        {
-            tuplaAdevolver= make_tuple(0, 0.5);
-            std::cout<<"GIRARDERECHA"<<std::endl;
-        }
+        first_time=false;
+        state=State::TURN;
     }
     else{
         partesVector=2;

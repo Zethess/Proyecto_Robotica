@@ -60,15 +60,15 @@
 			[
 				{
 					"directoryIndex" : 1,
-					"id" : "ICES__home_manuel_Escritorio_ROBOTICA_GitHub_Actividades_Proyecto_Robotica_practica2_control_src::@145eef247bfb46b6828c",
-					"jsonFile" : "target-ICES__home_manuel_Escritorio_ROBOTICA_GitHub_Actividades_Proyecto_Robotica_practica2_control_src-Debug-643044acd6d8161563b0.json",
-					"name" : "ICES__home_manuel_Escritorio_ROBOTICA_GitHub_Actividades_Proyecto_Robotica_practica2_control_src",
+					"id" : "ICES__home_alumno_robocomp_components_Proyecto_Robotica_practica2_control_src::@145eef247bfb46b6828c",
+					"jsonFile" : "target-ICES__home_alumno_robocomp_components_Proyecto_Robotica_practica2_control_src-Debug-ba31bb0b53f9a042162f.json",
+					"name" : "ICES__home_alumno_robocomp_components_Proyecto_Robotica_practica2_control_src",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 1,
 					"id" : "control::@145eef247bfb46b6828c",
-					"jsonFile" : "target-control-Debug-6a465630b6209181aba5.json",
+					"jsonFile" : "target-control-Debug-98f0fe8c9fa5e93d5396.json",
 					"name" : "control",
 					"projectIndex" : 0
 				},
@@ -85,12 +85,12 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/manuel/Escritorio/ROBOTICA/GitHub_Actividades/Proyecto_Robotica/practica2/control",
-		"source" : "/home/manuel/Escritorio/ROBOTICA/GitHub_Actividades/Proyecto_Robotica/practica2/control"
+		"build" : "/home/alumno/robocomp/components/Proyecto_Robotica/practica2/control",
+		"source" : "/home/alumno/robocomp/components/Proyecto_Robotica/practica2/control"
 	},
 	"version" : 
 	{
 		"major" : 2,
-		"minor" : 4
+		"minor" : 3
 	}
 }
