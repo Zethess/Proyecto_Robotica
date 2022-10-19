@@ -74,11 +74,11 @@ void SpecificWorker::initialize(int period)
 
 void SpecificWorker::compute() {
 
-    RoboCompLaser::TLaserData ldata;
+    RoboCompLaserMulti::TLaserData ldata;
     //El robot siente
     try
     {
-        ldata = laser_proxy->getLaserData();
+        ldata = lasermulti_proxy->getLaserData(2);
     }catch (const Ice::Exception &e) {std::cout << e.what() << std::endl; return;};
 
     switch(state)
@@ -103,11 +103,11 @@ void SpecificWorker::compute() {
 
     try
     {
-        differentialrobot_proxy->setSpeedBase(get<0>(valores),get<1>(valores));
+        differentialrobotmulti_proxy->setSpeedBase(2,get<0>(valores),get<1>(valores));
     }catch (const Ice::Exception &e) {std::cout << e.what() << std::endl;};
 }
 
-std::tuple<float, float> SpecificWorker::IDLE_function(const RoboCompLaser::TLaserData &ldata)
+std::tuple<float, float> SpecificWorker::IDLE_function(const RoboCompLaserMulti::TLaserData &ldata)
 {
     std::cout << "Estado: IDLE" << std::endl;
     std::tuple<float, float> tuplaAdevolver;
@@ -117,7 +117,7 @@ std::tuple<float, float> SpecificWorker::IDLE_function(const RoboCompLaser::TLas
     return tuplaAdevolver;
 }
 
-std::tuple<float, float> SpecificWorker::FORWARD_function(const RoboCompLaser::TLaserData &ldata)
+std::tuple<float, float> SpecificWorker::FORWARD_function(const RoboCompLaserMulti::TLaserData &ldata)
 {
     std::cout << "Estado: FORWARD" << std::endl;
     std::tuple<float, float> tuplaAdevolver;
@@ -128,8 +128,8 @@ std::tuple<float, float> SpecificWorker::FORWARD_function(const RoboCompLaser::T
 
     const int partesVector = 3;
     //ordenar por distancia la sección control de lalser
-    RoboCompLaser::TLaserData parteCentral(ldata.begin() + ldata.size() / partesVector,ldata.end() - ldata.size() / partesVector);
-    std::ranges::sort(parteCentral, {}, &RoboCompLaser::TData::dist);
+    RoboCompLaserMulti::TLaserData parteCentral(ldata.begin() + ldata.size() / partesVector,ldata.end() - ldata.size() / partesVector);
+    std::ranges::sort(parteCentral, {}, &RoboCompLaserMulti::TData::dist);
     cout<<"VELOCIDAD HORLEWILL: "<<get<0>(valores)<<endl;
     //Si hay un choque inminente (La menor distancia es menor que 1000 seleccionamos el estado TURN)
     if (parteCentral.front().dist < 1000) {
@@ -151,8 +151,8 @@ std::tuple<float, float> SpecificWorker::FORWARD_function(const RoboCompLaser::T
     }
 
     //Si la menor de las distancias es mayor que 1200 quiere decir que hay mucho espacio libre, por tanto pasamos a espiral
-    RoboCompLaser::TLaserData laserCompleto(ldata.begin(), ldata.end());
-    std::ranges::sort(laserCompleto, {}, &RoboCompLaser::TData::dist);
+    RoboCompLaserMulti::TLaserData laserCompleto(ldata.begin(), ldata.end());
+    std::ranges::sort(laserCompleto, {}, &RoboCompLaserMulti::TData::dist);
     /*if (laserCompleto.front().dist > 1200) {
         tuplaAdevolver = make_tuple(1100, -0.7);
         state = State::SPIRAL;
@@ -160,7 +160,7 @@ std::tuple<float, float> SpecificWorker::FORWARD_function(const RoboCompLaser::T
     return tuplaAdevolver;
 }
 
-std::tuple<float, float> SpecificWorker::TURN_function(const RoboCompLaser::TLaserData &ldata) {
+std::tuple<float, float> SpecificWorker::TURN_function(const RoboCompLaserMulti::TLaserData &ldata) {
     std::cout << "Estado: TURN" << std::endl;
     std::tuple<float, float> tuplaAdevolver;
 
@@ -173,8 +173,8 @@ std::tuple<float, float> SpecificWorker::TURN_function(const RoboCompLaser::TLas
     else {
         const int partesVector = 4;
         //ordenar por distancia la sección control de lalser
-        RoboCompLaser::TLaserData parteCentral(ldata.begin() + ldata.size() / partesVector,ldata.end() - ldata.size() / partesVector);
-        std::ranges::sort(parteCentral, {}, &RoboCompLaser::TData::dist);
+        RoboCompLaserMulti::TLaserData parteCentral(ldata.begin() + ldata.size() / partesVector,ldata.end() - ldata.size() / partesVector);
+        std::ranges::sort(parteCentral, {}, &RoboCompLaserMulti::TData::dist);
         //si hay espacio libre delante del robot se selecciona el método forward
         if (parteCentral.front().dist > 1000) {
             state = State::STRAIGHT;
@@ -185,7 +185,7 @@ std::tuple<float, float> SpecificWorker::TURN_function(const RoboCompLaser::TLas
     return tuplaAdevolver;
 }
 
-std::tuple<float, float> SpecificWorker::SPIRAL_function(const RoboCompLaser::TLaserData &ldata) {
+std::tuple<float, float> SpecificWorker::SPIRAL_function(const RoboCompLaserMulti::TLaserData &ldata) {
     std::cout << "Estado: SPIRAL" << std::endl;
 
     std::tuple<float, float> tuplaAdevolver;
@@ -195,8 +195,8 @@ std::tuple<float, float> SpecificWorker::SPIRAL_function(const RoboCompLaser::TL
 
     const int partesVector=4;
     //ordenar por distancia la sección control de lalser
-    RoboCompLaser::TLaserData parteCentral(ldata.begin()+ldata.size()/partesVector, ldata.end()-ldata.size()/partesVector);
-    std::ranges::sort(parteCentral, {}, &RoboCompLaser::TData::dist);
+    RoboCompLaserMulti::TLaserData parteCentral(ldata.begin()+ldata.size()/partesVector, ldata.end()-ldata.size()/partesVector);
+    std::ranges::sort(parteCentral, {}, &RoboCompLaserMulti::TData::dist);
 
     //si hay un obstaculo se selecciona el método turn
     if(parteCentral.front().dist < 1000)
@@ -218,43 +218,61 @@ std::tuple<float, float> SpecificWorker::SPIRAL_function(const RoboCompLaser::TL
 }
 
 
-std::tuple<float, float> SpecificWorker:: follow_wall_method(const RoboCompLaser::TLaserData &ldata)
+std::tuple<float, float> SpecificWorker:: follow_wall_method(const RoboCompLaserMulti::TLaserData &ldata)
 {
     std::cout << "Estado: SEGUIR PARED" << std::endl;
     std::tuple<float, float> tuplaAdevolver;
-    const int partesVector=3;
+    int partesVector=3;
     //ordenar por distancia la sección control de lalser
-    RoboCompLaser::TLaserData parteCentral(ldata.begin()+ldata.size()/partesVector, ldata.end()-ldata.size()/partesVector);
-    std::ranges::sort(parteCentral, {}, &RoboCompLaser::TData::dist);
+    RoboCompLaserMulti::TLaserData parteCentral(ldata.begin()+ldata.size()/partesVector, ldata.end()-ldata.size()/partesVector);
+    std::ranges::sort(parteCentral, {}, &RoboCompLaserMulti::TData::dist);
 
     if (parteCentral.front().dist < 1100)
     {
         if (GirarIzquierda(ldata))
         {
-            tuplaAdevolver= make_tuple(0, -0.4);
+            tuplaAdevolver= make_tuple(0, -0.5);
             std::cout<<"GIRARIZQUIERDA"<<std::endl;
         }
         else
         {
-            tuplaAdevolver= make_tuple(0, 0.4);
+            tuplaAdevolver= make_tuple(0, 0.5);
             std::cout<<"GIRARDERECHA"<<std::endl;
         }
     }
     else{
-        state=State::STRAIGHT;
-        tuplaAdevolver = make_tuple(MAX_ADV, 0);
+        partesVector=2;
+        //Si la distancia a la pared por la parte izquierda o derecha es menor que 300 esta en pared y tiene que seguirla
+        RoboCompLaserMulti::TLaserData parteIzquierda(ldata.begin(), ldata.end()-(ldata.size()/partesVector));
+        std::ranges::sort(parteIzquierda, {}, &RoboCompLaserMulti::TData::dist);
+        if(calcularMediaLaser(parteIzquierda) > 200) {
+            std::cout<<"corrigiendo trayecto"<<std::endl;
+            tuplaAdevolver = make_tuple(700, 0.1);
+        }else
+        {
+            RoboCompLaserMulti::TLaserData parteDerecha(ldata.begin(), ldata.end()-(ldata.size()/partesVector));
+            std::ranges::sort(parteDerecha, {}, &RoboCompLaserMulti::TData::dist);
+            if(calcularMediaLaser(parteIzquierda) > 200) {
+                std::cout<<"corriegiendo trayecto"<<std::endl;
+                tuplaAdevolver = make_tuple(700, -0.1);
+            }else
+            {
+                tuplaAdevolver = make_tuple(MAX_ADV, 0);
+            }
+        }
+
     }
     return tuplaAdevolver;
 }
 
-bool SpecificWorker::GirarIzquierda(const RoboCompLaser::TLaserData &ldata)
+bool SpecificWorker::GirarIzquierda(const RoboCompLaserMulti::TLaserData &ldata)
 {
     bool giroIzquierda = false;
     const int partesVector=3;
     float mediaIzquierda, mediaDerecha;
     //ordenar por distancia la sección control de laser
-    RoboCompLaser::TLaserData parteIzquierda(ldata.begin(), ldata.end()-2*(ldata.size()/partesVector));
-    RoboCompLaser::TLaserData parteDerecha(ldata.begin()+2*(ldata.size()/partesVector), ldata.end());
+    RoboCompLaserMulti::TLaserData parteIzquierda(ldata.begin(), ldata.end()-2*(ldata.size()/partesVector));
+    RoboCompLaserMulti::TLaserData parteDerecha(ldata.begin()+2*(ldata.size()/partesVector), ldata.end());
     mediaIzquierda=calcularMediaLaser(parteIzquierda);
     mediaDerecha= calcularMediaLaser(parteDerecha);
 
@@ -266,26 +284,26 @@ bool SpecificWorker::GirarIzquierda(const RoboCompLaser::TLaserData &ldata)
 }
 
 
-bool SpecificWorker::hayQueSeguirLaPared(const RoboCompLaser::TLaserData &ldata)
+bool SpecificWorker::hayQueSeguirLaPared(const RoboCompLaserMulti::TLaserData &ldata)
 {
     bool bandera=false;
-    const int partesVector=3;
+    int partesVector=3;
     //Si la distancia a la pared por la parte izquierda o derecha es menor que 300 esta en pared y tiene que seguirla
-    RoboCompLaser::TLaserData parteCentral(ldata.begin()+(ldata.size()/partesVector), ldata.end()-(ldata.size()/partesVector));
-    std::ranges::sort(parteCentral, {}, &RoboCompLaser::TData::dist);
+    RoboCompLaserMulti::TLaserData parteCentral(ldata.begin()+(ldata.size()/partesVector), ldata.end()-(ldata.size()/partesVector));
+    std::ranges::sort(parteCentral, {}, &RoboCompLaserMulti::TData::dist);
 
 
     partesVector=2;
     //Si la distancia a la pared por la parte izquierda o derecha es menor que 300 esta en pared y tiene que seguirla
-    RoboCompLaser::TLaserData parteIzquierda(ldata.begin(), ldata.end()-(ldata.size()/partesVector));
-    std::ranges::sort(parteIzquierda, {}, &RoboCompLaser::TData::dist);
+    RoboCompLaserMulti::TLaserData parteIzquierda(ldata.begin(), ldata.end()-(ldata.size()/partesVector));
+    std::ranges::sort(parteIzquierda, {}, &RoboCompLaserMulti::TData::dist);
     if(calcularMediaLaser(parteIzquierda) > 500)
     {
         bandera=true;
     }
 
-    RoboCompLaser::TLaserData parteDerecha(ldata.begin()+(ldata.size()/partesVector), ldata.end());
-    std::ranges::sort(parteDerecha, {}, &RoboCompLaser::TData::dist);
+    RoboCompLaserMulti::TLaserData parteDerecha(ldata.begin()+(ldata.size()/partesVector), ldata.end());
+    std::ranges::sort(parteDerecha, {}, &RoboCompLaserMulti::TData::dist);
     if(calcularMediaLaser(parteDerecha) > 500)
     {
         bandera=true;
@@ -295,7 +313,7 @@ bool SpecificWorker::hayQueSeguirLaPared(const RoboCompLaser::TLaserData &ldata)
 }
 
 
-float SpecificWorker::calcularMediaLaser(const RoboCompLaser::TLaserData &laser)
+float SpecificWorker::calcularMediaLaser(const RoboCompLaserMulti::TLaserData &laser)
 {
     float media=0.0;
 

@@ -1,7 +1,7 @@
 src/CMakeFiles/control.dir/Laser.cpp.o: \
- /home/juanfra/robocomp/components/Proyecto-Robotica/practica2/control/src/Laser.cpp \
+ /home/manuel/Escritorio/ROBOTICA/GitHub_Actividades/Proyecto_Robotica/practica2/control/src/Laser.cpp \
  /usr/include/stdc-predef.h \
- /home/juanfra/robocomp/components/Proyecto-Robotica/practica2/control/src/Laser.h \
+ /home/manuel/Escritorio/ROBOTICA/GitHub_Actividades/Proyecto_Robotica/practica2/control/src/Laser.h \
  /usr/include/IceUtil/PushDisableWarnings.h /usr/include/Ice/ProxyF.h \
  /usr/include/Ice/Config.h /usr/include/IceUtil/Config.h \
  /usr/include/c++/11/stdlib.h /usr/include/c++/11/cstdlib \
@@ -277,4 +277,4 @@ src/CMakeFiles/control.dir/Laser.cpp.o: \
  /usr/include/c++/11/deque /usr/include/c++/11/bits/stl_deque.h \
  /usr/include/c++/11/bits/deque.tcc /usr/include/Ice/FactoryTableInit.h \
  /usr/include/Ice/DefaultValueFactory.h \
- /home/juanfra/robocomp/components/Proyecto-Robotica/practica2/control/src/GenericBase.h
+ /home/manuel/Escritorio/ROBOTICA/GitHub_Actividades/Proyecto_Robotica/practica2/control/src/GenericBase.h

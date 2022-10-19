@@ -1,7 +1,7 @@
 src/CMakeFiles/control.dir/GenericBase.cpp.o: \
- /home/juanfra/robocomp/components/Proyecto-Robotica/practica2/control/src/GenericBase.cpp \
+ /home/manuel/Escritorio/ROBOTICA/GitHub_Actividades/Proyecto_Robotica/practica2/control/src/GenericBase.cpp \
  /usr/include/stdc-predef.h \
- /home/juanfra/robocomp/components/Proyecto-Robotica/practica2/control/src/GenericBase.h \
+ /home/manuel/Escritorio/ROBOTICA/GitHub_Actividades/Proyecto_Robotica/practica2/control/src/GenericBase.h \
  /usr/include/IceUtil/PushDisableWarnings.h /usr/include/Ice/ProxyF.h \
  /usr/include/Ice/Config.h /usr/include/IceUtil/Config.h \
  /usr/include/c++/11/stdlib.h /usr/include/c++/11/cstdlib \

@@ -1,13 +1,11 @@
-/home/juanfra/robocomp/components/Proyecto-Robotica/practica2/control/src/control_autogen/EWIEGA46WW/moc_genericmonitor.cpp: /home/juanfra/robocomp/components/Proyecto-Robotica/practica2/control/src/genericmonitor.h \
-  /home/juanfra/robocomp/components/Proyecto-Robotica/practica2/control/src/control_autogen/moc_predefs.h \
-  /home/juanfra/robocomp/classes/qlog/qlog.h \
-  /home/juanfra/robocomp/components/Proyecto-Robotica/practica2/control/src/CommonBehavior.h \
-  /home/juanfra/robocomp/components/Proyecto-Robotica/practica2/control/src/DifferentialRobot.h \
-  /home/juanfra/robocomp/components/Proyecto-Robotica/practica2/control/src/GenericBase.h \
-  /home/juanfra/robocomp/components/Proyecto-Robotica/practica2/control/src/Laser.h \
-  /home/juanfra/robocomp/components/Proyecto-Robotica/practica2/control/src/config.h \
-  /home/juanfra/robocomp/components/Proyecto-Robotica/practica2/control/src/genericworker.h \
-  /home/juanfra/robocomp/components/Proyecto-Robotica/practica2/control/src/ui_mainUI.h \
+/home/manuel/Escritorio/ROBOTICA/GitHub_Actividades/Proyecto_Robotica/practica2/control/src/control_autogen/EWIEGA46WW/moc_genericmonitor.cpp: /home/manuel/Escritorio/ROBOTICA/GitHub_Actividades/Proyecto_Robotica/practica2/control/src/genericmonitor.h \
+  /home/manuel/Escritorio/ROBOTICA/GitHub_Actividades/Proyecto_Robotica/practica2/control/src/control_autogen/moc_predefs.h \
+  /home/manuel/Escritorio/ROBOTICA/GitHub_Actividades/Proyecto_Robotica/practica2/control/src/CommonBehavior.h \
+  /home/manuel/Escritorio/ROBOTICA/GitHub_Actividades/Proyecto_Robotica/practica2/control/src/GenericBase.h \
+  /home/manuel/Escritorio/ROBOTICA/GitHub_Actividades/Proyecto_Robotica/practica2/control/src/config.h \
+  /home/manuel/Escritorio/ROBOTICA/GitHub_Actividades/Proyecto_Robotica/practica2/control/src/genericworker.h \
+  /home/manuel/Escritorio/ROBOTICA/GitHub_Actividades/Proyecto_Robotica/practica2/control/src/ui_mainUI.h \
+  /opt/robocomp/classes/qlog/qlog.h \
   /usr/include/GL/gl.h \
   /usr/include/Ice/Application.h \
   /usr/include/Ice/AsyncResult.h \

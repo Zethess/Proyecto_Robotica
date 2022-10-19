@@ -1,5 +1,5 @@
 src/CMakeFiles/control.dir/main.cpp.o: \
- /home/juanfra/robocomp/components/Proyecto-Robotica/practica2/control/src/main.cpp \
+ /home/manuel/Escritorio/ROBOTICA/GitHub_Actividades/Proyecto_Robotica/practica2/control/src/main.cpp \
  /usr/include/stdc-predef.h /usr/include/signal.h /usr/include/features.h \
  /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -1022,13 +1022,13 @@ src/CMakeFiles/control.dir/main.cpp.o: \
  /usr/include/langinfo.h /usr/include/nl_types.h /usr/include/Ice/UUID.h \
  /usr/include/IceUtil/UUID.h /usr/include/IceStorm/IceStorm.h \
  /usr/include/IceStorm/Metrics.h /usr/include/IceStorm/Config.h \
- /home/juanfra/robocomp/classes/rapplication/rapplication.h \
+ /opt/robocomp/classes/rapplication/rapplication.h \
  /usr/include/IceUtil/IceUtil.h /usr/include/IceUtil/Functional.h \
  /usr/include/IceUtil/MutexPtrLock.h /usr/include/IceUtil/RecMutex.h \
- /home/juanfra/robocomp/classes/sigwatch/sigwatch.h \
+ /opt/robocomp/classes/sigwatch/sigwatch.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject \
- /home/juanfra/robocomp/classes/qlog/qlog.h \
- /home/juanfra/robocomp/components/Proyecto-Robotica/practica2/control/src/config.h \
+ /opt/robocomp/classes/qlog/qlog.h \
+ /home/manuel/Escritorio/ROBOTICA/GitHub_Actividades/Proyecto_Robotica/practica2/control/src/config.h \
  /usr/include/boost/format.hpp /usr/include/boost/detail/workaround.hpp \
  /usr/include/boost/config/workaround.hpp /usr/include/boost/config.hpp \
  /usr/include/boost/config/user.hpp \
@@ -1234,18 +1234,18 @@ src/CMakeFiles/control.dir/main.cpp.o: \
  /usr/include/boost/format/parsing.hpp \
  /usr/include/boost/format/free_funcs.hpp \
  /usr/include/boost/format/detail/unset_macros.hpp \
- /home/juanfra/robocomp/components/Proyecto-Robotica/practica2/control/src/config.h \
- /home/juanfra/robocomp/components/Proyecto-Robotica/practica2/control/src/genericmonitor.h \
- /home/juanfra/robocomp/components/Proyecto-Robotica/practica2/control/src/genericworker.h \
+ /home/manuel/Escritorio/ROBOTICA/GitHub_Actividades/Proyecto_Robotica/practica2/control/src/config.h \
+ /home/manuel/Escritorio/ROBOTICA/GitHub_Actividades/Proyecto_Robotica/practica2/control/src/genericmonitor.h \
+ /home/manuel/Escritorio/ROBOTICA/GitHub_Actividades/Proyecto_Robotica/practica2/control/src/genericworker.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/QtGui \
- /home/juanfra/robocomp/components/Proyecto-Robotica/practica2/control/src/ui_mainUI.h \
+ /home/manuel/Escritorio/ROBOTICA/GitHub_Actividades/Proyecto_Robotica/practica2/control/src/ui_mainUI.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QApplication \
- /home/juanfra/robocomp/components/Proyecto-Robotica/practica2/control/src/CommonBehavior.h \
- /home/juanfra/robocomp/components/Proyecto-Robotica/practica2/control/src/DifferentialRobot.h \
- /home/juanfra/robocomp/components/Proyecto-Robotica/practica2/control/src/GenericBase.h \
- /home/juanfra/robocomp/components/Proyecto-Robotica/practica2/control/src/Laser.h \
- /home/juanfra/robocomp/components/Proyecto-Robotica/practica2/control/src/specificworker.h \
- /home/juanfra/robocomp/components/Proyecto-Robotica/practica2/control/src/genericworker.h \
+ /home/manuel/Escritorio/ROBOTICA/GitHub_Actividades/Proyecto_Robotica/practica2/control/src/CommonBehavior.h \
+ /home/manuel/Escritorio/ROBOTICA/GitHub_Actividades/Proyecto_Robotica/practica2/control/src/DifferentialRobotMulti.h \
+ /home/manuel/Escritorio/ROBOTICA/GitHub_Actividades/Proyecto_Robotica/practica2/control/src/GenericBase.h \
+ /home/manuel/Escritorio/ROBOTICA/GitHub_Actividades/Proyecto_Robotica/practica2/control/src/LaserMulti.h \
+ /home/manuel/Escritorio/ROBOTICA/GitHub_Actividades/Proyecto_Robotica/practica2/control/src/specificworker.h \
+ /home/manuel/Escritorio/ROBOTICA/GitHub_Actividades/Proyecto_Robotica/practica2/control/src/genericworker.h \
  /usr/local/include/innermodel/innermodel.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QHash \
  /usr/local/include/qmat/qmat.h /usr/include/gsl/gsl_math.h \
@@ -1387,5 +1387,5 @@ src/CMakeFiles/control.dir/main.cpp.o: \
  /usr/local/include/innermodel/innermodelpointcloud.h \
  /usr/local/include/innermodel/innermodeldisplay.h \
  /usr/include/c++/11/ranges /usr/include/c++/11/optional \
- /home/juanfra/robocomp/components/Proyecto-Robotica/practica2/control/src/specificmonitor.h \
- /home/juanfra/robocomp/components/Proyecto-Robotica/practica2/control/src/commonbehaviorI.h
+ /home/manuel/Escritorio/ROBOTICA/GitHub_Actividades/Proyecto_Robotica/practica2/control/src/specificmonitor.h \
+ /home/manuel/Escritorio/ROBOTICA/GitHub_Actividades/Proyecto_Robotica/practica2/control/src/commonbehaviorI.h

@@ -50,15 +50,15 @@ public slots:
 	int startup_check();
 	void initialize(int period);
 
-    std::tuple<float, float> FORWARD_function(const RoboCompLaser::TLaserData &ldata);
+    std::tuple<float, float> FORWARD_function(const RoboCompLaserMulti::TLaserData &ldata);
     //Este método lo único que va hacer es pasar al estado STRAIGHT (RECTO)
-    std::tuple<float, float> IDLE_function(const RoboCompLaser::TLaserData &ldata);
-    std::tuple<float, float> TURN_function(const RoboCompLaser::TLaserData &ldata);
-    std::tuple<float, float> SPIRAL_function(const RoboCompLaser::TLaserData &ldata);
-    std::tuple<float, float> follow_wall_method(const RoboCompLaser::TLaserData &ldata);
-    bool hayQueSeguirLaPared(const RoboCompLaser::TLaserData &ldata);
-    bool GirarIzquierda(const RoboCompLaser::TLaserData &ldata);
-    float calcularMediaLaser(const RoboCompLaser::TLaserData &laser);
+    std::tuple<float, float> IDLE_function(const RoboCompLaserMulti::TLaserData &ldata);
+    std::tuple<float, float> TURN_function(const RoboCompLaserMulti::TLaserData &ldata);
+    std::tuple<float, float> SPIRAL_function(const RoboCompLaserMulti::TLaserData &ldata);
+    std::tuple<float, float> follow_wall_method(const RoboCompLaserMulti::TLaserData &ldata);
+    bool hayQueSeguirLaPared(const RoboCompLaserMulti::TLaserData &ldata);
+    bool GirarIzquierda(const RoboCompLaserMulti::TLaserData &ldata);
+    float calcularMediaLaser(const RoboCompLaserMulti::TLaserData &laser);
 
 
 private:

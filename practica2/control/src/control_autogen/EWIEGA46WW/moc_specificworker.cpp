@@ -23,7 +23,7 @@ QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_SpecificWorker_t {
     QByteArrayData data[18];
-    char stringdata0[252];
+    char stringdata0[257];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -40,22 +40,22 @@ QT_MOC_LITERAL(4, 38, 10), // "initialize"
 QT_MOC_LITERAL(5, 49, 6), // "period"
 QT_MOC_LITERAL(6, 56, 16), // "FORWARD_function"
 QT_MOC_LITERAL(7, 73, 23), // "std::tuple<float,float>"
-QT_MOC_LITERAL(8, 97, 25), // "RoboCompLaser::TLaserData"
-QT_MOC_LITERAL(9, 123, 5), // "ldata"
-QT_MOC_LITERAL(10, 129, 13), // "IDLE_function"
-QT_MOC_LITERAL(11, 143, 13), // "TURN_function"
-QT_MOC_LITERAL(12, 157, 15), // "SPIRAL_function"
-QT_MOC_LITERAL(13, 173, 18), // "follow_wall_method"
-QT_MOC_LITERAL(14, 192, 19), // "hayQueSeguirLaPared"
-QT_MOC_LITERAL(15, 212, 14), // "GirarIzquierda"
-QT_MOC_LITERAL(16, 227, 18), // "calcularMediaLaser"
-QT_MOC_LITERAL(17, 246, 5) // "laser"
+QT_MOC_LITERAL(8, 97, 30), // "RoboCompLaserMulti::TLaserData"
+QT_MOC_LITERAL(9, 128, 5), // "ldata"
+QT_MOC_LITERAL(10, 134, 13), // "IDLE_function"
+QT_MOC_LITERAL(11, 148, 13), // "TURN_function"
+QT_MOC_LITERAL(12, 162, 15), // "SPIRAL_function"
+QT_MOC_LITERAL(13, 178, 18), // "follow_wall_method"
+QT_MOC_LITERAL(14, 197, 19), // "hayQueSeguirLaPared"
+QT_MOC_LITERAL(15, 217, 14), // "GirarIzquierda"
+QT_MOC_LITERAL(16, 232, 18), // "calcularMediaLaser"
+QT_MOC_LITERAL(17, 251, 5) // "laser"
 
     },
     "SpecificWorker\0compute\0\0startup_check\0"
     "initialize\0period\0FORWARD_function\0"
     "std::tuple<float,float>\0"
-    "RoboCompLaser::TLaserData\0ldata\0"
+    "RoboCompLaserMulti::TLaserData\0ldata\0"
     "IDLE_function\0TURN_function\0SPIRAL_function\0"
     "follow_wall_method\0hayQueSeguirLaPared\0"
     "GirarIzquierda\0calcularMediaLaser\0"
@@ -115,21 +115,21 @@ void SpecificWorker::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _
         case 1: { int _r = _t->startup_check();
             if (_a[0]) *reinterpret_cast< int*>(_a[0]) = std::move(_r); }  break;
         case 2: _t->initialize((*reinterpret_cast< int(*)>(_a[1]))); break;
-        case 3: { std::tuple<float,float> _r = _t->FORWARD_function((*reinterpret_cast< const RoboCompLaser::TLaserData(*)>(_a[1])));
+        case 3: { std::tuple<float,float> _r = _t->FORWARD_function((*reinterpret_cast< const RoboCompLaserMulti::TLaserData(*)>(_a[1])));
             if (_a[0]) *reinterpret_cast< std::tuple<float,float>*>(_a[0]) = std::move(_r); }  break;
-        case 4: { std::tuple<float,float> _r = _t->IDLE_function((*reinterpret_cast< const RoboCompLaser::TLaserData(*)>(_a[1])));
+        case 4: { std::tuple<float,float> _r = _t->IDLE_function((*reinterpret_cast< const RoboCompLaserMulti::TLaserData(*)>(_a[1])));
             if (_a[0]) *reinterpret_cast< std::tuple<float,float>*>(_a[0]) = std::move(_r); }  break;
-        case 5: { std::tuple<float,float> _r = _t->TURN_function((*reinterpret_cast< const RoboCompLaser::TLaserData(*)>(_a[1])));
+        case 5: { std::tuple<float,float> _r = _t->TURN_function((*reinterpret_cast< const RoboCompLaserMulti::TLaserData(*)>(_a[1])));
             if (_a[0]) *reinterpret_cast< std::tuple<float,float>*>(_a[0]) = std::move(_r); }  break;
-        case 6: { std::tuple<float,float> _r = _t->SPIRAL_function((*reinterpret_cast< const RoboCompLaser::TLaserData(*)>(_a[1])));
+        case 6: { std::tuple<float,float> _r = _t->SPIRAL_function((*reinterpret_cast< const RoboCompLaserMulti::TLaserData(*)>(_a[1])));
             if (_a[0]) *reinterpret_cast< std::tuple<float,float>*>(_a[0]) = std::move(_r); }  break;
-        case 7: { std::tuple<float,float> _r = _t->follow_wall_method((*reinterpret_cast< const RoboCompLaser::TLaserData(*)>(_a[1])));
+        case 7: { std::tuple<float,float> _r = _t->follow_wall_method((*reinterpret_cast< const RoboCompLaserMulti::TLaserData(*)>(_a[1])));
             if (_a[0]) *reinterpret_cast< std::tuple<float,float>*>(_a[0]) = std::move(_r); }  break;
-        case 8: { bool _r = _t->hayQueSeguirLaPared((*reinterpret_cast< const RoboCompLaser::TLaserData(*)>(_a[1])));
+        case 8: { bool _r = _t->hayQueSeguirLaPared((*reinterpret_cast< const RoboCompLaserMulti::TLaserData(*)>(_a[1])));
             if (_a[0]) *reinterpret_cast< bool*>(_a[0]) = std::move(_r); }  break;
-        case 9: { bool _r = _t->GirarIzquierda((*reinterpret_cast< const RoboCompLaser::TLaserData(*)>(_a[1])));
+        case 9: { bool _r = _t->GirarIzquierda((*reinterpret_cast< const RoboCompLaserMulti::TLaserData(*)>(_a[1])));
             if (_a[0]) *reinterpret_cast< bool*>(_a[0]) = std::move(_r); }  break;
-        case 10: { float _r = _t->calcularMediaLaser((*reinterpret_cast< const RoboCompLaser::TLaserData(*)>(_a[1])));
+        case 10: { float _r = _t->calcularMediaLaser((*reinterpret_cast< const RoboCompLaserMulti::TLaserData(*)>(_a[1])));
             if (_a[0]) *reinterpret_cast< float*>(_a[0]) = std::move(_r); }  break;
         default: ;
         }
