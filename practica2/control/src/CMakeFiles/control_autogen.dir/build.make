@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/alumno/robocomp/components/Proyecto_Robotica/practica2/control
+CMAKE_SOURCE_DIR = /home/manuel/Escritorio/ROBOTICA/GitHub_Actividades/Proyecto_Robotica/practica2/control
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/alumno/robocomp/components/Proyecto_Robotica/practica2/control
+CMAKE_BINARY_DIR = /home/manuel/Escritorio/ROBOTICA/GitHub_Actividades/Proyecto_Robotica/practica2/control
 
 # Utility rule file for control_autogen.
 
@@ -67,8 +67,8 @@ include src/CMakeFiles/control_autogen.dir/compiler_depend.make
 include src/CMakeFiles/control_autogen.dir/progress.make
 
 src/CMakeFiles/control_autogen:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/alumno/robocomp/components/Proyecto_Robotica/practica2/control/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target control"
-	cd /home/alumno/robocomp/components/Proyecto_Robotica/practica2/control/src && /usr/bin/cmake -E cmake_autogen /home/alumno/robocomp/components/Proyecto_Robotica/practica2/control/src/CMakeFiles/control_autogen.dir/AutogenInfo.json Debug
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/manuel/Escritorio/ROBOTICA/GitHub_Actividades/Proyecto_Robotica/practica2/control/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target control"
+	cd /home/manuel/Escritorio/ROBOTICA/GitHub_Actividades/Proyecto_Robotica/practica2/control/src && /usr/bin/cmake -E cmake_autogen /home/manuel/Escritorio/ROBOTICA/GitHub_Actividades/Proyecto_Robotica/practica2/control/src/CMakeFiles/control_autogen.dir/AutogenInfo.json Debug
 
 control_autogen: src/CMakeFiles/control_autogen
 control_autogen: src/CMakeFiles/control_autogen.dir/build.make
@@ -79,10 +79,10 @@ src/CMakeFiles/control_autogen.dir/build: control_autogen
 .PHONY : src/CMakeFiles/control_autogen.dir/build
 
 src/CMakeFiles/control_autogen.dir/clean:
-	cd /home/alumno/robocomp/components/Proyecto_Robotica/practica2/control/src && $(CMAKE_COMMAND) -P CMakeFiles/control_autogen.dir/cmake_clean.cmake
+	cd /home/manuel/Escritorio/ROBOTICA/GitHub_Actividades/Proyecto_Robotica/practica2/control/src && $(CMAKE_COMMAND) -P CMakeFiles/control_autogen.dir/cmake_clean.cmake
 .PHONY : src/CMakeFiles/control_autogen.dir/clean
 
 src/CMakeFiles/control_autogen.dir/depend:
-	cd /home/alumno/robocomp/components/Proyecto_Robotica/practica2/control && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/alumno/robocomp/components/Proyecto_Robotica/practica2/control /home/alumno/robocomp/components/Proyecto_Robotica/practica2/control/src /home/alumno/robocomp/components/Proyecto_Robotica/practica2/control /home/alumno/robocomp/components/Proyecto_Robotica/practica2/control/src /home/alumno/robocomp/components/Proyecto_Robotica/practica2/control/src/CMakeFiles/control_autogen.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/manuel/Escritorio/ROBOTICA/GitHub_Actividades/Proyecto_Robotica/practica2/control && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/manuel/Escritorio/ROBOTICA/GitHub_Actividades/Proyecto_Robotica/practica2/control /home/manuel/Escritorio/ROBOTICA/GitHub_Actividades/Proyecto_Robotica/practica2/control/src /home/manuel/Escritorio/ROBOTICA/GitHub_Actividades/Proyecto_Robotica/practica2/control /home/manuel/Escritorio/ROBOTICA/GitHub_Actividades/Proyecto_Robotica/practica2/control/src /home/manuel/Escritorio/ROBOTICA/GitHub_Actividades/Proyecto_Robotica/practica2/control/src/CMakeFiles/control_autogen.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : src/CMakeFiles/control_autogen.dir/depend
 

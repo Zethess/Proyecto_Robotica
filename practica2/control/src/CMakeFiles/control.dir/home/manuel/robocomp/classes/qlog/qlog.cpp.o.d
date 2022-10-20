@@ -1,7 +1,7 @@
 src/CMakeFiles/control.dir/home/manuel/robocomp/classes/qlog/qlog.cpp.o: \
  /home/manuel/robocomp/classes/qlog/qlog.cpp /usr/include/stdc-predef.h \
  /home/manuel/robocomp/classes/qlog/qlog.h \
- /home/manuel/Escritorio/ROBOTICA/GitHub_Actividades/Proyecto-Robotica/practica2/control/src/config.h \
+ /home/manuel/Escritorio/ROBOTICA/GitHub_Actividades/Proyecto_Robotica/practica2/control/src/config.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QtCore \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QtCoreDepends \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qglobal.h \

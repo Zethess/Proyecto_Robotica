@@ -1,8 +1,8 @@
 src/CMakeFiles/control.dir/specificmonitor.cpp.o: \
- /home/alumno/robocomp/components/Proyecto_Robotica/practica2/control/src/specificmonitor.cpp \
+ /home/manuel/Escritorio/ROBOTICA/GitHub_Actividades/Proyecto_Robotica/practica2/control/src/specificmonitor.cpp \
  /usr/include/stdc-predef.h \
- /home/alumno/robocomp/components/Proyecto_Robotica/practica2/control/src/specificmonitor.h \
- /home/alumno/robocomp/components/Proyecto_Robotica/practica2/control/src/genericmonitor.h \
+ /home/manuel/Escritorio/ROBOTICA/GitHub_Actividades/Proyecto_Robotica/practica2/control/src/specificmonitor.h \
+ /home/manuel/Escritorio/ROBOTICA/GitHub_Actividades/Proyecto_Robotica/practica2/control/src/genericmonitor.h \
  /usr/include/Ice/Ice.h /usr/include/IceUtil/PushDisableWarnings.h \
  /usr/include/Ice/Config.h /usr/include/IceUtil/Config.h \
  /usr/include/c++/11/stdlib.h /usr/include/c++/11/cstdlib \
@@ -627,10 +627,10 @@ src/CMakeFiles/control.dir/specificmonitor.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qwineventnotifier.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qxmlstream.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qtcoreversion.h \
- /home/alumno/robocomp/components/Proyecto_Robotica/practica2/control/src/genericworker.h \
- /home/alumno/robocomp/components/Proyecto_Robotica/practica2/control/src/config.h \
- /home/alumno/robocomp/classes/qlog/qlog.h \
- /home/alumno/robocomp/components/Proyecto_Robotica/practica2/control/src/config.h \
+ /home/manuel/Escritorio/ROBOTICA/GitHub_Actividades/Proyecto_Robotica/practica2/control/src/genericworker.h \
+ /home/manuel/Escritorio/ROBOTICA/GitHub_Actividades/Proyecto_Robotica/practica2/control/src/config.h \
+ /home/manuel/robocomp/classes/qlog/qlog.h \
+ /home/manuel/Escritorio/ROBOTICA/GitHub_Actividades/Proyecto_Robotica/practica2/control/src/config.h \
  /usr/include/boost/format.hpp /usr/include/boost/detail/workaround.hpp \
  /usr/include/boost/config/workaround.hpp /usr/include/boost/config.hpp \
  /usr/include/boost/config/user.hpp \
@@ -1023,7 +1023,7 @@ src/CMakeFiles/control.dir/specificmonitor.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qvector4d.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qwindowdefs.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtguiversion.h \
- /home/alumno/robocomp/components/Proyecto_Robotica/practica2/control/src/ui_mainUI.h \
+ /home/manuel/Escritorio/ROBOTICA/GitHub_Actividades/Proyecto_Robotica/practica2/control/src/ui_mainUI.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QVariant \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QApplication \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qapplication.h \
@@ -1033,7 +1033,7 @@ src/CMakeFiles/control.dir/specificmonitor.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qsizepolicy.h \
- /home/alumno/robocomp/components/Proyecto_Robotica/practica2/control/src/CommonBehavior.h \
- /home/alumno/robocomp/components/Proyecto_Robotica/practica2/control/src/DifferentialRobotMulti.h \
- /home/alumno/robocomp/components/Proyecto_Robotica/practica2/control/src/GenericBase.h \
- /home/alumno/robocomp/components/Proyecto_Robotica/practica2/control/src/LaserMulti.h
+ /home/manuel/Escritorio/ROBOTICA/GitHub_Actividades/Proyecto_Robotica/practica2/control/src/CommonBehavior.h \
+ /home/manuel/Escritorio/ROBOTICA/GitHub_Actividades/Proyecto_Robotica/practica2/control/src/DifferentialRobotMulti.h \
+ /home/manuel/Escritorio/ROBOTICA/GitHub_Actividades/Proyecto_Robotica/practica2/control/src/GenericBase.h \
+ /home/manuel/Escritorio/ROBOTICA/GitHub_Actividades/Proyecto_Robotica/practica2/control/src/LaserMulti.h

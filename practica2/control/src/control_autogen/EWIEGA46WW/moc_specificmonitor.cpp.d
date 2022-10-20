@@ -1,14 +1,14 @@
-/home/alumno/robocomp/components/Proyecto_Robotica/practica2/control/src/control_autogen/EWIEGA46WW/moc_specificmonitor.cpp: /home/alumno/robocomp/components/Proyecto_Robotica/practica2/control/src/specificmonitor.h \
-  /home/alumno/robocomp/components/Proyecto_Robotica/practica2/control/src/control_autogen/moc_predefs.h \
-  /home/alumno/robocomp/classes/qlog/qlog.h \
-  /home/alumno/robocomp/components/Proyecto_Robotica/practica2/control/src/CommonBehavior.h \
-  /home/alumno/robocomp/components/Proyecto_Robotica/practica2/control/src/DifferentialRobotMulti.h \
-  /home/alumno/robocomp/components/Proyecto_Robotica/practica2/control/src/GenericBase.h \
-  /home/alumno/robocomp/components/Proyecto_Robotica/practica2/control/src/LaserMulti.h \
-  /home/alumno/robocomp/components/Proyecto_Robotica/practica2/control/src/config.h \
-  /home/alumno/robocomp/components/Proyecto_Robotica/practica2/control/src/genericmonitor.h \
-  /home/alumno/robocomp/components/Proyecto_Robotica/practica2/control/src/genericworker.h \
-  /home/alumno/robocomp/components/Proyecto_Robotica/practica2/control/src/ui_mainUI.h \
+/home/manuel/Escritorio/ROBOTICA/GitHub_Actividades/Proyecto_Robotica/practica2/control/src/control_autogen/EWIEGA46WW/moc_specificmonitor.cpp: /home/manuel/Escritorio/ROBOTICA/GitHub_Actividades/Proyecto_Robotica/practica2/control/src/specificmonitor.h \
+  /home/manuel/Escritorio/ROBOTICA/GitHub_Actividades/Proyecto_Robotica/practica2/control/src/control_autogen/moc_predefs.h \
+  /home/manuel/Escritorio/ROBOTICA/GitHub_Actividades/Proyecto_Robotica/practica2/control/src/CommonBehavior.h \
+  /home/manuel/Escritorio/ROBOTICA/GitHub_Actividades/Proyecto_Robotica/practica2/control/src/DifferentialRobotMulti.h \
+  /home/manuel/Escritorio/ROBOTICA/GitHub_Actividades/Proyecto_Robotica/practica2/control/src/GenericBase.h \
+  /home/manuel/Escritorio/ROBOTICA/GitHub_Actividades/Proyecto_Robotica/practica2/control/src/LaserMulti.h \
+  /home/manuel/Escritorio/ROBOTICA/GitHub_Actividades/Proyecto_Robotica/practica2/control/src/config.h \
+  /home/manuel/Escritorio/ROBOTICA/GitHub_Actividades/Proyecto_Robotica/practica2/control/src/genericmonitor.h \
+  /home/manuel/Escritorio/ROBOTICA/GitHub_Actividades/Proyecto_Robotica/practica2/control/src/genericworker.h \
+  /home/manuel/Escritorio/ROBOTICA/GitHub_Actividades/Proyecto_Robotica/practica2/control/src/ui_mainUI.h \
+  /home/manuel/robocomp/classes/qlog/qlog.h \
   /usr/include/GL/gl.h \
   /usr/include/Ice/Application.h \
   /usr/include/Ice/AsyncResult.h \

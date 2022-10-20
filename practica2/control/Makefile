@@ -57,18 +57,18 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/alumno/robocomp/components/Proyecto_Robotica/practica2/control
+CMAKE_SOURCE_DIR = /home/manuel/Escritorio/ROBOTICA/GitHub_Actividades/Proyecto_Robotica/practica2/control
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/alumno/robocomp/components/Proyecto_Robotica/practica2/control
+CMAKE_BINARY_DIR = /home/manuel/Escritorio/ROBOTICA/GitHub_Actividades/Proyecto_Robotica/practica2/control
 
 #=============================================================================
 # Targets provided globally by CMake.
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	/usr/bin/cmake-gui -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -132,9 +132,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/alumno/robocomp/components/Proyecto_Robotica/practica2/control/CMakeFiles /home/alumno/robocomp/components/Proyecto_Robotica/practica2/control//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/manuel/Escritorio/ROBOTICA/GitHub_Actividades/Proyecto_Robotica/practica2/control/CMakeFiles /home/manuel/Escritorio/ROBOTICA/GitHub_Actividades/Proyecto_Robotica/practica2/control//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/alumno/robocomp/components/Proyecto_Robotica/practica2/control/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/manuel/Escritorio/ROBOTICA/GitHub_Actividades/Proyecto_Robotica/practica2/control/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -162,17 +162,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named ICES__home_alumno_robocomp_components_Proyecto_Robotica_practica2_control_src
+# Target rules for targets named ICES__home_manuel_Escritorio_ROBOTICA_GitHub_Actividades_Proyecto_Robotica_practica2_control_src
 
 # Build rule for target.
-ICES__home_alumno_robocomp_components_Proyecto_Robotica_practica2_control_src: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ICES__home_alumno_robocomp_components_Proyecto_Robotica_practica2_control_src
-.PHONY : ICES__home_alumno_robocomp_components_Proyecto_Robotica_practica2_control_src
+ICES__home_manuel_Escritorio_ROBOTICA_GitHub_Actividades_Proyecto_Robotica_practica2_control_src: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ICES__home_manuel_Escritorio_ROBOTICA_GitHub_Actividades_Proyecto_Robotica_practica2_control_src
+.PHONY : ICES__home_manuel_Escritorio_ROBOTICA_GitHub_Actividades_Proyecto_Robotica_practica2_control_src
 
 # fast build rule for target.
-ICES__home_alumno_robocomp_components_Proyecto_Robotica_practica2_control_src/fast:
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/ICES__home_alumno_robocomp_components_Proyecto_Robotica_practica2_control_src.dir/build.make src/CMakeFiles/ICES__home_alumno_robocomp_components_Proyecto_Robotica_practica2_control_src.dir/build
-.PHONY : ICES__home_alumno_robocomp_components_Proyecto_Robotica_practica2_control_src/fast
+ICES__home_manuel_Escritorio_ROBOTICA_GitHub_Actividades_Proyecto_Robotica_practica2_control_src/fast:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/ICES__home_manuel_Escritorio_ROBOTICA_GitHub_Actividades_Proyecto_Robotica_practica2_control_src.dir/build.make src/CMakeFiles/ICES__home_manuel_Escritorio_ROBOTICA_GitHub_Actividades_Proyecto_Robotica_practica2_control_src.dir/build
+.PHONY : ICES__home_manuel_Escritorio_ROBOTICA_GitHub_Actividades_Proyecto_Robotica_practica2_control_src/fast
 
 #=============================================================================
 # Target rules for targets named control
@@ -212,7 +212,7 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... ICES__home_alumno_robocomp_components_Proyecto_Robotica_practica2_control_src"
+	@echo "... ICES__home_manuel_Escritorio_ROBOTICA_GitHub_Actividades_Proyecto_Robotica_practica2_control_src"
 	@echo "... control_autogen"
 	@echo "... control"
 .PHONY : help

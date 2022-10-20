@@ -1,7 +1,7 @@
 src/CMakeFiles/control.dir/CommonBehavior.cpp.o: \
- /home/alumno/robocomp/components/Proyecto_Robotica/practica2/control/src/CommonBehavior.cpp \
+ /home/manuel/Escritorio/ROBOTICA/GitHub_Actividades/Proyecto_Robotica/practica2/control/src/CommonBehavior.cpp \
  /usr/include/stdc-predef.h \
- /home/alumno/robocomp/components/Proyecto_Robotica/practica2/control/src/CommonBehavior.h \
+ /home/manuel/Escritorio/ROBOTICA/GitHub_Actividades/Proyecto_Robotica/practica2/control/src/CommonBehavior.h \
  /usr/include/IceUtil/PushDisableWarnings.h /usr/include/Ice/ProxyF.h \
  /usr/include/Ice/Config.h /usr/include/IceUtil/Config.h \
  /usr/include/c++/11/stdlib.h /usr/include/c++/11/cstdlib \
