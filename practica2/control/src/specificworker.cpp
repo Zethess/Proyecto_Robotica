@@ -122,7 +122,6 @@ std::tuple<float, float> SpecificWorker::FORWARD_function(const RoboCompLaserMul
     std::cout << "Estado: FORWARD" << std::endl;
     std::tuple<float, float> tuplaAdevolver;
 
-
     //Inicializamos con los valores que ya tenia la tupla anteriormente por si no hay cambio
     tuplaAdevolver = make_tuple(get<0>(valores), get<1>(valores));
 
@@ -163,43 +162,63 @@ std::tuple<float, float> SpecificWorker::FORWARD_function(const RoboCompLaserMul
 std::tuple<float, float> SpecificWorker::TURN_function(const RoboCompLaserMulti::TLaserData &ldata) {
     std::cout << "Estado: TURN" << std::endl;
     std::tuple<float, float> tuplaAdevolver;
-
-    const int partesVector = 3;
+    static int partesVector=3;
+    static int derecha=0;
 
     //Inicializamos con los valores que ya tenia la tupla anteriormente por si no hay cambio
     tuplaAdevolver = make_tuple(get<0>(valores), get<1>(valores));
-    if (hayQueSeguirLaPared(ldata) && pared==false)
+
+    srand(time(NULL));
+    static int aleatorio =rand() % 2;
+
+    if (pared==true)
     {
-        state=State::FOLLOW_WALL;
+        std::cout<<"regenerando aleatorio"<<std::endl;
+        aleatorio =rand() % 2;
+        pared=false; //Dejamos libre la bandera para que pueda volver otra vez a entrar en el estado
+    }
+
+    std::cout<<aleatorio<<std::endl;
+
+    if (aleatorio)
+    {
         RoboCompLaserMulti::TLaserData parteCentral(ldata.begin()+ldata.size()/partesVector, ldata.end()-ldata.size()/partesVector);
         std::ranges::sort(parteCentral, {}, &RoboCompLaserMulti::TData::dist);
 
         if(parteCentral.front().dist<1100) {
-            if (GirarIzquierda(ldata)) {
+            if (GirarIzquierda(ldata) && derecha==0) {
                 tuplaAdevolver = make_tuple(0, -0.9);
                 std::cout << "GIRARIZQUIERDA" << std::endl;
             } else {
+                derecha=1;
                 tuplaAdevolver = make_tuple(0, 0.9);
                 std::cout << "GIRARDERECHA" << std::endl;
             }
+        }else
+        {
+            derecha=0;
+            state=State::FOLLOW_WALL;
+            tuplaAdevolver = make_tuple(MAX_ADV, 0);
         }
     }
     else {
+        pared=true;
+        //pared=false; //Dejamos libre la bandera para que pueda volver otra vez a entrar en el estado
         //ordenar por distancia la sección control de lalser
         RoboCompLaserMulti::TLaserData parteCentral(ldata.begin()+ldata.size()/partesVector, ldata.end()-ldata.size()/partesVector);
         std::ranges::sort(parteCentral, {}, &RoboCompLaserMulti::TData::dist);
         //si hay espacio libre delante del robot se selecciona el método forward
         if (parteCentral.front().dist > 1100) {
+            derecha=0;  //evita el baile de la J
             state = State::STRAIGHT;
             tuplaAdevolver = make_tuple(MAX_ADV, 0);
-            pared=false; //Dejamos libre la bandera para que pueda volver otra vez a entrar en el estado
         }else
         {
-            pared=false; //Dejamos libre la bandera para que pueda volver otra vez a entrar en el estado
-            if (GirarIzquierda(ldata)) {
+            if (GirarIzquierda(ldata) && derecha==0) {
                 tuplaAdevolver = make_tuple(0, -0.9);
                 std::cout << "GIRARIZQUIERDA" << std::endl;
             } else {
+                derecha = 1;
                 tuplaAdevolver = make_tuple(0, 0.9);
                 std::cout << "GIRARDERECHA" << std::endl;
             }
@@ -245,13 +264,18 @@ std::tuple<float, float> SpecificWorker::SPIRAL_function(const RoboCompLaserMult
 std::tuple<float, float> SpecificWorker:: follow_wall_method(const RoboCompLaserMulti::TLaserData &ldata)
 {
     static bool first_time = true;
-    static auto start = std::chrono::system_clock::now();
+    static std::chrono::time_point<std::chrono::system_clock> start;
+
+    if(first_time == true)
+    {
+        start = std::chrono::system_clock::now();
+    }
 
     bool noEvaluo=false;
 
     std::cout << "Estado: SEGUIR PARED" << std::endl;
     std::tuple<float, float> tuplaAdevolver;
-    int partesVector=3;
+    const int partesVector=3;
     //ordenar por distancia la sección control de lalser
     RoboCompLaserMulti::TLaserData parteCentral(ldata.begin()+ldata.size()/partesVector, ldata.end()-ldata.size()/partesVector);
     std::ranges::sort(parteCentral, {}, &RoboCompLaserMulti::TData::dist);
@@ -260,8 +284,10 @@ std::tuple<float, float> SpecificWorker:: follow_wall_method(const RoboCompLaser
     {
         auto end = std::chrono::system_clock::now();
         std::chrono::duration<float,std::milli> duration = end - start;
-        if(duration.count() > 10000)
+        std::cout<<duration.count()<<std::endl;
+        if(duration.count() > 20000)
         {
+            std::cout<<"sale del seguir pared"<<std::endl;
             pared=true; //Ponemos pared a true para que no entre de nuevo en este estado por el turn y pueda salir a un estado distinto
             first_time=true;
             state=State::TURN;
@@ -272,23 +298,31 @@ std::tuple<float, float> SpecificWorker:: follow_wall_method(const RoboCompLaser
 
     if (noEvaluo==false) {
         first_time = false;
-        if (parteCentral.front().dist < 1100) {
+        if (parteCentral.front().dist < 900) {
             state = State::TURN;
-        } else { //ESta parte corrige trayectoria y se debe de hacer aqui y no en el turn
-            partesVector = 2;
-            //Si la distancia a la pared por la parte izquierda o derecha es menor que 300 esta en pared y tiene que seguirla
-            RoboCompLaserMulti::TLaserData parteIzquierda(ldata.begin(), ldata.end() - (ldata.size() / partesVector));
+        } else
+        { //ESta parte corrige trayectoria y se debe de hacer aqui y no en el turn
+            std::cout<<"Corregir trayecto"<<std::endl;
+
+            RoboCompLaserMulti::TLaserData parteIzquierda(ldata.begin(), ldata.end()-2*(ldata.size()/partesVector));
             std::ranges::sort(parteIzquierda, {}, &RoboCompLaserMulti::TData::dist);
-            if (calcularMediaLaser(parteIzquierda) > 200) {
-                std::cout << "corrigiendo trayecto" << std::endl;
-                tuplaAdevolver = make_tuple(800, 0.1);
-            } else {
-                RoboCompLaserMulti::TLaserData parteDerecha(ldata.begin(), ldata.end() - (ldata.size() / partesVector));
-                std::ranges::sort(parteDerecha, {}, &RoboCompLaserMulti::TData::dist);
-                if (calcularMediaLaser(parteDerecha) > 200) {
-                    std::cout << "corriegiendo trayecto" << std::endl;
-                    tuplaAdevolver = make_tuple(800, -0.1);
-                } else {
+
+            RoboCompLaserMulti::TLaserData parteDerecha(ldata.begin()+2*(ldata.size()/partesVector), ldata.end());
+            std::ranges::sort(parteDerecha, {}, &RoboCompLaserMulti::TData::dist);
+
+            if(calcularMediaLaser(parteIzquierda) > 300 )
+            {
+                std::cout<<"girando a la derecha"<<std::endl;
+                tuplaAdevolver = make_tuple(600, 0.4);
+            }else
+            {
+                if(calcularMediaLaser(parteDerecha) > 300 )
+                {
+                    std::cout<<"girando a la izquierda"<<std::endl;
+                    tuplaAdevolver = make_tuple(600, -0.4);
+                }else
+                {
+                    std::cout<<"rotacion 0"<<std::endl;
                     tuplaAdevolver = make_tuple(MAX_ADV, 0);
                 }
             }
@@ -319,7 +353,7 @@ bool SpecificWorker::GirarIzquierda(const RoboCompLaserMulti::TLaserData &ldata)
 
 bool SpecificWorker::hayQueSeguirLaPared(const RoboCompLaserMulti::TLaserData &ldata)
 {
-    bool bandera=false;
+    /*bool bandera=false;
     int partesVector=3;
     //Si la distancia a la pared por la parte izquierda o derecha es menor que 300 esta en pared y tiene que seguirla
     RoboCompLaserMulti::TLaserData parteCentral(ldata.begin()+(ldata.size()/partesVector), ldata.end()-(ldata.size()/partesVector));
@@ -341,8 +375,9 @@ bool SpecificWorker::hayQueSeguirLaPared(const RoboCompLaserMulti::TLaserData &l
     {
         bandera=true;
     }
+    */
 
-    return bandera;
+    return true;
 }
 
 
