@@ -27,7 +27,9 @@
 #ifndef SPECIFICWORKER_H
 #define SPECIFICWORKER_H
 #define MAX_ADV 1200.0
+#define DELTA 50
 #define MAX_ROT 1.2
+
 
 #include <genericworker.h>
 #include <innermodel/innermodel.h>
@@ -58,7 +60,8 @@ public slots:
     //Este método lo único que va hacer es pasar al estado STRAIGHT (RECTO)
     std::tuple<float, float> IDLE_function(const RoboCompLaserMulti::TLaserData &ldata);
     std::tuple<float, float> TURN_function(const RoboCompLaserMulti::TLaserData &ldata);
-    std::tuple<float, float> SPIRAL_function(const RoboCompLaserMulti::TLaserData &ldata);
+    std::tuple<float, float> SPIRAL_function(RoboCompLaserMulti::TLaserData &ldata);
+
     std::tuple<float, float> follow_wall_method(const RoboCompLaserMulti::TLaserData &ldata);
     bool hayQueSeguirLaPared(const RoboCompLaserMulti::TLaserData &ldata);
     bool GirarIzquierda(const RoboCompLaserMulti::TLaserData &ldata);

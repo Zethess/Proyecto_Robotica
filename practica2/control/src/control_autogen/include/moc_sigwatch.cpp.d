@@ -1,5 +1,5 @@
-/home/manuel/Escritorio/ROBOTICA/GitHub_Actividades/Proyecto_Robotica/practica2/control/src/control_autogen/include/moc_sigwatch.cpp: /home/manuel/robocomp/classes/sigwatch/sigwatch.h \
-  /home/manuel/Escritorio/ROBOTICA/GitHub_Actividades/Proyecto_Robotica/practica2/control/src/control_autogen/moc_predefs.h \
+/home/robocomp/robocomp/components/Proyecto_Robotica/practica2/control/src/control_autogen/include/moc_sigwatch.cpp: /opt/robocomp/classes/sigwatch/sigwatch.h \
+  /home/robocomp/robocomp/components/Proyecto_Robotica/practica2/control/src/control_autogen/moc_predefs.h \
   /usr/include/assert.h \
   /usr/include/c++/11/algorithm \
   /usr/include/c++/11/array \

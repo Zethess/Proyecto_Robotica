@@ -22,8 +22,8 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_SpecificWorker_t {
-    QByteArrayData data[18];
-    char stringdata0[257];
+    QByteArrayData data[19];
+    char stringdata0[289];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -45,11 +45,12 @@ QT_MOC_LITERAL(9, 128, 5), // "ldata"
 QT_MOC_LITERAL(10, 134, 13), // "IDLE_function"
 QT_MOC_LITERAL(11, 148, 13), // "TURN_function"
 QT_MOC_LITERAL(12, 162, 15), // "SPIRAL_function"
-QT_MOC_LITERAL(13, 178, 18), // "follow_wall_method"
-QT_MOC_LITERAL(14, 197, 19), // "hayQueSeguirLaPared"
-QT_MOC_LITERAL(15, 217, 14), // "GirarIzquierda"
-QT_MOC_LITERAL(16, 232, 18), // "calcularMediaLaser"
-QT_MOC_LITERAL(17, 251, 5) // "laser"
+QT_MOC_LITERAL(13, 178, 31), // "RoboCompLaserMulti::TLaserData&"
+QT_MOC_LITERAL(14, 210, 18), // "follow_wall_method"
+QT_MOC_LITERAL(15, 229, 19), // "hayQueSeguirLaPared"
+QT_MOC_LITERAL(16, 249, 14), // "GirarIzquierda"
+QT_MOC_LITERAL(17, 264, 18), // "calcularMediaLaser"
+QT_MOC_LITERAL(18, 283, 5) // "laser"
 
     },
     "SpecificWorker\0compute\0\0startup_check\0"
@@ -57,6 +58,7 @@ QT_MOC_LITERAL(17, 251, 5) // "laser"
     "std::tuple<float,float>\0"
     "RoboCompLaserMulti::TLaserData\0ldata\0"
     "IDLE_function\0TURN_function\0SPIRAL_function\0"
+    "RoboCompLaserMulti::TLaserData&\0"
     "follow_wall_method\0hayQueSeguirLaPared\0"
     "GirarIzquierda\0calcularMediaLaser\0"
     "laser"
@@ -84,10 +86,10 @@ static const uint qt_meta_data_SpecificWorker[] = {
       10,    1,   77,    2, 0x0a /* Public */,
       11,    1,   80,    2, 0x0a /* Public */,
       12,    1,   83,    2, 0x0a /* Public */,
-      13,    1,   86,    2, 0x0a /* Public */,
-      14,    1,   89,    2, 0x0a /* Public */,
-      15,    1,   92,    2, 0x0a /* Public */,
-      16,    1,   95,    2, 0x0a /* Public */,
+      14,    1,   86,    2, 0x0a /* Public */,
+      15,    1,   89,    2, 0x0a /* Public */,
+      16,    1,   92,    2, 0x0a /* Public */,
+      17,    1,   95,    2, 0x0a /* Public */,
 
  // slots: parameters
     QMetaType::Void,
@@ -96,11 +98,11 @@ static const uint qt_meta_data_SpecificWorker[] = {
     0x80000000 | 7, 0x80000000 | 8,    9,
     0x80000000 | 7, 0x80000000 | 8,    9,
     0x80000000 | 7, 0x80000000 | 8,    9,
-    0x80000000 | 7, 0x80000000 | 8,    9,
+    0x80000000 | 7, 0x80000000 | 13,    9,
     0x80000000 | 7, 0x80000000 | 8,    9,
     QMetaType::Bool, 0x80000000 | 8,    9,
     QMetaType::Bool, 0x80000000 | 8,    9,
-    QMetaType::Float, 0x80000000 | 8,   17,
+    QMetaType::Float, 0x80000000 | 8,   18,
 
        0        // eod
 };
@@ -121,7 +123,7 @@ void SpecificWorker::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _
             if (_a[0]) *reinterpret_cast< std::tuple<float,float>*>(_a[0]) = std::move(_r); }  break;
         case 5: { std::tuple<float,float> _r = _t->TURN_function((*reinterpret_cast< const RoboCompLaserMulti::TLaserData(*)>(_a[1])));
             if (_a[0]) *reinterpret_cast< std::tuple<float,float>*>(_a[0]) = std::move(_r); }  break;
-        case 6: { std::tuple<float,float> _r = _t->SPIRAL_function((*reinterpret_cast< const RoboCompLaserMulti::TLaserData(*)>(_a[1])));
+        case 6: { std::tuple<float,float> _r = _t->SPIRAL_function((*reinterpret_cast< RoboCompLaserMulti::TLaserData(*)>(_a[1])));
             if (_a[0]) *reinterpret_cast< std::tuple<float,float>*>(_a[0]) = std::move(_r); }  break;
         case 7: { std::tuple<float,float> _r = _t->follow_wall_method((*reinterpret_cast< const RoboCompLaserMulti::TLaserData(*)>(_a[1])));
             if (_a[0]) *reinterpret_cast< std::tuple<float,float>*>(_a[0]) = std::move(_r); }  break;
