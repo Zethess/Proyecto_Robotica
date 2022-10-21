@@ -277,6 +277,10 @@ std::tuple<float, float> SpecificWorker:: follow_wall_method(const RoboCompLaser
     //ordenar por distancia la sección control de laser
     RoboCompLaserMulti::TLaserData parteCentral(ldata.begin()+ldata.size()/partesVector, ldata.end()-ldata.size()/partesVector);
     std::ranges::sort(parteCentral, {}, &RoboCompLaserMulti::TData::dist);
+    RoboCompLaserMulti::TLaserData parteIzquierda(ldata.begin(), ldata.end()-2*(ldata.size()/partesVector));
+    std::ranges::sort(parteIzquierda, {}, &RoboCompLaserMulti::TData::dist);
+    RoboCompLaserMulti::TLaserData parteDerecha(ldata.begin()+2*(ldata.size()/partesVector), ldata.end());
+    std::ranges::sort(parteDerecha, {}, &RoboCompLaserMulti::TData::dist);
 
     if (first_time !=true)
     {
@@ -289,7 +293,12 @@ std::tuple<float, float> SpecificWorker:: follow_wall_method(const RoboCompLaser
             first_time=true;
             state=State::TURN;
             noEvaluo=true;
-            tuplaAdevolver = make_tuple(500, 0.8);
+            if (calcularMediaLaser(parteIzquierda) < calcularMediaLaser(parteDerecha)) {
+                tuplaAdevolver = make_tuple(MAX_ADV, -0.8);
+            }
+            else{
+                tuplaAdevolver = make_tuple(MAX_ADV, +0.8);
+            }
         }
     }
 
@@ -301,11 +310,7 @@ std::tuple<float, float> SpecificWorker:: follow_wall_method(const RoboCompLaser
         { //ESta parte corrige trayectoria y se debe de hacer aqui y no en el turn
             std::cout<<"Corregir trayecto"<<std::endl;
 
-            RoboCompLaserMulti::TLaserData parteIzquierda(ldata.begin(), ldata.end()-2*(ldata.size()/partesVector));
-            std::ranges::sort(parteIzquierda, {}, &RoboCompLaserMulti::TData::dist);
 
-            RoboCompLaserMulti::TLaserData parteDerecha(ldata.begin()+2*(ldata.size()/partesVector), ldata.end());
-            std::ranges::sort(parteDerecha, {}, &RoboCompLaserMulti::TData::dist);
             std::cout << "MEDIADERECHA: "<<calcularMediaLaser(parteIzquierda) << std::endl;
             std::cout << "MEDIAIZQUIERDA: "<<calcularMediaLaser(parteDerecha) << std::endl;
 
