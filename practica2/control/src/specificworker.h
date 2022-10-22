@@ -26,9 +26,6 @@
 
 #ifndef SPECIFICWORKER_H
 #define SPECIFICWORKER_H
-#define MAX_ADV 1200.0
-#define DELTA 50
-#define MAX_ROT 1.2
 
 
 #include <genericworker.h>
@@ -80,6 +77,14 @@ private:
 
     //Declaramos una tupla donde se alamacenarán los valores de adv, rot y State
     std::tuple<float, float> valores;
+
+    struct Constants
+    {
+        const float MAX_ADV = 1200.0;
+        const float DELTA = 50;
+        const float MAX_ROT = 1.2;
+    };
+    Constants consts;
 
 
 

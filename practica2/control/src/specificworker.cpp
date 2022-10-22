@@ -111,7 +111,7 @@ std::tuple<float, float> SpecificWorker::IDLE_function(const RoboCompLaserMulti:
 {
     std::cout << "Estado: IDLE" << std::endl;
     std::tuple<float, float> tuplaAdevolver;
-    tuplaAdevolver=make_tuple(MAX_ADV, 0);
+    tuplaAdevolver=make_tuple(consts.MAX_ADV, 0);
     state=State::STRAIGHT;
 
     return tuplaAdevolver;
@@ -150,7 +150,7 @@ std::tuple<float, float> SpecificWorker::FORWARD_function(const RoboCompLaserMul
         std::ranges::sort(laserCompleto, {}, &RoboCompLaserMulti::TData::dist);
         if (laserCompleto.front().dist > 1200) {
             state = State::SPIRAL;
-            tuplaAdevolver = make_tuple(1, MAX_ROT);
+            tuplaAdevolver = make_tuple(1, consts.MAX_ROT);
         }
     }
 
@@ -179,7 +179,8 @@ std::tuple<float, float> SpecificWorker::TURN_function(const RoboCompLaserMulti:
 
     std::cout<<aleatorio<<std::endl;
 
-    if (aleatorio && hayQueSeguirLaPared(ldata))
+    if (aleatorio && hayQueSeguirLaPared(ldata)) //NO tiene sentido que se siga una pared en la mitad del mapa,. por eso aparte de generar el aleatorio
+                                                 //Se comprueba que se pueda seguir pared
     {
         RoboCompLaserMulti::TLaserData parteCentral(ldata.begin()+ldata.size()/partesVector, ldata.end()-ldata.size()/partesVector);
         std::ranges::sort(parteCentral, {}, &RoboCompLaserMulti::TData::dist);
@@ -197,7 +198,7 @@ std::tuple<float, float> SpecificWorker::TURN_function(const RoboCompLaserMulti:
         {
             derecha=0;
             state=State::FOLLOW_WALL;
-            tuplaAdevolver = make_tuple(MAX_ADV, 0);
+            tuplaAdevolver = make_tuple(consts.MAX_ADV, 0);
         }
     }
     else {
@@ -210,7 +211,7 @@ std::tuple<float, float> SpecificWorker::TURN_function(const RoboCompLaserMulti:
         if (parteCentral.front().dist > 1100) {
             derecha=0;  //evita el baile de la J
             state = State::STRAIGHT;
-            tuplaAdevolver = make_tuple(MAX_ADV, 0);
+            tuplaAdevolver = make_tuple(consts.MAX_ADV, 0);
         }else
         {
             if (GirarIzquierda(ldata) && derecha==0) {
@@ -231,7 +232,7 @@ std::tuple<float, float> SpecificWorker::SPIRAL_function(RoboCompLaserMulti::TLa
 {
     const int part = 3;
     static float spiralAvance=1.0;
-    static float spiralRot=MAX_ROT;
+    static float spiralRot=consts.MAX_ROT;
     RoboCompLaserMulti::TLaserData parteCentral(ldata.begin()+ldata.size()/part, ldata.end()-ldata.size()/part);
     std::ranges::sort(parteCentral, {},&RoboCompLaserMulti::TData::dist);
 
@@ -243,11 +244,11 @@ std::tuple<float, float> SpecificWorker::SPIRAL_function(RoboCompLaserMulti::TLa
     {
         state = State::TURN;
         spiralAvance=1.0;
-        spiralRot=MAX_ROT;
+        spiralRot=consts.MAX_ROT;
         tuplaAdevolver = make_tuple(0, 0);
     }
     else {
-        if(spiralAvance < MAX_ADV && spiralRot > 0)
+        if(spiralAvance < consts.MAX_ADV && spiralRot > 0)
         {
             sleep(1);
             spiralAvance+=50;
@@ -286,6 +287,7 @@ std::tuple<float, float> SpecificWorker:: follow_wall_method(const RoboCompLaser
     {
         auto end = std::chrono::system_clock::now();
         std::chrono::duration<float,std::milli> duration = end - start;
+        std::cout<<duration.count()<<std::endl;
         if(duration.count() > 5000)
         {
             std::cout<<"sale del seguir pared"<<std::endl;
@@ -293,11 +295,11 @@ std::tuple<float, float> SpecificWorker:: follow_wall_method(const RoboCompLaser
             first_time=true;
             state=State::TURN;
             noEvaluo=true;
-            if (calcularMediaLaser(parteIzquierda) < calcularMediaLaser(parteDerecha)) {
-                tuplaAdevolver = make_tuple(MAX_ADV, -0.8);
-            }
-            else{
-                tuplaAdevolver = make_tuple(MAX_ADV, +0.8);
+            if (calcularMediaLaser(parteIzquierda) < calcularMediaLaser(parteDerecha)) { //Esto se hace para que cuando vaya a salir del estado
+                tuplaAdevolver = make_tuple(consts.MAX_ADV, -0.8);                                         //no se quede al lado de la pared y salga para alante, de
+            }                                                                                       //de manera que no vuelva a segir la pared.
+            else{                                                                                   //Para ello le metemos una rotación contrario al lado de la
+                tuplaAdevolver = make_tuple(consts.MAX_ADV, +0.8);                                         //pared.
             }
         }
     }
@@ -310,35 +312,35 @@ std::tuple<float, float> SpecificWorker:: follow_wall_method(const RoboCompLaser
         { //ESta parte corrige trayectoria y se debe de hacer aqui y no en el turn
             std::cout<<"Corregir trayecto"<<std::endl;
 
-
+            //Los laser estan cambiado de sentido
             std::cout << "MEDIADERECHA: "<<calcularMediaLaser(parteIzquierda) << std::endl;
             std::cout << "MEDIAIZQUIERDA: "<<calcularMediaLaser(parteDerecha) << std::endl;
 
-            if (calcularMediaLaser(parteIzquierda) < calcularMediaLaser(parteDerecha)) {
-                if (calcularMediaLaser(parteIzquierda) > 900 + DELTA) {
+            if (calcularMediaLaser(parteIzquierda) < calcularMediaLaser(parteDerecha)) { //Tengo la pared a la derecha
+                if (calcularMediaLaser(parteIzquierda) > 900 + consts.DELTA) {
                     std::cout << "girando a la derecha pared a la derecha" << std::endl;
                     tuplaAdevolver = make_tuple(700, 0.2);
                 } else {
-                    if (calcularMediaLaser(parteIzquierda) < 900 - DELTA) {
+                    if (calcularMediaLaser(parteIzquierda) < 900 - consts.DELTA) {
                         std::cout << "girando a la izquierda pared a la derecha" << std::endl;
                         tuplaAdevolver = make_tuple(700, -0.2);
                     }
                     else{
-                        tuplaAdevolver = make_tuple(MAX_ADV, 0);
+                        tuplaAdevolver = make_tuple(consts.MAX_ADV, 0);
                     }
                 }
             }
-            else{
-                if (calcularMediaLaser(parteDerecha) > 900 + DELTA) {
+            else{   //Tengo la pared a la izquierda
+                if (calcularMediaLaser(parteDerecha) > 900 + consts.DELTA) {
                     std::cout << "girando a la izquierda pared a la izquierda" << std::endl;
                     tuplaAdevolver = make_tuple(700, -0.2);
                 } else {
-                    if (calcularMediaLaser(parteDerecha) < 900 - DELTA) {
+                    if (calcularMediaLaser(parteDerecha) < 900 - consts.DELTA) {
                         std::cout << "girando a la derecha pared a la izquierda" << std::endl;
                         tuplaAdevolver = make_tuple(700, 0.2);
                     }
                     else{
-                        tuplaAdevolver = make_tuple(MAX_ADV, 0);
+                        tuplaAdevolver = make_tuple(consts.MAX_ADV, 0);
                     }
                 }
             }

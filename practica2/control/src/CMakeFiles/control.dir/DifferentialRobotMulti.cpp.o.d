@@ -1,7 +1,7 @@
 src/CMakeFiles/control.dir/DifferentialRobotMulti.cpp.o: \
- /home/robocomp/robocomp/components/Proyecto_Robotica/practica2/control/src/DifferentialRobotMulti.cpp \
+ /home/manuel/Escritorio/ROBOTICA/GitHub_Actividades/Proyecto_Robotica/practica2/control/src/DifferentialRobotMulti.cpp \
  /usr/include/stdc-predef.h \
- /home/robocomp/robocomp/components/Proyecto_Robotica/practica2/control/src/DifferentialRobotMulti.h \
+ /home/manuel/Escritorio/ROBOTICA/GitHub_Actividades/Proyecto_Robotica/practica2/control/src/DifferentialRobotMulti.h \
  /usr/include/IceUtil/PushDisableWarnings.h /usr/include/Ice/ProxyF.h \
  /usr/include/Ice/Config.h /usr/include/IceUtil/Config.h \
  /usr/include/c++/11/stdlib.h /usr/include/c++/11/cstdlib \
@@ -277,4 +277,4 @@ src/CMakeFiles/control.dir/DifferentialRobotMulti.cpp.o: \
  /usr/include/c++/11/deque /usr/include/c++/11/bits/stl_deque.h \
  /usr/include/c++/11/bits/deque.tcc /usr/include/Ice/FactoryTableInit.h \
  /usr/include/Ice/DefaultValueFactory.h \
- /home/robocomp/robocomp/components/Proyecto_Robotica/practica2/control/src/GenericBase.h
+ /home/manuel/Escritorio/ROBOTICA/GitHub_Actividades/Proyecto_Robotica/practica2/control/src/GenericBase.h
