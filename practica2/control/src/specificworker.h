@@ -80,7 +80,7 @@ private:
 
     struct Constants
     {
-        const float MAX_ADV = 1400.0;
+        const float MAX_ADV = 1200.0;
         const float DELTA = 50;
         const float MAX_ROT = 1.2;
     };
