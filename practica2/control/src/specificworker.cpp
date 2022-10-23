@@ -78,7 +78,7 @@ void SpecificWorker::compute() {
     //El robot siente
     try
     {
-        ldata = lasermulti_proxy->getLaserData(2);
+        ldata = lasermulti_proxy->getLaserData(1);
     }catch (const Ice::Exception &e) {std::cout << e.what() << std::endl; return;};
 
     switch(state)
@@ -103,7 +103,7 @@ void SpecificWorker::compute() {
 
     try
     {
-        differentialrobotmulti_proxy->setSpeedBase(2,get<0>(valores),get<1>(valores));
+        differentialrobotmulti_proxy->setSpeedBase(1,get<0>(valores),get<1>(valores));
     }catch (const Ice::Exception &e) {std::cout << e.what() << std::endl;};
 }
 
@@ -131,7 +131,7 @@ std::tuple<float, float> SpecificWorker::FORWARD_function(const RoboCompLaserMul
     std::ranges::sort(parteCentral, {}, &RoboCompLaserMulti::TData::dist);
     cout<<"VELOCIDAD HORLEWILL: "<<get<0>(valores)<<endl;
     //Si hay un choque inminente (La menor distancia es menor que 1000 seleccionamos el estado TURN)
-    if (parteCentral.front().dist < 1100) {
+    if (parteCentral.front().dist < 1300) {
         state=State::TURN;
         if (GirarIzquierda(ldata))
         {
@@ -164,16 +164,19 @@ std::tuple<float, float> SpecificWorker::TURN_function(const RoboCompLaserMulti:
     static int partesVector=3;
     static int derecha=0;
 
+    static bool inicioTurn = true;  //SOlo generamos numeros aleatorios al inicio del giro
+
     //Inicializamos con los valores que ya tenia la tupla anteriormente por si no hay cambio
     tuplaAdevolver = make_tuple(get<0>(valores), get<1>(valores));
 
     srand(time(NULL));
     static int aleatorio =rand() % 2;
 
-    if (pared==true)
+    if (pared==true && inicioTurn==true)
     {
         std::cout<<"regenerando aleatorio"<<std::endl;
         aleatorio =rand() % 2;
+        inicioTurn=false;
         pared=false; //Dejamos libre la bandera para que pueda volver otra vez a entrar en el estado
     }
 
@@ -185,7 +188,7 @@ std::tuple<float, float> SpecificWorker::TURN_function(const RoboCompLaserMulti:
         RoboCompLaserMulti::TLaserData parteCentral(ldata.begin()+ldata.size()/partesVector, ldata.end()-ldata.size()/partesVector);
         std::ranges::sort(parteCentral, {}, &RoboCompLaserMulti::TData::dist);
 
-        if(parteCentral.front().dist<1100) {
+        if(parteCentral.front().dist<1300) {
             if (GirarIzquierda(ldata) && derecha==0) {
                 tuplaAdevolver = make_tuple(0, -0.5);
                 std::cout << "GIRARIZQUIERDA" << std::endl;
@@ -199,6 +202,7 @@ std::tuple<float, float> SpecificWorker::TURN_function(const RoboCompLaserMulti:
             derecha=0;
             state=State::FOLLOW_WALL;
             tuplaAdevolver = make_tuple(consts.MAX_ADV, 0);
+            inicioTurn=true; //CAmbiamos de estado ya no hay que mantener la rotación sin generar numero aleatorio
         }
     }
     else {
@@ -210,6 +214,7 @@ std::tuple<float, float> SpecificWorker::TURN_function(const RoboCompLaserMulti:
         //si hay espacio libre delante del robot se selecciona el método forward
         if (parteCentral.front().dist > 1100) {
             derecha=0;  //evita el baile de la J
+            inicioTurn=true; //CAmbiamos de estado ya no hay que mantener la rotación sin generar numero aleatorio
             state = State::STRAIGHT;
             tuplaAdevolver = make_tuple(consts.MAX_ADV, 0);
         }else
@@ -240,7 +245,7 @@ std::tuple<float, float> SpecificWorker::SPIRAL_function(RoboCompLaserMulti::TLa
 
     tuple<float, float> tuplaAdevolver = make_tuple(spiralAvance, spiralRot);
 
-    if(parteCentral.front().dist < 1100)
+    if(parteCentral.front().dist < 1300)
     {
         state = State::TURN;
         spiralAvance=1.0;
@@ -253,6 +258,10 @@ std::tuple<float, float> SpecificWorker::SPIRAL_function(RoboCompLaserMulti::TLa
             sleep(1);
             spiralAvance+=50;
             spiralRot-=0.03;
+        }else
+        {
+            state = State::STRAIGHT;
+            tuplaAdevolver = make_tuple(consts.MAX_ADV, 0);
         }
     }
 
@@ -319,11 +328,11 @@ std::tuple<float, float> SpecificWorker:: follow_wall_method(const RoboCompLaser
             if (calcularMediaLaser(parteIzquierda) < calcularMediaLaser(parteDerecha)) { //Tengo la pared a la derecha
                 if (calcularMediaLaser(parteIzquierda) > 900 + consts.DELTA) {
                     std::cout << "girando a la derecha pared a la derecha" << std::endl;
-                    tuplaAdevolver = make_tuple(700, 0.2);
+                    tuplaAdevolver = make_tuple(consts.MAX_ADV, 0.2); //-----------------
                 } else {
                     if (calcularMediaLaser(parteIzquierda) < 900 - consts.DELTA) {
                         std::cout << "girando a la izquierda pared a la derecha" << std::endl;
-                        tuplaAdevolver = make_tuple(700, -0.2);
+                        tuplaAdevolver = make_tuple(consts.MAX_ADV, -0.2); //--------------
                     }
                     else{
                         tuplaAdevolver = make_tuple(consts.MAX_ADV, 0);
@@ -333,11 +342,11 @@ std::tuple<float, float> SpecificWorker:: follow_wall_method(const RoboCompLaser
             else{   //Tengo la pared a la izquierda
                 if (calcularMediaLaser(parteDerecha) > 900 + consts.DELTA) {
                     std::cout << "girando a la izquierda pared a la izquierda" << std::endl;
-                    tuplaAdevolver = make_tuple(700, -0.2);
+                    tuplaAdevolver = make_tuple(consts.MAX_ADV, -0.2);  //------------------
                 } else {
                     if (calcularMediaLaser(parteDerecha) < 900 - consts.DELTA) {
                         std::cout << "girando a la derecha pared a la izquierda" << std::endl;
-                        tuplaAdevolver = make_tuple(700, 0.2);
+                        tuplaAdevolver = make_tuple(consts.MAX_ADV, 0.2);  //----------------------
                     }
                     else{
                         tuplaAdevolver = make_tuple(consts.MAX_ADV, 0);
