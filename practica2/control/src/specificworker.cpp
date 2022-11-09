@@ -148,7 +148,7 @@ std::tuple<float, float> SpecificWorker::FORWARD_function(const RoboCompLaserMul
     {
         RoboCompLaserMulti::TLaserData laserCompleto(ldata.begin(), ldata.end());
         std::ranges::sort(laserCompleto, {}, &RoboCompLaserMulti::TData::dist);
-        if (laserCompleto.front().dist > 1200) {
+        if (laserCompleto.front().dist > 2000) {
             state = State::SPIRAL;
             tuplaAdevolver = make_tuple(1, consts.MAX_ROT);
         }
@@ -256,8 +256,8 @@ std::tuple<float, float> SpecificWorker::SPIRAL_function(RoboCompLaserMulti::TLa
         if(spiralAvance < consts.MAX_ADV && spiralRot > 0)
         {
             sleep(1);
-            spiralAvance+=50;
-            spiralRot-=0.03;
+            spiralAvance+=35;
+            spiralRot-=0.012;
         }else
         {
             state = State::STRAIGHT;
