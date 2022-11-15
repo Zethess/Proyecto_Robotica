@@ -1,7 +1,7 @@
-/home/alumno/robocomp/components/beta-robotica-class/forcefield/src/forcefield_autogen/EWIEGA46WW/moc_genericworker.cpp: /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/genericworker.h \
-  /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/forcefield_autogen/moc_predefs.h \
-  /home/alumno/robocomp/classes/qlog/qlog.h \
-  /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/config.h \
+/home/manuel/robocomp/components/beta-robotica-class/forcefield/src/forcefield_autogen/EWIEGA46WW/moc_genericworker.cpp: /home/manuel/robocomp/components/beta-robotica-class/forcefield/src/genericworker.h \
+  /home/manuel/robocomp/components/beta-robotica-class/forcefield/src/forcefield_autogen/moc_predefs.h \
+  /home/manuel/robocomp/classes/qlog/qlog.h \
+  /home/manuel/robocomp/components/beta-robotica-class/forcefield/src/config.h \
   /usr/include/GL/gl.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \

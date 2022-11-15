@@ -4,6 +4,8 @@ SET ( SOURCES
   specificmonitor.cpp
   $ENV{ROBOCOMP}/classes/abstract_graphic_viewer/abstract_graphic_viewer.cpp
   dynamic_window.cpp
+  robot.cpp
+  camera.cpp
 )
 
 # Headers set

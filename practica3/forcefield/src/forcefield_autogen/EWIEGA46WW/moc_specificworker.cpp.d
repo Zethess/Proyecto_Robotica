@@ -1,11 +1,13 @@
-/home/alumno/robocomp/components/beta-robotica-class/forcefield/src/forcefield_autogen/EWIEGA46WW/moc_specificworker.cpp: /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/specificworker.h \
-  /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/forcefield_autogen/moc_predefs.h \
-  /home/alumno/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.h \
-  /home/alumno/robocomp/classes/qlog/qlog.h \
-  /home/alumno/robocomp/classes/timer/timer.h \
-  /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/config.h \
-  /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/dynamic_window.h \
-  /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/genericworker.h \
+/home/manuel/robocomp/components/beta-robotica-class/forcefield/src/forcefield_autogen/EWIEGA46WW/moc_specificworker.cpp: /home/manuel/robocomp/components/beta-robotica-class/forcefield/src/specificworker.h \
+  /home/manuel/robocomp/components/beta-robotica-class/forcefield/src/forcefield_autogen/moc_predefs.h \
+  /home/manuel/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.h \
+  /home/manuel/robocomp/classes/qlog/qlog.h \
+  /home/manuel/robocomp/classes/timer/timer.h \
+  /home/manuel/robocomp/components/beta-robotica-class/forcefield/src/camera.h \
+  /home/manuel/robocomp/components/beta-robotica-class/forcefield/src/config.h \
+  /home/manuel/robocomp/components/beta-robotica-class/forcefield/src/dynamic_window.h \
+  /home/manuel/robocomp/components/beta-robotica-class/forcefield/src/genericworker.h \
+  /home/manuel/robocomp/components/beta-robotica-class/forcefield/src/robot.h \
   /usr/include/GL/gl.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
@@ -696,6 +698,7 @@
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qwaitcondition.h \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qwineventnotifier.h \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qxmlstream.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/QColor \
   /usr/include/x86_64-linux-gnu/qt5/QtGui/QImage \
   /usr/include/x86_64-linux-gnu/qt5/QtGui/QMatrix3x3 \
   /usr/include/x86_64-linux-gnu/qt5/QtGui/QMatrix4x4 \

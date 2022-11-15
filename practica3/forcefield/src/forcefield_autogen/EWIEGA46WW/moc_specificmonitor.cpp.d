@@ -1,9 +1,9 @@
-/home/alumno/robocomp/components/beta-robotica-class/forcefield/src/forcefield_autogen/EWIEGA46WW/moc_specificmonitor.cpp: /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/specificmonitor.h \
-  /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/forcefield_autogen/moc_predefs.h \
-  /home/alumno/robocomp/classes/qlog/qlog.h \
-  /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/config.h \
-  /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/genericmonitor.h \
-  /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/genericworker.h \
+/home/manuel/robocomp/components/beta-robotica-class/forcefield/src/forcefield_autogen/EWIEGA46WW/moc_specificmonitor.cpp: /home/manuel/robocomp/components/beta-robotica-class/forcefield/src/specificmonitor.h \
+  /home/manuel/robocomp/components/beta-robotica-class/forcefield/src/forcefield_autogen/moc_predefs.h \
+  /home/manuel/robocomp/classes/qlog/qlog.h \
+  /home/manuel/robocomp/components/beta-robotica-class/forcefield/src/config.h \
+  /home/manuel/robocomp/components/beta-robotica-class/forcefield/src/genericmonitor.h \
+  /home/manuel/robocomp/components/beta-robotica-class/forcefield/src/genericworker.h \
   /usr/include/GL/gl.h \
   /usr/include/Ice/Application.h \
   /usr/include/Ice/AsyncResult.h \

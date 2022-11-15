@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/alumno/robocomp/components/beta-robotica-class/forcefield
+CMAKE_SOURCE_DIR = /home/manuel/robocomp/components/beta-robotica-class/forcefield
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/alumno/robocomp/components/beta-robotica-class/forcefield
+CMAKE_BINARY_DIR = /home/manuel/robocomp/components/beta-robotica-class/forcefield
 
 # Utility rule file for forcefield_autogen.
 
@@ -67,8 +67,8 @@ include src/CMakeFiles/forcefield_autogen.dir/compiler_depend.make
 include src/CMakeFiles/forcefield_autogen.dir/progress.make
 
 src/CMakeFiles/forcefield_autogen:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/alumno/robocomp/components/beta-robotica-class/forcefield/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target forcefield"
-	cd /home/alumno/robocomp/components/beta-robotica-class/forcefield/src && /usr/bin/cmake -E cmake_autogen /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/CMakeFiles/forcefield_autogen.dir/AutogenInfo.json ""
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/manuel/robocomp/components/beta-robotica-class/forcefield/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target forcefield"
+	cd /home/manuel/robocomp/components/beta-robotica-class/forcefield/src && /usr/bin/cmake -E cmake_autogen /home/manuel/robocomp/components/beta-robotica-class/forcefield/src/CMakeFiles/forcefield_autogen.dir/AutogenInfo.json ""
 
 forcefield_autogen: src/CMakeFiles/forcefield_autogen
 forcefield_autogen: src/CMakeFiles/forcefield_autogen.dir/build.make
@@ -79,10 +79,10 @@ src/CMakeFiles/forcefield_autogen.dir/build: forcefield_autogen
 .PHONY : src/CMakeFiles/forcefield_autogen.dir/build
 
 src/CMakeFiles/forcefield_autogen.dir/clean:
-	cd /home/alumno/robocomp/components/beta-robotica-class/forcefield/src && $(CMAKE_COMMAND) -P CMakeFiles/forcefield_autogen.dir/cmake_clean.cmake
+	cd /home/manuel/robocomp/components/beta-robotica-class/forcefield/src && $(CMAKE_COMMAND) -P CMakeFiles/forcefield_autogen.dir/cmake_clean.cmake
 .PHONY : src/CMakeFiles/forcefield_autogen.dir/clean
 
 src/CMakeFiles/forcefield_autogen.dir/depend:
-	cd /home/alumno/robocomp/components/beta-robotica-class/forcefield && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/alumno/robocomp/components/beta-robotica-class/forcefield /home/alumno/robocomp/components/beta-robotica-class/forcefield/src /home/alumno/robocomp/components/beta-robotica-class/forcefield /home/alumno/robocomp/components/beta-robotica-class/forcefield/src /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/CMakeFiles/forcefield_autogen.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/manuel/robocomp/components/beta-robotica-class/forcefield && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/manuel/robocomp/components/beta-robotica-class/forcefield /home/manuel/robocomp/components/beta-robotica-class/forcefield/src /home/manuel/robocomp/components/beta-robotica-class/forcefield /home/manuel/robocomp/components/beta-robotica-class/forcefield/src /home/manuel/robocomp/components/beta-robotica-class/forcefield/src/CMakeFiles/forcefield_autogen.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : src/CMakeFiles/forcefield_autogen.dir/depend
 
