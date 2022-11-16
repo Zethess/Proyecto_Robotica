@@ -219,17 +219,19 @@ void SpecificWorker::compute()
     draw_floor_line(top_lines, {1});
 
     /// YOLO
-    RoboCompYoloObjects::TObjects objects = yolo_detect_objects(top_rgb_frame);
+    RoboCompYoloObjects::TObjects objects = yolo_detect_objects(top_rgb_frame);//esta lista hay que pasarsela al método state machine porque
+                                                                                //es la que tiene los objetos detectados por la camara actualmente
 
     /// draw top image
-    //cv::imshow("top", top_rgb_frame); cv::waitKey(5);
+    cv::imshow("top", top_rgb_frame); cv::waitKey(5);
 
     /// draw yolo_objects on 2D view
     draw_objects_on_2dview(objects, RoboCompYoloObjects::TBox());
 
     // TODO:: STATE MACHINE
+
     // state machine to activate basic behaviours. Returns a  target_coordinates vector
-    //  state_machine(objects, current_line);
+    state_machine(objects, current_line);
 
     /// eye tracking: tracks  current selected object or  IOR if none
     eye_track(robot);
@@ -245,6 +247,38 @@ void SpecificWorker::compute()
     //move_robot(force);
 
     //robot.print();
+}
+
+void SpecificWorker::state_machine(const RoboCompYoloObjects::TObjects &objects, const std::vector<Eigen::Vector2f> &line){
+
+    switch(state)
+    {
+        case State::IDLE:
+            state=State::SEARCHING;
+            break;
+        case State::SEARCHING:
+            search_state(objects);
+            break;
+        case State::APPROACHING:
+            break;
+        case State::WAITING:
+            break;
+    }
+
+}
+
+void SpecificWorker::search_state(const RoboCompYoloObjects::TObjects &objects)
+{
+    //Comprueba que el objeto que identifica es distinto del objeto que tenemos actualmente.
+    //Una vez comprobado, si es distinto, cambia en el iterador a los atributos del nuevo objeto y cambia de estado
+    if(auto it=std::find_if_not(objects.begin(), objects.end(),
+                                [r=robot](auto &a){return a.type == r.get_current_target().type;}); it != objects.end())
+    //En una funcion lamda lo que hay entre corchete es para capturar un objeto del entorno, y en a esta los elementos del it
+    {
+        robot.set_current_target(*it);
+        state = State::APPROACHING;
+    }else   //Si no, sigue rotando
+        robot.setRotation(0.5);
 }
 
 //////////////////// ELEMENTS OF CONTROL/////////////////////////////////////////////////

@@ -123,10 +123,10 @@ class SpecificWorker : public GenericWorker
     Eigen::Vector3f target_coordinates{0.f, 0.f, 0.f};  //third component for pure  rotations
 
     // state machine
-    Eigen::Vector3f state_machine(const RoboCompYoloObjects::TObjects &objects, const std::vector<Eigen::Vector2f> &line);
+    void state_machine(const RoboCompYoloObjects::TObjects &objects, const std::vector<Eigen::Vector2f> &line);
     enum class State {IDLE, SEARCHING, APPROACHING, WAITING};
-    State state = State::SEARCHING;
-    Eigen::Vector3f search_state(const RoboCompYoloObjects::TObjects &objects);
+    State state = State::IDLE;
+    void search_state(const RoboCompYoloObjects::TObjects &objects);
     Eigen::Vector3f approach_state(const RoboCompYoloObjects::TObjects &objects, const std::vector<Eigen::Vector2f> &line);
     Eigen::Vector3f wait_state();
 
