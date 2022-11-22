@@ -338,5 +338,5 @@ src/CMakeFiles/forcefield.dir/home/alumno/robocomp/classes/sigwatch/sigwatch.cpp
  /usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h \
  /usr/include/x86_64-linux-gnu/bits/sigthread.h \
  /usr/include/x86_64-linux-gnu/bits/signal_ext.h \
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/forcefield_autogen/include/moc_sigwatch.cpp \
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/forcefield_autogen/include/../../../../../../classes/sigwatch/sigwatch.h
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/forcefield_autogen/include/moc_sigwatch.cpp \
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/forcefield_autogen/include/../../../../../../../classes/sigwatch/sigwatch.h

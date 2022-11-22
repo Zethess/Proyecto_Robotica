@@ -638,8 +638,8 @@ src/CMakeFiles/forcefield.dir/specificmonitor.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qtcoreversion.h \
  /home/robocomp/robocomp/components/beta-robotica-class/forcefield/src/genericworker.h \
  /home/robocomp/robocomp/components/beta-robotica-class/forcefield/src/config.h \
- /opt/robocomp/classes/qlog/qlog.h \
- /home/robocomp/robocomp/components/beta-robotica-class/forcefield/src/config.h \
+ /home/alumno/robocomp/classes/qlog/qlog.h \
+ /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/config.h \
  /usr/include/boost/format.hpp /usr/include/boost/detail/workaround.hpp \
  /usr/include/boost/config/workaround.hpp /usr/include/boost/config.hpp \
  /usr/include/boost/config/user.hpp \
@@ -1032,7 +1032,7 @@ src/CMakeFiles/forcefield.dir/specificmonitor.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qvector4d.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qwindowdefs.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtguiversion.h \
- /home/robocomp/robocomp/components/beta-robotica-class/forcefield/src/ui_mainUI.h \
+ /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/ui_mainUI.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QVariant \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QApplication \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qapplication.h \
@@ -1054,10 +1054,10 @@ src/CMakeFiles/forcefield.dir/specificmonitor.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qgridlayout.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h \
- /home/robocomp/robocomp/components/beta-robotica-class/forcefield/src/CommonBehavior.h \
- /home/robocomp/robocomp/components/beta-robotica-class/forcefield/src/CameraRGBDSimple.h \
- /home/robocomp/robocomp/components/beta-robotica-class/forcefield/src/GenericBase.h \
- /home/robocomp/robocomp/components/beta-robotica-class/forcefield/src/JointMotorSimple.h \
- /home/robocomp/robocomp/components/beta-robotica-class/forcefield/src/JoystickAdapter.h \
- /home/robocomp/robocomp/components/beta-robotica-class/forcefield/src/OmniRobot.h \
- /home/robocomp/robocomp/components/beta-robotica-class/forcefield/src/YoloObjects.h
+ /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/CommonBehavior.h \
+ /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/CameraRGBDSimple.h \
+ /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/GenericBase.h \
+ /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/JointMotorSimple.h \
+ /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/JoystickAdapter.h \
+ /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/OmniRobot.h \
+ /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/YoloObjects.h

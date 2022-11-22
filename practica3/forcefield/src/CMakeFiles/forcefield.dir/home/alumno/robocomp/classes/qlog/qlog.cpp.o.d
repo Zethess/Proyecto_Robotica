@@ -1,7 +1,7 @@
 src/CMakeFiles/forcefield.dir/home/alumno/robocomp/classes/qlog/qlog.cpp.o: \
  /home/alumno/robocomp/classes/qlog/qlog.cpp /usr/include/stdc-predef.h \
  /home/alumno/robocomp/classes/qlog/qlog.h \
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/config.h \
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/config.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QtCore \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QtCoreDepends \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qglobal.h \

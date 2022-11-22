@@ -7,7 +7,7 @@
 *****************************************************************************/
 
 #include <memory>
-#include "../../../../../../classes/abstract_graphic_viewer/abstract_graphic_viewer.h"
+#include "../../../../../../../classes/abstract_graphic_viewer/abstract_graphic_viewer.h"
 #include <QtCore/qbytearray.h>
 #include <QtCore/qmetatype.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)

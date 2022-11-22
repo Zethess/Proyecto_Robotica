@@ -7,7 +7,7 @@
 *****************************************************************************/
 
 #include <memory>
-#include "../../genericmonitor.h"
+#include "../../../../../../../../../robocomp/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/genericmonitor.h"
 #include <QtCore/qbytearray.h>
 #include <QtCore/qmetatype.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)

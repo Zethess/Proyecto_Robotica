@@ -423,7 +423,7 @@ src/CMakeFiles/forcefield.dir/robot.cpp.o: \
  /usr/include/Eigen/src/Eigenvalues/GeneralizedEigenSolver.h \
  /usr/include/Eigen/src/Eigenvalues/./RealQZ.h \
  /usr/include/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h \
- /home/robocomp/robocomp/components/beta-robotica-class/forcefield/src/YoloObjects.h \
+ /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/YoloObjects.h \
  /usr/include/IceUtil/PushDisableWarnings.h /usr/include/Ice/ProxyF.h \
  /usr/include/Ice/Config.h /usr/include/IceUtil/Config.h \
  /usr/include/c++/11/iostream /usr/include/c++/11/memory \
@@ -492,7 +492,7 @@ src/CMakeFiles/forcefield.dir/robot.cpp.o: \
  /usr/include/c++/11/deque /usr/include/c++/11/bits/stl_deque.h \
  /usr/include/c++/11/bits/deque.tcc /usr/include/Ice/FactoryTableInit.h \
  /usr/include/Ice/DefaultValueFactory.h \
- /home/robocomp/robocomp/components/beta-robotica-class/forcefield/src/CameraRGBDSimple.h \
+ /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/CameraRGBDSimple.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QtCore \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QtCoreDepends \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qglobal.h \
@@ -801,7 +801,7 @@ src/CMakeFiles/forcefield.dir/robot.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtgui-config.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qrgb.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qrgba64.h \
- /opt/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.h \
+ /home/alumno/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgetsglobal.h \
@@ -898,9 +898,9 @@ src/CMakeFiles/forcefield.dir/robot.cpp.o: \
  /usr/include/opencv4/opencv2/core/optim.hpp \
  /usr/include/opencv4/opencv2/core/ovx.hpp \
  /usr/include/opencv4/opencv2/core/cvdef.h \
- /home/robocomp/robocomp/components/beta-robotica-class/forcefield/src/JointMotorSimple.h \
- /home/robocomp/robocomp/components/beta-robotica-class/forcefield/src/OmniRobot.h \
- /home/robocomp/robocomp/components/beta-robotica-class/forcefield/src/GenericBase.h \
+ /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/JointMotorSimple.h \
+ /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/OmniRobot.h \
+ /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/GenericBase.h \
  /usr/local/include/cppitertools/range.hpp \
  /usr/local/include/cppitertools/internal/iterbase.hpp \
  /usr/include/c++/11/optional /usr/include/c++/11/ranges
