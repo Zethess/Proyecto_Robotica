@@ -221,6 +221,7 @@ std::vector<Eigen::Vector2f> SpecificWorker::door_detector(const std::vector<Eig
         auto v1 = line[p1];
         auto v2 = line[p2];
 
+
         if(((pos1 and not pos2) or (pos2 and not pos1)) and ((v1-v2).norm() < 1000 and (v1-v2).norm() > 600))
         {
             doors.push_back((v1+v2)/2);
