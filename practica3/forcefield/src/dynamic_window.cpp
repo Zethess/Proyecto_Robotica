@@ -29,7 +29,7 @@ std::tuple<float, float, float> Dynamic_Window::update(const Eigen::Vector3f &ta
         return  std::make_tuple(0.f, 0.f, 0.f);
 
     if(target_r.z() !=0 ) // only rotation
-        return std::make_tuple(0.f, target_r.z(), 0.f);
+        return std::make_tuple(0.f, 0.f, target_r.z());
 
     // compute future positions of the robot
     QPolygonF laser_poly;
@@ -64,7 +64,7 @@ std::tuple<float, float, float> Dynamic_Window::update(const Eigen::Vector3f &ta
         //float dist = target_r.norm();
         //float dist_break = std::clamp(dist / 1000, 0.f, 1.f);
         //v = constants.max_advance_velocity * dist_break * gaussian(w);
-        return std::make_tuple(v, w, 0.f);
+        return std::make_tuple(0.f, v, w);
     }
     else
         return {};

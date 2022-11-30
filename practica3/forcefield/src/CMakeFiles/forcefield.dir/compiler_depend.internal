@@ -3,9 +3,8 @@
 
 src/CMakeFiles/forcefield.dir/CameraRGBDSimple.cpp.o
  /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/CameraRGBDSimple.cpp
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/CameraRGBDSimple.cpp
  /usr/include/stdc-predef.h
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/CameraRGBDSimple.h
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/CameraRGBDSimple.h
  /usr/include/IceUtil/PushDisableWarnings.h
  /usr/include/Ice/ProxyF.h
  /usr/include/Ice/Config.h
@@ -391,9 +390,8 @@ src/CMakeFiles/forcefield.dir/CameraRGBDSimple.cpp.o
 
 src/CMakeFiles/forcefield.dir/CommonBehavior.cpp.o
  /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/CommonBehavior.cpp
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/CommonBehavior.cpp
  /usr/include/stdc-predef.h
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/CommonBehavior.h
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/CommonBehavior.h
  /usr/include/IceUtil/PushDisableWarnings.h
  /usr/include/Ice/ProxyF.h
  /usr/include/Ice/Config.h
@@ -779,9 +777,8 @@ src/CMakeFiles/forcefield.dir/CommonBehavior.cpp.o
 
 src/CMakeFiles/forcefield.dir/GenericBase.cpp.o
  /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/GenericBase.cpp
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/GenericBase.cpp
  /usr/include/stdc-predef.h
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/GenericBase.h
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/GenericBase.h
  /usr/include/IceUtil/PushDisableWarnings.h
  /usr/include/Ice/ProxyF.h
  /usr/include/Ice/Config.h
@@ -1167,9 +1164,8 @@ src/CMakeFiles/forcefield.dir/GenericBase.cpp.o
 
 src/CMakeFiles/forcefield.dir/JointMotorSimple.cpp.o
  /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/JointMotorSimple.cpp
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/JointMotorSimple.cpp
  /usr/include/stdc-predef.h
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/JointMotorSimple.h
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/JointMotorSimple.h
  /usr/include/IceUtil/PushDisableWarnings.h
  /usr/include/Ice/ProxyF.h
  /usr/include/Ice/Config.h
@@ -1555,9 +1551,8 @@ src/CMakeFiles/forcefield.dir/JointMotorSimple.cpp.o
 
 src/CMakeFiles/forcefield.dir/JoystickAdapter.cpp.o
  /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/JoystickAdapter.cpp
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/JoystickAdapter.cpp
  /usr/include/stdc-predef.h
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/JoystickAdapter.h
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/JoystickAdapter.h
  /usr/include/IceUtil/PushDisableWarnings.h
  /usr/include/Ice/ProxyF.h
  /usr/include/Ice/Config.h
@@ -1943,9 +1938,8 @@ src/CMakeFiles/forcefield.dir/JoystickAdapter.cpp.o
 
 src/CMakeFiles/forcefield.dir/OmniRobot.cpp.o
  /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/OmniRobot.cpp
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/OmniRobot.cpp
  /usr/include/stdc-predef.h
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/OmniRobot.h
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/OmniRobot.h
  /usr/include/IceUtil/PushDisableWarnings.h
  /usr/include/Ice/ProxyF.h
  /usr/include/Ice/Config.h
@@ -2328,13 +2322,12 @@ src/CMakeFiles/forcefield.dir/OmniRobot.cpp.o
  /usr/include/c++/11/bits/deque.tcc
  /usr/include/Ice/FactoryTableInit.h
  /usr/include/Ice/DefaultValueFactory.h
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/GenericBase.h
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/GenericBase.h
 
 src/CMakeFiles/forcefield.dir/YoloObjects.cpp.o
  /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/YoloObjects.cpp
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/YoloObjects.cpp
  /usr/include/stdc-predef.h
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/YoloObjects.h
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/YoloObjects.h
  /usr/include/IceUtil/PushDisableWarnings.h
  /usr/include/Ice/ProxyF.h
  /usr/include/Ice/Config.h
@@ -2717,13 +2710,12 @@ src/CMakeFiles/forcefield.dir/YoloObjects.cpp.o
  /usr/include/c++/11/bits/deque.tcc
  /usr/include/Ice/FactoryTableInit.h
  /usr/include/Ice/DefaultValueFactory.h
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/CameraRGBDSimple.h
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/CameraRGBDSimple.h
 
 src/CMakeFiles/forcefield.dir/camera.cpp.o
  /home/robocomp/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/camera.cpp
- /home/robocomp/robocomp/components/beta-robotica-class/forcefield/src/camera.cpp
  /usr/include/stdc-predef.h
- /home/robocomp/robocomp/components/beta-robotica-class/forcefield/src/camera.h
+ /home/robocomp/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/camera.h
  /usr/include/Eigen/Dense
  /usr/include/Eigen/Core
  /usr/include/Eigen/src/Core/util/DisableStupidWarnings.h
@@ -3550,7 +3542,7 @@ src/CMakeFiles/forcefield.dir/camera.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qwineventnotifier.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qxmlstream.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qtcoreversion.h
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/CameraRGBDSimple.h
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/CameraRGBDSimple.h
  /usr/include/IceUtil/PushDisableWarnings.h
  /usr/include/Ice/ProxyF.h
  /usr/include/Ice/Config.h
@@ -3669,9 +3661,8 @@ src/CMakeFiles/forcefield.dir/camera.cpp.o
 
 src/CMakeFiles/forcefield.dir/commonbehaviorI.cpp.o
  /home/robocomp/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/commonbehaviorI.cpp
- /home/robocomp/robocomp/components/beta-robotica-class/forcefield/src/commonbehaviorI.cpp
  /usr/include/stdc-predef.h
- /home/robocomp/robocomp/components/beta-robotica-class/forcefield/src/commonbehaviorI.h
+ /home/robocomp/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/commonbehaviorI.h
  /usr/include/Ice/Ice.h
  /usr/include/IceUtil/PushDisableWarnings.h
  /usr/include/Ice/Config.h
@@ -4107,10 +4098,10 @@ src/CMakeFiles/forcefield.dir/commonbehaviorI.cpp.o
  /usr/include/nl_types.h
  /usr/include/Ice/UUID.h
  /usr/include/IceUtil/UUID.h
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/CommonBehavior.h
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/config.h
- /home/robocomp/robocomp/components/beta-robotica-class/forcefield/src/genericworker.h
- /home/robocomp/robocomp/components/beta-robotica-class/forcefield/src/config.h
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/CommonBehavior.h
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/config.h
+ /home/robocomp/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/genericworker.h
+ /home/robocomp/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/config.h
  /home/alumno/robocomp/classes/qlog/qlog.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QtCore
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QtCoreDepends
@@ -4841,7 +4832,7 @@ src/CMakeFiles/forcefield.dir/commonbehaviorI.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qvector4d.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qwindowdefs.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtguiversion.h
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/ui_mainUI.h
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/ui_mainUI.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QVariant
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QApplication
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qapplication.h
@@ -4863,13 +4854,13 @@ src/CMakeFiles/forcefield.dir/commonbehaviorI.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qgridlayout.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/CameraRGBDSimple.h
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/GenericBase.h
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/JointMotorSimple.h
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/JoystickAdapter.h
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/OmniRobot.h
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/YoloObjects.h
- /home/robocomp/robocomp/components/beta-robotica-class/forcefield/src/genericmonitor.h
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/CameraRGBDSimple.h
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/GenericBase.h
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/JointMotorSimple.h
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/JoystickAdapter.h
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/OmniRobot.h
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/YoloObjects.h
+ /home/robocomp/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/genericmonitor.h
 
 src/CMakeFiles/forcefield.dir/dynamic_window.cpp.o
  /home/robocomp/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/dynamic_window.cpp
@@ -5791,9 +5782,8 @@ src/CMakeFiles/forcefield.dir/dynamic_window.cpp.o
 
 src/CMakeFiles/forcefield.dir/forcefield_autogen/mocs_compilation.cpp.o
  /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/forcefield_autogen/mocs_compilation.cpp
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/forcefield_autogen/mocs_compilation.cpp
  /usr/include/stdc-predef.h
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/forcefield_autogen/I3FNLAJYSS/moc_abstract_graphic_viewer.cpp
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/forcefield_autogen/I3FNLAJYSS/moc_abstract_graphic_viewer.cpp
  /usr/include/c++/11/memory
  /usr/include/c++/11/bits/stl_algobase.h
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h
@@ -6223,8 +6213,8 @@ src/CMakeFiles/forcefield.dir/forcefield_autogen/mocs_compilation.cpp.o
  /usr/include/c++/11/iostream
  /usr/include/c++/11/istream
  /usr/include/c++/11/bits/istream.tcc
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/forcefield_autogen/EWIEGA46WW/moc_genericmonitor.cpp
- /home/robocomp/robocomp/components/beta-robotica-class/forcefield/src/genericmonitor.h
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/forcefield_autogen/EWIEGA46WW/moc_genericmonitor.cpp
+ /home/robocomp/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/genericmonitor.h
  /usr/include/Ice/Ice.h
  /usr/include/IceUtil/PushDisableWarnings.h
  /usr/include/Ice/Config.h
@@ -6630,10 +6620,10 @@ src/CMakeFiles/forcefield.dir/forcefield_autogen/mocs_compilation.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qwineventnotifier.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qxmlstream.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qtcoreversion.h
- /home/robocomp/robocomp/components/beta-robotica-class/forcefield/src/genericworker.h
- /home/robocomp/robocomp/components/beta-robotica-class/forcefield/src/config.h
+ /home/robocomp/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/genericworker.h
+ /home/robocomp/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/config.h
  /home/alumno/robocomp/classes/qlog/qlog.h
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/config.h
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/config.h
  /usr/include/boost/format.hpp
  /usr/include/boost/detail/workaround.hpp
  /usr/include/boost/config/workaround.hpp
@@ -7001,7 +6991,7 @@ src/CMakeFiles/forcefield.dir/forcefield_autogen/mocs_compilation.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qvector4d.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qwindowdefs.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtguiversion.h
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/ui_mainUI.h
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/ui_mainUI.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QVariant
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QApplication
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QFrame
@@ -7010,21 +7000,21 @@ src/CMakeFiles/forcefield.dir/forcefield_autogen/mocs_compilation.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qsplitter.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QVBoxLayout
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/CommonBehavior.h
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/CameraRGBDSimple.h
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/GenericBase.h
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/JointMotorSimple.h
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/JoystickAdapter.h
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/OmniRobot.h
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/YoloObjects.h
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/forcefield_autogen/EWIEGA46WW/moc_genericworker.cpp
- /home/robocomp/robocomp/components/beta-robotica-class/forcefield/src/genericworker.h
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/forcefield_autogen/EWIEGA46WW/moc_specificmonitor.cpp
- /home/robocomp/robocomp/components/beta-robotica-class/forcefield/src/specificmonitor.h
- /home/robocomp/robocomp/components/beta-robotica-class/forcefield/src/genericmonitor.h
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/forcefield_autogen/EWIEGA46WW/moc_specificworker.cpp
- /home/robocomp/robocomp/components/beta-robotica-class/forcefield/src/specificworker.h
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/genericworker.h
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/CommonBehavior.h
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/CameraRGBDSimple.h
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/GenericBase.h
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/JointMotorSimple.h
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/JoystickAdapter.h
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/OmniRobot.h
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/YoloObjects.h
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/forcefield_autogen/EWIEGA46WW/moc_genericworker.cpp
+ /home/robocomp/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/genericworker.h
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/forcefield_autogen/EWIEGA46WW/moc_specificmonitor.cpp
+ /home/robocomp/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/specificmonitor.h
+ /home/robocomp/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/genericmonitor.h
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/forcefield_autogen/EWIEGA46WW/moc_specificworker.cpp
+ /home/robocomp/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/specificworker.h
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/genericworker.h
  /home/alumno/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.h
  /home/alumno/robocomp/classes/timer/timer.h
  /usr/include/Eigen/Dense
@@ -7256,21 +7246,20 @@ src/CMakeFiles/forcefield.dir/forcefield_autogen/mocs_compilation.cpp.o
  /usr/include/opencv4/opencv2/highgui.hpp
  /usr/include/opencv4/opencv2/imgcodecs.hpp
  /usr/include/opencv4/opencv2/videoio.hpp
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/dynamic_window.h
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/dynamic_window.h
  /usr/include/c++/11/optional
  /usr/include/x86_64-linux-gnu/qt5/QtGui/QPolygonF
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QPointF
  /usr/include/x86_64-linux-gnu/qt5/QtGui/QTransform
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsEllipseItem
- /home/robocomp/robocomp/components/beta-robotica-class/forcefield/src/robot.h
+ /home/robocomp/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/robot.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/QColor
- /home/robocomp/robocomp/components/beta-robotica-class/forcefield/src/camera.h
+ /home/robocomp/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/camera.h
 
 src/CMakeFiles/forcefield.dir/genericmonitor.cpp.o
  /home/robocomp/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/genericmonitor.cpp
- /home/robocomp/robocomp/components/beta-robotica-class/forcefield/src/genericmonitor.cpp
  /usr/include/stdc-predef.h
- /home/robocomp/robocomp/components/beta-robotica-class/forcefield/src/genericmonitor.h
+ /home/robocomp/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/genericmonitor.h
  /usr/include/Ice/Ice.h
  /usr/include/IceUtil/PushDisableWarnings.h
  /usr/include/Ice/Config.h
@@ -8032,10 +8021,10 @@ src/CMakeFiles/forcefield.dir/genericmonitor.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qwineventnotifier.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qxmlstream.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qtcoreversion.h
- /home/robocomp/robocomp/components/beta-robotica-class/forcefield/src/genericworker.h
- /home/robocomp/robocomp/components/beta-robotica-class/forcefield/src/config.h
+ /home/robocomp/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/genericworker.h
+ /home/robocomp/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/config.h
  /home/alumno/robocomp/classes/qlog/qlog.h
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/config.h
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/config.h
  /usr/include/boost/format.hpp
  /usr/include/boost/detail/workaround.hpp
  /usr/include/boost/config/workaround.hpp
@@ -8439,7 +8428,7 @@ src/CMakeFiles/forcefield.dir/genericmonitor.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qvector4d.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qwindowdefs.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtguiversion.h
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/ui_mainUI.h
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/ui_mainUI.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QVariant
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QApplication
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qapplication.h
@@ -8461,20 +8450,19 @@ src/CMakeFiles/forcefield.dir/genericmonitor.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qgridlayout.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/CommonBehavior.h
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/CameraRGBDSimple.h
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/GenericBase.h
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/JointMotorSimple.h
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/JoystickAdapter.h
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/OmniRobot.h
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/YoloObjects.h
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/CommonBehavior.h
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/CameraRGBDSimple.h
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/GenericBase.h
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/JointMotorSimple.h
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/JoystickAdapter.h
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/OmniRobot.h
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/YoloObjects.h
 
 src/CMakeFiles/forcefield.dir/genericworker.cpp.o
  /home/robocomp/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/genericworker.cpp
- /home/robocomp/robocomp/components/beta-robotica-class/forcefield/src/genericworker.cpp
  /usr/include/stdc-predef.h
- /home/robocomp/robocomp/components/beta-robotica-class/forcefield/src/genericworker.h
- /home/robocomp/robocomp/components/beta-robotica-class/forcefield/src/config.h
+ /home/robocomp/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/genericworker.h
+ /home/robocomp/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/config.h
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h
  /usr/include/stdint.h
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h
@@ -8493,7 +8481,7 @@ src/CMakeFiles/forcefield.dir/genericworker.cpp.o
  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h
  /home/alumno/robocomp/classes/qlog/qlog.h
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/config.h
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/config.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QtCore
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QtCoreDepends
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qglobal.h
@@ -9508,7 +9496,7 @@ src/CMakeFiles/forcefield.dir/genericworker.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qvector4d.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qwindowdefs.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtguiversion.h
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/ui_mainUI.h
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/ui_mainUI.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QVariant
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QApplication
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qapplication.h
@@ -9530,7 +9518,7 @@ src/CMakeFiles/forcefield.dir/genericworker.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qgridlayout.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/CommonBehavior.h
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/CommonBehavior.h
  /usr/include/IceUtil/PushDisableWarnings.h
  /usr/include/Ice/ProxyF.h
  /usr/include/Ice/Config.h
@@ -9614,12 +9602,12 @@ src/CMakeFiles/forcefield.dir/genericworker.cpp.o
  /usr/include/c++/11/bits/deque.tcc
  /usr/include/Ice/FactoryTableInit.h
  /usr/include/Ice/DefaultValueFactory.h
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/CameraRGBDSimple.h
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/GenericBase.h
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/JointMotorSimple.h
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/JoystickAdapter.h
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/OmniRobot.h
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/YoloObjects.h
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/CameraRGBDSimple.h
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/GenericBase.h
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/JointMotorSimple.h
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/JoystickAdapter.h
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/OmniRobot.h
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/YoloObjects.h
 
 src/CMakeFiles/forcefield.dir/home/alumno/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.cpp.o
  /home/alumno/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.cpp
@@ -12075,9 +12063,8 @@ src/CMakeFiles/forcefield.dir/home/alumno/robocomp/classes/sigwatch/sigwatch.cpp
 
 src/CMakeFiles/forcefield.dir/joystickadapterI.cpp.o
  /home/robocomp/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/joystickadapterI.cpp
- /home/robocomp/robocomp/components/beta-robotica-class/forcefield/src/joystickadapterI.cpp
  /usr/include/stdc-predef.h
- /home/robocomp/robocomp/components/beta-robotica-class/forcefield/src/joystickadapterI.h
+ /home/robocomp/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/joystickadapterI.h
  /usr/include/Ice/Ice.h
  /usr/include/IceUtil/PushDisableWarnings.h
  /usr/include/Ice/Config.h
@@ -12513,10 +12500,10 @@ src/CMakeFiles/forcefield.dir/joystickadapterI.cpp.o
  /usr/include/nl_types.h
  /usr/include/Ice/UUID.h
  /usr/include/IceUtil/UUID.h
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/JoystickAdapter.h
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/config.h
- /home/robocomp/robocomp/components/beta-robotica-class/forcefield/src/genericworker.h
- /home/robocomp/robocomp/components/beta-robotica-class/forcefield/src/config.h
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/JoystickAdapter.h
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/config.h
+ /home/robocomp/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/genericworker.h
+ /home/robocomp/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/config.h
  /home/alumno/robocomp/classes/qlog/qlog.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QtCore
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QtCoreDepends
@@ -13247,7 +13234,7 @@ src/CMakeFiles/forcefield.dir/joystickadapterI.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qvector4d.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qwindowdefs.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtguiversion.h
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/ui_mainUI.h
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/ui_mainUI.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QVariant
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QApplication
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qapplication.h
@@ -13269,16 +13256,15 @@ src/CMakeFiles/forcefield.dir/joystickadapterI.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qgridlayout.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/CommonBehavior.h
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/CameraRGBDSimple.h
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/GenericBase.h
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/JointMotorSimple.h
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/OmniRobot.h
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/YoloObjects.h
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/CommonBehavior.h
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/CameraRGBDSimple.h
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/GenericBase.h
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/JointMotorSimple.h
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/OmniRobot.h
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/YoloObjects.h
 
 src/CMakeFiles/forcefield.dir/main.cpp.o
  /home/robocomp/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/main.cpp
- /home/robocomp/robocomp/components/beta-robotica-class/forcefield/src/main.cpp
  /usr/include/stdc-predef.h
  /usr/include/signal.h
  /usr/include/features.h
@@ -14449,7 +14435,7 @@ src/CMakeFiles/forcefield.dir/main.cpp.o
  /home/alumno/robocomp/classes/sigwatch/sigwatch.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject
  /home/alumno/robocomp/classes/qlog/qlog.h
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/config.h
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/config.h
  /usr/include/boost/format.hpp
  /usr/include/boost/detail/workaround.hpp
  /usr/include/boost/config/workaround.hpp
@@ -14665,24 +14651,24 @@ src/CMakeFiles/forcefield.dir/main.cpp.o
  /usr/include/boost/format/parsing.hpp
  /usr/include/boost/format/free_funcs.hpp
  /usr/include/boost/format/detail/unset_macros.hpp
- /home/robocomp/robocomp/components/beta-robotica-class/forcefield/src/config.h
- /home/robocomp/robocomp/components/beta-robotica-class/forcefield/src/genericmonitor.h
- /home/robocomp/robocomp/components/beta-robotica-class/forcefield/src/genericworker.h
+ /home/robocomp/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/config.h
+ /home/robocomp/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/genericmonitor.h
+ /home/robocomp/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/genericworker.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/QtGui
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/ui_mainUI.h
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/ui_mainUI.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QApplication
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QFrame
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QSplitter
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QVBoxLayout
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/CommonBehavior.h
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/CameraRGBDSimple.h
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/GenericBase.h
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/JointMotorSimple.h
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/JoystickAdapter.h
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/OmniRobot.h
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/YoloObjects.h
- /home/robocomp/robocomp/components/beta-robotica-class/forcefield/src/specificworker.h
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/genericworker.h
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/CommonBehavior.h
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/CameraRGBDSimple.h
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/GenericBase.h
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/JointMotorSimple.h
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/JoystickAdapter.h
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/OmniRobot.h
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/YoloObjects.h
+ /home/robocomp/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/specificworker.h
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/genericworker.h
  /home/alumno/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsScene
@@ -14928,25 +14914,24 @@ src/CMakeFiles/forcefield.dir/main.cpp.o
  /usr/include/opencv4/opencv2/highgui.hpp
  /usr/include/opencv4/opencv2/imgcodecs.hpp
  /usr/include/opencv4/opencv2/videoio.hpp
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/dynamic_window.h
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/dynamic_window.h
  /usr/include/c++/11/optional
  /usr/include/x86_64-linux-gnu/qt5/QtGui/QPolygonF
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QPointF
  /usr/include/x86_64-linux-gnu/qt5/QtGui/QTransform
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsEllipseItem
- /home/robocomp/robocomp/components/beta-robotica-class/forcefield/src/robot.h
+ /home/robocomp/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/robot.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/QColor
- /home/robocomp/robocomp/components/beta-robotica-class/forcefield/src/camera.h
- /home/robocomp/robocomp/components/beta-robotica-class/forcefield/src/specificmonitor.h
- /home/robocomp/robocomp/components/beta-robotica-class/forcefield/src/commonbehaviorI.h
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/joystickadapterI.h
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/genericworker.h
+ /home/robocomp/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/camera.h
+ /home/robocomp/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/specificmonitor.h
+ /home/robocomp/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/commonbehaviorI.h
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/joystickadapterI.h
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/genericworker.h
 
 src/CMakeFiles/forcefield.dir/robot.cpp.o
  /home/robocomp/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/robot.cpp
- /home/robocomp/robocomp/components/beta-robotica-class/forcefield/src/robot.cpp
  /usr/include/stdc-predef.h
- /home/robocomp/robocomp/components/beta-robotica-class/forcefield/src/robot.h
+ /home/robocomp/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/robot.h
  /usr/include/Eigen/Dense
  /usr/include/Eigen/Core
  /usr/include/Eigen/src/Core/util/DisableStupidWarnings.h
@@ -15432,7 +15417,7 @@ src/CMakeFiles/forcefield.dir/robot.cpp.o
  /usr/include/Eigen/src/Eigenvalues/GeneralizedEigenSolver.h
  /usr/include/Eigen/src/Eigenvalues/RealQZ.h
  /usr/include/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/YoloObjects.h
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/YoloObjects.h
  /usr/include/IceUtil/PushDisableWarnings.h
  /usr/include/Ice/ProxyF.h
  /usr/include/Ice/Config.h
@@ -15549,7 +15534,7 @@ src/CMakeFiles/forcefield.dir/robot.cpp.o
  /usr/include/c++/11/bits/deque.tcc
  /usr/include/Ice/FactoryTableInit.h
  /usr/include/Ice/DefaultValueFactory.h
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/CameraRGBDSimple.h
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/CameraRGBDSimple.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QtCore
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QtCoreDepends
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qglobal.h
@@ -15930,7 +15915,7 @@ src/CMakeFiles/forcefield.dir/robot.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsPolygonItem
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qgraphicsitem.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpainterpath.h
- /home/robocomp/robocomp/components/beta-robotica-class/forcefield/src/camera.h
+ /home/robocomp/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/camera.h
  /usr/include/opencv4/opencv2/core.hpp
  /usr/include/opencv4/opencv2/core/cvdef.h
  /usr/include/opencv4/opencv2/core/version.hpp
@@ -15960,9 +15945,9 @@ src/CMakeFiles/forcefield.dir/robot.cpp.o
  /usr/include/opencv4/opencv2/core/optim.hpp
  /usr/include/opencv4/opencv2/core/ovx.hpp
  /usr/include/opencv4/opencv2/core/cvdef.h
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/JointMotorSimple.h
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/OmniRobot.h
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/GenericBase.h
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/JointMotorSimple.h
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/OmniRobot.h
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/GenericBase.h
  /usr/local/include/cppitertools/range.hpp
  /usr/local/include/cppitertools/internal/iterbase.hpp
  /usr/include/c++/11/optional
@@ -15970,10 +15955,9 @@ src/CMakeFiles/forcefield.dir/robot.cpp.o
 
 src/CMakeFiles/forcefield.dir/specificmonitor.cpp.o
  /home/robocomp/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/specificmonitor.cpp
- /home/robocomp/robocomp/components/beta-robotica-class/forcefield/src/specificmonitor.cpp
  /usr/include/stdc-predef.h
- /home/robocomp/robocomp/components/beta-robotica-class/forcefield/src/specificmonitor.h
- /home/robocomp/robocomp/components/beta-robotica-class/forcefield/src/genericmonitor.h
+ /home/robocomp/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/specificmonitor.h
+ /home/robocomp/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/genericmonitor.h
  /usr/include/Ice/Ice.h
  /usr/include/IceUtil/PushDisableWarnings.h
  /usr/include/Ice/Config.h
@@ -16735,10 +16719,10 @@ src/CMakeFiles/forcefield.dir/specificmonitor.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qwineventnotifier.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qxmlstream.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qtcoreversion.h
- /home/robocomp/robocomp/components/beta-robotica-class/forcefield/src/genericworker.h
- /home/robocomp/robocomp/components/beta-robotica-class/forcefield/src/config.h
+ /home/robocomp/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/genericworker.h
+ /home/robocomp/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/config.h
  /home/alumno/robocomp/classes/qlog/qlog.h
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/config.h
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/config.h
  /usr/include/boost/format.hpp
  /usr/include/boost/detail/workaround.hpp
  /usr/include/boost/config/workaround.hpp
@@ -17142,7 +17126,7 @@ src/CMakeFiles/forcefield.dir/specificmonitor.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qvector4d.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qwindowdefs.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtguiversion.h
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/ui_mainUI.h
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/ui_mainUI.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QVariant
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QApplication
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qapplication.h
@@ -17164,21 +17148,20 @@ src/CMakeFiles/forcefield.dir/specificmonitor.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qgridlayout.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/CommonBehavior.h
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/CameraRGBDSimple.h
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/GenericBase.h
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/JointMotorSimple.h
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/JoystickAdapter.h
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/OmniRobot.h
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/YoloObjects.h
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/CommonBehavior.h
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/CameraRGBDSimple.h
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/GenericBase.h
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/JointMotorSimple.h
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/JoystickAdapter.h
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/OmniRobot.h
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/YoloObjects.h
 
 src/CMakeFiles/forcefield.dir/specificworker.cpp.o
  /home/robocomp/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/specificworker.cpp
- /home/robocomp/robocomp/components/beta-robotica-class/forcefield/src/specificworker.cpp
  /usr/include/stdc-predef.h
- /home/robocomp/robocomp/components/beta-robotica-class/forcefield/src/specificworker.h
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/genericworker.h
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/config.h
+ /home/robocomp/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/specificworker.h
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/genericworker.h
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/config.h
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h
  /usr/include/stdint.h
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h
@@ -17197,7 +17180,7 @@ src/CMakeFiles/forcefield.dir/specificworker.cpp.o
  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h
  /home/alumno/robocomp/classes/qlog/qlog.h
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/config.h
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/config.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QtCore
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QtCoreDepends
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qglobal.h
@@ -18212,7 +18195,7 @@ src/CMakeFiles/forcefield.dir/specificworker.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qvector4d.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qwindowdefs.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtguiversion.h
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/ui_mainUI.h
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/ui_mainUI.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QVariant
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QApplication
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qapplication.h
@@ -18234,7 +18217,7 @@ src/CMakeFiles/forcefield.dir/specificworker.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qgridlayout.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/CommonBehavior.h
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/CommonBehavior.h
  /usr/include/IceUtil/PushDisableWarnings.h
  /usr/include/Ice/ProxyF.h
  /usr/include/Ice/Config.h
@@ -18318,12 +18301,12 @@ src/CMakeFiles/forcefield.dir/specificworker.cpp.o
  /usr/include/c++/11/bits/deque.tcc
  /usr/include/Ice/FactoryTableInit.h
  /usr/include/Ice/DefaultValueFactory.h
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/CameraRGBDSimple.h
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/GenericBase.h
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/JointMotorSimple.h
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/JoystickAdapter.h
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/OmniRobot.h
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/YoloObjects.h
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/CameraRGBDSimple.h
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/GenericBase.h
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/JointMotorSimple.h
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/JoystickAdapter.h
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/OmniRobot.h
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/YoloObjects.h
  /home/alumno/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsScene
@@ -18578,15 +18561,15 @@ src/CMakeFiles/forcefield.dir/specificworker.cpp.o
  /usr/include/opencv4/opencv2/highgui.hpp
  /usr/include/opencv4/opencv2/imgcodecs.hpp
  /usr/include/opencv4/opencv2/videoio.hpp
- /home/alumno/robocomp/components/beta-robotica-class/forcefield/src/dynamic_window.h
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/dynamic_window.h
  /usr/include/c++/11/optional
  /usr/include/x86_64-linux-gnu/qt5/QtGui/QPolygonF
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QPointF
  /usr/include/x86_64-linux-gnu/qt5/QtGui/QTransform
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsEllipseItem
- /home/robocomp/robocomp/components/beta-robotica-class/forcefield/src/robot.h
+ /home/robocomp/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/robot.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/QColor
- /home/robocomp/robocomp/components/beta-robotica-class/forcefield/src/camera.h
+ /home/robocomp/robocomp/components/Proyecto_Robotica/practica3/forcefield/src/camera.h
  /usr/local/include/cppitertools/range.hpp
  /usr/local/include/cppitertools/internal/iterbase.hpp
  /usr/local/include/cppitertools/enumerate.hpp
