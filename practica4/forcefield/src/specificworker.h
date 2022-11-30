@@ -142,6 +142,9 @@ class SpecificWorker : public GenericWorker
     // Clock
     rc::Timer<> clock;
 
+    //
+    std::vector<Eigen::Vector2f> door_detector(const std::vector<Eigen::Vector2f> &line);
+    void draw_doors(const std::vector<Eigen::Vector2f> &doors);
 
 
 };

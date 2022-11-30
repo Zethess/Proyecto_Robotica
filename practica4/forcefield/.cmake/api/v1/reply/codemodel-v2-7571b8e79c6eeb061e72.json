@@ -1,0 +1,96 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-34c71776ed784388d362.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "src",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-src-0e45e8f54f9fe6eb1f95.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "forcefield",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "ICES__home_alumno_robocomp_components_Proyecto_Robotica_practica4_forcefield_src::@145eef247bfb46b6828c",
+					"jsonFile" : "target-ICES__home_alumno_robocomp_components_Proyecto_Robotica_practica4_forcefield_src-076f430d6d2d07657870.json",
+					"name" : "ICES__home_alumno_robocomp_components_Proyecto_Robotica_practica4_forcefield_src",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "forcefield::@145eef247bfb46b6828c",
+					"jsonFile" : "target-forcefield-c5d530b9553c052fddf4.json",
+					"name" : "forcefield",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "forcefield_autogen::@145eef247bfb46b6828c",
+					"jsonFile" : "target-forcefield_autogen-e79305a56d7aeda4b3d6.json",
+					"name" : "forcefield_autogen",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield",
+		"source" : "/home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

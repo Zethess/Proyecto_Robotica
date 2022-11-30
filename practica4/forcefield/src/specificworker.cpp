@@ -23,6 +23,7 @@
 #include <cppitertools/filter.hpp>
 #include <cppitertools/chunked.hpp>
 #include <cppitertools/sliding_window.hpp>
+#include <cppitertools/combinations_with_replacement.hpp>
 
 /**
 * \brief Default constructor
@@ -193,6 +194,55 @@ void SpecificWorker::initialize(int period)
         std::cout << "Worker initialized OK" << std::endl;
 	}
 }
+
+std::vector<Eigen::Vector2f> SpecificWorker::door_detector(const std::vector<Eigen::Vector2f> &line)
+{
+    std::vector<float> derivaties (line.size()-1);
+    for(auto &&[i,d]: line | iter::sliding_window(2) | iter::enumerate)
+    {
+        derivaties[i]=(d[1].norm() - d[0].norm());
+    }
+
+    std::vector <std::tuple<int, bool>> peaks;
+    for(auto &&[i,d]: derivaties | iter::enumerate)
+    {
+        if (d > 0){
+            peaks.push_back(std::make_tuple(i,true));
+        }
+        else{
+            peaks.push_back(std::make_tuple(i,false));
+        }
+    }
+
+    std::vector<Eigen::Vector2f> doors;
+    for(auto &&p: peaks | iter::combinations_with_replacement(2)){
+        auto &[p1,pos1] = p[0];
+        auto &[p2,pos2] = p[1];
+        auto v1 = line[p1];
+        auto v2 = line[p2];
+
+        if(((pos1 and not pos2) or (pos2 and not pos1)) and ((v1-v2).norm() < 1000 and (v1-v2).norm() > 600))
+        {
+            doors.push_back((v1+v2)/2);
+        }
+    }
+    return doors;
+}
+
+void SpecificWorker::draw_doors(const std::vector<Eigen::Vector2f> &doors){
+    static std::vector<QGraphicsItem *> items;
+    for(const auto &i: items)
+        viewer->scene.removeItem(i);
+    items.clear();
+
+    for (const auto &d: doors){
+        auto item = (viewer->scene.addEllipse(-100, -100, 200, 200, QPen(QColor("magenta")), QBrush(QColor("magenta")))); //Para hacerlo mas compacto - QBrush
+        item->setPos(d.x(), d.y());
+        items.push_back(item);
+    }
+}
+
+
 void SpecificWorker::compute()
 {
     cv::Mat omni_rgb_frame;
@@ -212,15 +262,17 @@ void SpecificWorker::compute()
 
     /// compute level_lines
     auto omni_lines = get_multi_level_3d_points_omni(omni_depth_frame);
-    //draw_floor_line(omni_lines, {1});
+    draw_floor_line(omni_lines, {1});
     auto current_line = omni_lines[1];  // second line of the list of laser lines at different heights
     //auto top_lines = get_multi_level_3d_points_top(top_depth_frame, top_camera.get_depth_focalx(), top_camera.get_depth_focaly());
-    auto top_lines  = top_camera.get_depth_lines_in_robot(0, 1600, 50, robot.get_tf_cam_to_base());
-    draw_floor_line(top_lines, {1});
+    //auto top_lines  = top_camera.get_depth_lines_in_robot(0, 1600, 50, robot.get_tf_cam_to_base());
+    //draw_floor_line(top_lines, {1});
 
     /// YOLO
     RoboCompYoloObjects::TObjects objects = yolo_detect_objects(top_rgb_frame);//esta lista hay que pasarsela al método state machine porque
                                                                                 //es la que tiene los objetos detectados por la camara actualmente
+    door_detector(current_line);
+    draw_doors(door_detector(current_line));
 
     /// draw top image
     cv::imshow("top", top_rgb_frame); cv::waitKey(5);
