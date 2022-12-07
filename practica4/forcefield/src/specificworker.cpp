@@ -206,7 +206,7 @@ std::vector<Eigen::Vector2f> SpecificWorker::door_detector(const std::vector<Eig
     std::vector <std::tuple<int, bool>> peaks;
     for(auto &&[i,d]: derivaties | iter::enumerate)
     {
-        if (d > 0){
+        if (d > -500){
             peaks.push_back(std::make_tuple(i,true));
         }
         else{
@@ -292,8 +292,8 @@ void SpecificWorker::compute()
     auto [adv, rot, side] =  dwa.update(robot.get_robot_target_coordinates(), current_line, robot.get_current_advance_speed(), robot.get_current_rot_speed(), viewer);
 
     qInfo() << __FUNCTION__ << adv <<  side << rot;
-    try{ omnirobot_proxy->setSpeedBase(side, adv, rot); }
-    catch(const Ice::Exception &e){ std::cout << e.what() << "Error connecting to omnirobot" << std::endl;}
+//
+
 
     //robot.print();
 }
