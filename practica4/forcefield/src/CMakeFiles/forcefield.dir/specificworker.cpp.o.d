@@ -1,25 +1,34 @@
 src/CMakeFiles/forcefield.dir/specificworker.cpp.o: \
  /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/specificworker.cpp \
- /usr/include/stdc-predef.h \
- /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/specificworker.h \
- /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/genericworker.h \
- /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/config.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
- /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
- /usr/include/features.h /usr/include/features-time64.h \
+ /usr/include/stdc-predef.h /usr/include/unistd.h /usr/include/features.h \
+ /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
  /usr/include/x86_64-linux-gnu/bits/timesize.h \
  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
  /usr/include/x86_64-linux-gnu/bits/long-double.h \
  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
+ /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
+ /usr/include/x86_64-linux-gnu/bits/environments.h \
  /usr/include/x86_64-linux-gnu/bits/types.h \
  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
  /usr/include/x86_64-linux-gnu/bits/time64.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
+ /usr/include/x86_64-linux-gnu/bits/confname.h \
+ /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
+ /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
+ /usr/include/x86_64-linux-gnu/bits/unistd.h \
+ /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
+ /usr/include/linux/close_range.h \
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/specificworker.h \
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/genericworker.h \
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/config.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
+ /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
- /home/alumno/robocomp/classes/qlog/qlog.h \
+ /opt/robocomp/classes/qlog/qlog.h \
  /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/config.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QtCore \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QtCoreDepends \
@@ -29,7 +38,6 @@ src/CMakeFiles/forcefield.dir/specificworker.cpp.o: \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h \
  /usr/include/c++/11/pstl/pstl_config.h /usr/include/c++/11/cstddef \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
  /usr/include/c++/11/utility /usr/include/c++/11/bits/stl_relops.h \
  /usr/include/c++/11/bits/stl_pair.h /usr/include/c++/11/bits/move.h \
  /usr/include/c++/11/compare /usr/include/c++/11/concepts \
@@ -206,15 +214,7 @@ src/CMakeFiles/forcefield.dir/specificworker.cpp.o: \
  /usr/include/linux/limits.h \
  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
- /usr/include/x86_64-linux-gnu/bits/uio_lim.h /usr/include/unistd.h \
- /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
- /usr/include/x86_64-linux-gnu/bits/environments.h \
- /usr/include/x86_64-linux-gnu/bits/confname.h \
- /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
- /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
- /usr/include/x86_64-linux-gnu/bits/unistd.h \
- /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
- /usr/include/linux/close_range.h /usr/include/syscall.h \
+ /usr/include/x86_64-linux-gnu/bits/uio_lim.h /usr/include/syscall.h \
  /usr/include/x86_64-linux-gnu/sys/syscall.h \
  /usr/include/x86_64-linux-gnu/asm/unistd.h \
  /usr/include/x86_64-linux-gnu/asm/unistd_64.h \
@@ -1034,7 +1034,7 @@ src/CMakeFiles/forcefield.dir/specificworker.cpp.o: \
  /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/JoystickAdapter.h \
  /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/OmniRobot.h \
  /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/YoloObjects.h \
- /home/alumno/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.h \
+ /opt/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsScene \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qgraphicsscene.h \
@@ -1058,7 +1058,7 @@ src/CMakeFiles/forcefield.dir/specificworker.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsPolygonItem \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qgraphicsitem.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpainterpath.h \
- /home/alumno/robocomp/classes/timer/timer.h /usr/include/Eigen/Dense \
+ /opt/robocomp/classes/timer/timer.h /usr/include/Eigen/Dense \
  /usr/include/Eigen/Core \
  /usr/include/Eigen/src/Core/util/DisableStupidWarnings.h \
  /usr/include/Eigen/src/Core/util/Macros.h \
@@ -1286,6 +1286,8 @@ src/CMakeFiles/forcefield.dir/specificworker.cpp.o: \
  /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/robot.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/QColor \
  /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/camera.h \
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/door_detector.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsItem \
  /usr/local/include/cppitertools/range.hpp \
  /usr/local/include/cppitertools/internal/iterbase.hpp \
  /usr/local/include/cppitertools/enumerate.hpp \

@@ -1,8 +1,5 @@
 /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/forcefield_autogen/EWIEGA46WW/moc_specificworker.cpp: /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/specificworker.h \
   /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/forcefield_autogen/moc_predefs.h \
-  /home/alumno/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.h \
-  /home/alumno/robocomp/classes/qlog/qlog.h \
-  /home/alumno/robocomp/classes/timer/timer.h \
   /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/CameraRGBDSimple.h \
   /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/CommonBehavior.h \
   /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/GenericBase.h \
@@ -12,10 +9,14 @@
   /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/YoloObjects.h \
   /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/camera.h \
   /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/config.h \
+  /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/door_detector.h \
   /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/dynamic_window.h \
   /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/genericworker.h \
   /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/robot.h \
   /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/ui_mainUI.h \
+  /opt/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.h \
+  /opt/robocomp/classes/qlog/qlog.h \
+  /opt/robocomp/classes/timer/timer.h \
   /usr/include/GL/gl.h \
   /usr/include/Ice/AsyncResult.h \
   /usr/include/Ice/BatchRequestQueueF.h \
@@ -921,6 +922,7 @@
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QApplication \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QFrame \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsEllipseItem \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsItem \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsPolygonItem \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsScene \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsView \

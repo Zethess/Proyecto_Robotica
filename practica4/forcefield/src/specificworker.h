@@ -38,6 +38,7 @@
 #include <timer/timer.h>
 #include "robot.h"
 #include "camera.h"
+#include "door_detector.h"
 
 class SpecificWorker : public GenericWorker
 {
@@ -122,6 +123,9 @@ class SpecificWorker : public GenericWorker
     void set_target_force(const Eigen::Vector3f &vec);
     Eigen::Vector3f target_coordinates{0.f, 0.f, 0.f};  //third component for pure  rotations
 
+    //Door Detector
+    Door_detector door_detector;
+
     // state machine
     void state_machine(const RoboCompYoloObjects::TObjects &objects, const std::vector<Eigen::Vector2f> &line);
     enum class State {IDLE, SEARCHING, APPROACHING, WAITING};
@@ -141,11 +145,6 @@ class SpecificWorker : public GenericWorker
 
     // Clock
     rc::Timer<> clock;
-
-    //
-    std::vector<Eigen::Vector2f> door_detector(const std::vector<Eigen::Vector2f> &line);
-    void draw_doors(const std::vector<Eigen::Vector2f> &doors);
-
 
 };
 
