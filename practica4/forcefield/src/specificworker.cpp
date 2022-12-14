@@ -227,9 +227,13 @@ void SpecificWorker::compute()
                                                                                 //es la que tiene los objetos detectados por la camara actualmente
 
     /// Door Detector
-    auto doors = door_detector.detector(current_line);
+    auto doors = door_detector.detector(current_line, viewer);
     door_detector.draw_doors(doors, viewer);
 
+    auto lista1;
+    auto lista;
+    for(const auto &l : lista1)
+        lista.push_back(l);
 
     /// draw top image
     cv::imshow("top", top_rgb_frame); cv::waitKey(5);

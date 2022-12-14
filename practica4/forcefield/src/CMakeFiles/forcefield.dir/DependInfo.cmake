@@ -11,6 +11,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/CameraRGBDSimple.cpp" "src/CMakeFiles/forcefield.dir/CameraRGBDSimple.cpp.o" "gcc" "src/CMakeFiles/forcefield.dir/CameraRGBDSimple.cpp.o.d"
   "/home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/CommonBehavior.cpp" "src/CMakeFiles/forcefield.dir/CommonBehavior.cpp.o" "gcc" "src/CMakeFiles/forcefield.dir/CommonBehavior.cpp.o.d"
   "/home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/GenericBase.cpp" "src/CMakeFiles/forcefield.dir/GenericBase.cpp.o" "gcc" "src/CMakeFiles/forcefield.dir/GenericBase.cpp.o.d"
+  "/home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/GenericObject.cpp" "src/CMakeFiles/forcefield.dir/GenericObject.cpp.o" "gcc" "src/CMakeFiles/forcefield.dir/GenericObject.cpp.o.d"
   "/home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/JointMotorSimple.cpp" "src/CMakeFiles/forcefield.dir/JointMotorSimple.cpp.o" "gcc" "src/CMakeFiles/forcefield.dir/JointMotorSimple.cpp.o.d"
   "/home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/JoystickAdapter.cpp" "src/CMakeFiles/forcefield.dir/JoystickAdapter.cpp.o" "gcc" "src/CMakeFiles/forcefield.dir/JoystickAdapter.cpp.o.d"
   "/home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/OmniRobot.cpp" "src/CMakeFiles/forcefield.dir/OmniRobot.cpp.o" "gcc" "src/CMakeFiles/forcefield.dir/OmniRobot.cpp.o.d"

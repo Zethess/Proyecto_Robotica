@@ -10,6 +10,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/forcefield.dir/CommonBehavior.cpp.o.d"
   "CMakeFiles/forcefield.dir/GenericBase.cpp.o"
   "CMakeFiles/forcefield.dir/GenericBase.cpp.o.d"
+  "CMakeFiles/forcefield.dir/GenericObject.cpp.o"
+  "CMakeFiles/forcefield.dir/GenericObject.cpp.o.d"
   "CMakeFiles/forcefield.dir/JointMotorSimple.cpp.o"
   "CMakeFiles/forcefield.dir/JointMotorSimple.cpp.o.d"
   "CMakeFiles/forcefield.dir/JoystickAdapter.cpp.o"

@@ -101,6 +101,12 @@
 	"HEADERS" : 
 	[
 		[
+			"/home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/GenericObject.h",
+			"MU",
+			"EWIEGA46WW/moc_GenericObject.cpp",
+			null
+		],
+		[
 			"/home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/camera.h",
 			"MU",
 			"EWIEGA46WW/moc_camera.cpp",
@@ -272,6 +278,11 @@
 	"SETTINGS_FILE" : "/home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/CMakeFiles/forcefield_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
+		[
+			"/home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/GenericObject.cpp",
+			"MU",
+			null
+		],
 		[
 			"/home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/camera.cpp",
 			"MU",

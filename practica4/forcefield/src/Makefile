@@ -275,6 +275,30 @@ GenericBase.cpp.s:
 	cd /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/forcefield.dir/build.make src/CMakeFiles/forcefield.dir/GenericBase.cpp.s
 .PHONY : GenericBase.cpp.s
 
+GenericObject.o: GenericObject.cpp.o
+.PHONY : GenericObject.o
+
+# target to build an object file
+GenericObject.cpp.o:
+	cd /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/forcefield.dir/build.make src/CMakeFiles/forcefield.dir/GenericObject.cpp.o
+.PHONY : GenericObject.cpp.o
+
+GenericObject.i: GenericObject.cpp.i
+.PHONY : GenericObject.i
+
+# target to preprocess a source file
+GenericObject.cpp.i:
+	cd /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/forcefield.dir/build.make src/CMakeFiles/forcefield.dir/GenericObject.cpp.i
+.PHONY : GenericObject.cpp.i
+
+GenericObject.s: GenericObject.cpp.s
+.PHONY : GenericObject.s
+
+# target to generate assembly for a file
+GenericObject.cpp.s:
+	cd /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/forcefield.dir/build.make src/CMakeFiles/forcefield.dir/GenericObject.cpp.s
+.PHONY : GenericObject.cpp.s
+
 JointMotorSimple.o: JointMotorSimple.cpp.o
 .PHONY : JointMotorSimple.o
 
@@ -779,6 +803,9 @@ help:
 	@echo "... GenericBase.o"
 	@echo "... GenericBase.i"
 	@echo "... GenericBase.s"
+	@echo "... GenericObject.o"
+	@echo "... GenericObject.i"
+	@echo "... GenericObject.s"
 	@echo "... JointMotorSimple.o"
 	@echo "... JointMotorSimple.i"
 	@echo "... JointMotorSimple.s"

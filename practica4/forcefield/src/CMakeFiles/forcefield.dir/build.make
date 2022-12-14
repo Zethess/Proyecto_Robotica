@@ -346,10 +346,24 @@ src/CMakeFiles/forcefield.dir/joystickadapterI.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/forcefield.dir/joystickadapterI.cpp.s"
 	cd /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/joystickadapterI.cpp -o CMakeFiles/forcefield.dir/joystickadapterI.cpp.s
 
+src/CMakeFiles/forcefield.dir/GenericObject.cpp.o: src/CMakeFiles/forcefield.dir/flags.make
+src/CMakeFiles/forcefield.dir/GenericObject.cpp.o: src/GenericObject.cpp
+src/CMakeFiles/forcefield.dir/GenericObject.cpp.o: src/CMakeFiles/forcefield.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object src/CMakeFiles/forcefield.dir/GenericObject.cpp.o"
+	cd /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/forcefield.dir/GenericObject.cpp.o -MF CMakeFiles/forcefield.dir/GenericObject.cpp.o.d -o CMakeFiles/forcefield.dir/GenericObject.cpp.o -c /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/GenericObject.cpp
+
+src/CMakeFiles/forcefield.dir/GenericObject.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/forcefield.dir/GenericObject.cpp.i"
+	cd /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/GenericObject.cpp > CMakeFiles/forcefield.dir/GenericObject.cpp.i
+
+src/CMakeFiles/forcefield.dir/GenericObject.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/forcefield.dir/GenericObject.cpp.s"
+	cd /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/GenericObject.cpp -o CMakeFiles/forcefield.dir/GenericObject.cpp.s
+
 src/CMakeFiles/forcefield.dir/CommonBehavior.cpp.o: src/CMakeFiles/forcefield.dir/flags.make
 src/CMakeFiles/forcefield.dir/CommonBehavior.cpp.o: src/CommonBehavior.cpp
 src/CMakeFiles/forcefield.dir/CommonBehavior.cpp.o: src/CMakeFiles/forcefield.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object src/CMakeFiles/forcefield.dir/CommonBehavior.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object src/CMakeFiles/forcefield.dir/CommonBehavior.cpp.o"
 	cd /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/forcefield.dir/CommonBehavior.cpp.o -MF CMakeFiles/forcefield.dir/CommonBehavior.cpp.o.d -o CMakeFiles/forcefield.dir/CommonBehavior.cpp.o -c /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/CommonBehavior.cpp
 
 src/CMakeFiles/forcefield.dir/CommonBehavior.cpp.i: cmake_force
@@ -363,7 +377,7 @@ src/CMakeFiles/forcefield.dir/CommonBehavior.cpp.s: cmake_force
 src/CMakeFiles/forcefield.dir/CameraRGBDSimple.cpp.o: src/CMakeFiles/forcefield.dir/flags.make
 src/CMakeFiles/forcefield.dir/CameraRGBDSimple.cpp.o: src/CameraRGBDSimple.cpp
 src/CMakeFiles/forcefield.dir/CameraRGBDSimple.cpp.o: src/CMakeFiles/forcefield.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object src/CMakeFiles/forcefield.dir/CameraRGBDSimple.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object src/CMakeFiles/forcefield.dir/CameraRGBDSimple.cpp.o"
 	cd /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/forcefield.dir/CameraRGBDSimple.cpp.o -MF CMakeFiles/forcefield.dir/CameraRGBDSimple.cpp.o.d -o CMakeFiles/forcefield.dir/CameraRGBDSimple.cpp.o -c /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/CameraRGBDSimple.cpp
 
 src/CMakeFiles/forcefield.dir/CameraRGBDSimple.cpp.i: cmake_force
@@ -377,7 +391,7 @@ src/CMakeFiles/forcefield.dir/CameraRGBDSimple.cpp.s: cmake_force
 src/CMakeFiles/forcefield.dir/GenericBase.cpp.o: src/CMakeFiles/forcefield.dir/flags.make
 src/CMakeFiles/forcefield.dir/GenericBase.cpp.o: src/GenericBase.cpp
 src/CMakeFiles/forcefield.dir/GenericBase.cpp.o: src/CMakeFiles/forcefield.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object src/CMakeFiles/forcefield.dir/GenericBase.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object src/CMakeFiles/forcefield.dir/GenericBase.cpp.o"
 	cd /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/forcefield.dir/GenericBase.cpp.o -MF CMakeFiles/forcefield.dir/GenericBase.cpp.o.d -o CMakeFiles/forcefield.dir/GenericBase.cpp.o -c /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/GenericBase.cpp
 
 src/CMakeFiles/forcefield.dir/GenericBase.cpp.i: cmake_force
@@ -391,7 +405,7 @@ src/CMakeFiles/forcefield.dir/GenericBase.cpp.s: cmake_force
 src/CMakeFiles/forcefield.dir/JointMotorSimple.cpp.o: src/CMakeFiles/forcefield.dir/flags.make
 src/CMakeFiles/forcefield.dir/JointMotorSimple.cpp.o: src/JointMotorSimple.cpp
 src/CMakeFiles/forcefield.dir/JointMotorSimple.cpp.o: src/CMakeFiles/forcefield.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object src/CMakeFiles/forcefield.dir/JointMotorSimple.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object src/CMakeFiles/forcefield.dir/JointMotorSimple.cpp.o"
 	cd /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/forcefield.dir/JointMotorSimple.cpp.o -MF CMakeFiles/forcefield.dir/JointMotorSimple.cpp.o.d -o CMakeFiles/forcefield.dir/JointMotorSimple.cpp.o -c /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/JointMotorSimple.cpp
 
 src/CMakeFiles/forcefield.dir/JointMotorSimple.cpp.i: cmake_force
@@ -405,7 +419,7 @@ src/CMakeFiles/forcefield.dir/JointMotorSimple.cpp.s: cmake_force
 src/CMakeFiles/forcefield.dir/JoystickAdapter.cpp.o: src/CMakeFiles/forcefield.dir/flags.make
 src/CMakeFiles/forcefield.dir/JoystickAdapter.cpp.o: src/JoystickAdapter.cpp
 src/CMakeFiles/forcefield.dir/JoystickAdapter.cpp.o: src/CMakeFiles/forcefield.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object src/CMakeFiles/forcefield.dir/JoystickAdapter.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object src/CMakeFiles/forcefield.dir/JoystickAdapter.cpp.o"
 	cd /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/forcefield.dir/JoystickAdapter.cpp.o -MF CMakeFiles/forcefield.dir/JoystickAdapter.cpp.o.d -o CMakeFiles/forcefield.dir/JoystickAdapter.cpp.o -c /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/JoystickAdapter.cpp
 
 src/CMakeFiles/forcefield.dir/JoystickAdapter.cpp.i: cmake_force
@@ -419,7 +433,7 @@ src/CMakeFiles/forcefield.dir/JoystickAdapter.cpp.s: cmake_force
 src/CMakeFiles/forcefield.dir/OmniRobot.cpp.o: src/CMakeFiles/forcefield.dir/flags.make
 src/CMakeFiles/forcefield.dir/OmniRobot.cpp.o: src/OmniRobot.cpp
 src/CMakeFiles/forcefield.dir/OmniRobot.cpp.o: src/CMakeFiles/forcefield.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object src/CMakeFiles/forcefield.dir/OmniRobot.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object src/CMakeFiles/forcefield.dir/OmniRobot.cpp.o"
 	cd /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/forcefield.dir/OmniRobot.cpp.o -MF CMakeFiles/forcefield.dir/OmniRobot.cpp.o.d -o CMakeFiles/forcefield.dir/OmniRobot.cpp.o -c /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/OmniRobot.cpp
 
 src/CMakeFiles/forcefield.dir/OmniRobot.cpp.i: cmake_force
@@ -433,7 +447,7 @@ src/CMakeFiles/forcefield.dir/OmniRobot.cpp.s: cmake_force
 src/CMakeFiles/forcefield.dir/YoloObjects.cpp.o: src/CMakeFiles/forcefield.dir/flags.make
 src/CMakeFiles/forcefield.dir/YoloObjects.cpp.o: src/YoloObjects.cpp
 src/CMakeFiles/forcefield.dir/YoloObjects.cpp.o: src/CMakeFiles/forcefield.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object src/CMakeFiles/forcefield.dir/YoloObjects.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object src/CMakeFiles/forcefield.dir/YoloObjects.cpp.o"
 	cd /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/forcefield.dir/YoloObjects.cpp.o -MF CMakeFiles/forcefield.dir/YoloObjects.cpp.o.d -o CMakeFiles/forcefield.dir/YoloObjects.cpp.o -c /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/YoloObjects.cpp
 
 src/CMakeFiles/forcefield.dir/YoloObjects.cpp.i: cmake_force
@@ -462,6 +476,7 @@ forcefield_OBJECTS = \
 "CMakeFiles/forcefield.dir/commonbehaviorI.cpp.o" \
 "CMakeFiles/forcefield.dir/genericworker.cpp.o" \
 "CMakeFiles/forcefield.dir/joystickadapterI.cpp.o" \
+"CMakeFiles/forcefield.dir/GenericObject.cpp.o" \
 "CMakeFiles/forcefield.dir/CommonBehavior.cpp.o" \
 "CMakeFiles/forcefield.dir/CameraRGBDSimple.cpp.o" \
 "CMakeFiles/forcefield.dir/GenericBase.cpp.o" \
@@ -489,6 +504,7 @@ bin/forcefield: src/CMakeFiles/forcefield.dir/genericmonitor.cpp.o
 bin/forcefield: src/CMakeFiles/forcefield.dir/commonbehaviorI.cpp.o
 bin/forcefield: src/CMakeFiles/forcefield.dir/genericworker.cpp.o
 bin/forcefield: src/CMakeFiles/forcefield.dir/joystickadapterI.cpp.o
+bin/forcefield: src/CMakeFiles/forcefield.dir/GenericObject.cpp.o
 bin/forcefield: src/CMakeFiles/forcefield.dir/CommonBehavior.cpp.o
 bin/forcefield: src/CMakeFiles/forcefield.dir/CameraRGBDSimple.cpp.o
 bin/forcefield: src/CMakeFiles/forcefield.dir/GenericBase.cpp.o
@@ -564,7 +580,7 @@ bin/forcefield: /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.15.3
 bin/forcefield: /usr/lib/x86_64-linux-gnu/libQt5Network.so.5.15.3
 bin/forcefield: /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.3
 bin/forcefield: src/CMakeFiles/forcefield.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Linking CXX executable ../bin/forcefield"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Linking CXX executable ../bin/forcefield"
 	cd /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/forcefield.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
