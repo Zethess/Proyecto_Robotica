@@ -3,6 +3,7 @@
   /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/CameraRGBDSimple.h \
   /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/CommonBehavior.h \
   /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/GenericBase.h \
+  /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/GenericObject.h \
   /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/JointMotorSimple.h \
   /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/JoystickAdapter.h \
   /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/OmniRobot.h \
@@ -13,6 +14,7 @@
   /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/dynamic_window.h \
   /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/genericworker.h \
   /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/robot.h \
+  /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/stateMachine.h \
   /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/ui_mainUI.h \
   /opt/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.h \
   /opt/robocomp/classes/qlog/qlog.h \

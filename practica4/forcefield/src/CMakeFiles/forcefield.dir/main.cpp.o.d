@@ -1505,6 +1505,9 @@ src/CMakeFiles/forcefield.dir/main.cpp.o: \
  /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/camera.h \
  /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/door_detector.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsItem \
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/stateMachine.h \
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/door_detector.h \
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/GenericObject.h \
  /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/specificmonitor.h \
  /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/commonbehaviorI.h \
  /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/joystickadapterI.h

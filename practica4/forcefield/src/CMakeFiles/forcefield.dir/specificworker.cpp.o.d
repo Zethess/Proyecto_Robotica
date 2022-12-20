@@ -1288,6 +1288,9 @@ src/CMakeFiles/forcefield.dir/specificworker.cpp.o: \
  /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/camera.h \
  /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/door_detector.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsItem \
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/stateMachine.h \
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/door_detector.h \
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/GenericObject.h \
  /usr/local/include/cppitertools/range.hpp \
  /usr/local/include/cppitertools/internal/iterbase.hpp \
  /usr/local/include/cppitertools/enumerate.hpp \

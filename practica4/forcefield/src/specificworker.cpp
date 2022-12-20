@@ -230,10 +230,10 @@ void SpecificWorker::compute()
     auto doors = door_detector.detector(current_line, viewer);
     door_detector.draw_doors(doors, viewer);
 
-    auto lista1;
-    auto lista;
-    for(const auto &l : lista1)
-        lista.push_back(l);
+//    auto lista1;
+//    auto lista;
+//    for(const auto &l : lista1)
+//        lista.push_back(l);
 
     /// draw top image
     cv::imshow("top", top_rgb_frame); cv::waitKey(5);
@@ -242,7 +242,10 @@ void SpecificWorker::compute()
     draw_objects_on_2dview(objects, RoboCompYoloObjects::TBox());
 
     // state machine to activate basic behaviours. Returns a  target_coordinates vector
-    state_machine(objects, current_line);
+    static GenericObject objAux;
+    genericObjectLista=objAux.createList(doors);
+    genericObjectLista.insert(genericObjectLista.end(), objAux.createList(objects).begin(),  objAux.createList(objects).end());
+    state.state_machine(genericObjectLista, current_line, robot);
 
     /// eye tracking: tracks  current selected object or  IOR if none
     //eye_track(robot);
@@ -258,53 +261,6 @@ void SpecificWorker::compute()
     //robot.print();
 }
 
-void SpecificWorker::state_machine(const RoboCompYoloObjects::TObjects &objects, const std::vector<Eigen::Vector2f> &line){
-
-    switch(state)
-    {
-        case State::IDLE:
-            break;
-        case State::SEARCHING:
-            search_state(objects);
-            break;
-        case State::APPROACHING:
-            approach_state(objects, line);
-            break;
-        case State::WAITING:
-            break;
-    }
-
-}
-void SpecificWorker::approach_state(const RoboCompYoloObjects::TObjects &objects, const std::vector<Eigen::Vector2f> &line)
-{
-    if (robot.get_distance_to_target() < 800){
-        state = State::SEARCHING;
-    }
-    else{
-        if(auto it=std::find_if(objects.begin(), objects.end(),
-                                    [r=robot](auto &a){return a.type == r.get_current_target().type;}); it != objects.end())
-            //En una funcion lamda lo que hay entre corchete es para capturar un objeto del entorno, y en a esta los elementos del it
-        {
-            robot.set_current_target(*it);
-        }
-    }
-    std::cout << "ESTOY EN EL APPROACH" <<std::endl;
-}
-
-
-void SpecificWorker::search_state(const RoboCompYoloObjects::TObjects &objects)
-{
-    //Comprueba que el objeto que identifica es distinto del objeto que tenemos actualmente.
-    //Una vez comprobado, si es distinto, cambia en el iterador a los atributos del nuevo objeto y cambia de estado
-    if(auto it=std::find_if_not(objects.begin(), objects.end(),
-                                [r=robot](auto &a){return a.type == r.get_current_target().type;}); it != objects.end())
-    //En una funcion lamda lo que hay entre corchete es para capturar un objeto del entorno, y en a esta los elementos del it
-    {
-        robot.set_current_target(*it);
-        std::cout << "OBJETIVO ENCONTRADO" <<std::endl;
-        state = State::APPROACHING;
-    }   //Si no, sigue rotando
-}
 
 //////////////////// ELEMENTS OF CONTROL/////////////////////////////////////////////////
 // perception

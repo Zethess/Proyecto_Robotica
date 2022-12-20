@@ -779,6 +779,30 @@ specificworker.cpp.s:
 	cd /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/forcefield.dir/build.make src/CMakeFiles/forcefield.dir/specificworker.cpp.s
 .PHONY : specificworker.cpp.s
 
+stateMachine.o: stateMachine.cpp.o
+.PHONY : stateMachine.o
+
+# target to build an object file
+stateMachine.cpp.o:
+	cd /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/forcefield.dir/build.make src/CMakeFiles/forcefield.dir/stateMachine.cpp.o
+.PHONY : stateMachine.cpp.o
+
+stateMachine.i: stateMachine.cpp.i
+.PHONY : stateMachine.i
+
+# target to preprocess a source file
+stateMachine.cpp.i:
+	cd /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/forcefield.dir/build.make src/CMakeFiles/forcefield.dir/stateMachine.cpp.i
+.PHONY : stateMachine.cpp.i
+
+stateMachine.s: stateMachine.cpp.s
+.PHONY : stateMachine.s
+
+# target to generate assembly for a file
+stateMachine.cpp.s:
+	cd /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/forcefield.dir/build.make src/CMakeFiles/forcefield.dir/stateMachine.cpp.s
+.PHONY : stateMachine.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -866,6 +890,9 @@ help:
 	@echo "... specificworker.o"
 	@echo "... specificworker.i"
 	@echo "... specificworker.s"
+	@echo "... stateMachine.o"
+	@echo "... stateMachine.i"
+	@echo "... stateMachine.s"
 .PHONY : help
 
 

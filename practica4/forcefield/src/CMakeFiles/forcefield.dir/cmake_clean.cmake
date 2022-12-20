@@ -52,6 +52,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/forcefield.dir/specificmonitor.cpp.o.d"
   "CMakeFiles/forcefield.dir/specificworker.cpp.o"
   "CMakeFiles/forcefield.dir/specificworker.cpp.o.d"
+  "CMakeFiles/forcefield.dir/stateMachine.cpp.o"
+  "CMakeFiles/forcefield.dir/stateMachine.cpp.o.d"
   "CameraRGBDSimple.cpp"
   "CameraRGBDSimple.h"
   "CommonBehavior.cpp"

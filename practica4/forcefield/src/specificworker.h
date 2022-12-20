@@ -39,11 +39,14 @@
 #include "robot.h"
 #include "camera.h"
 #include "door_detector.h"
+#include "stateMachine.h"
+#include "GenericObject.h"
 
 class SpecificWorker : public GenericWorker
 {
     Q_OBJECT
     using v2f = Eigen::Vector2f;
+
     public:
         SpecificWorker(TuplePrx tprx, bool startup_check);
         ~SpecificWorker();
@@ -60,6 +63,8 @@ class SpecificWorker : public GenericWorker
 
     rc::Robot robot;
     rc::Camera top_camera;
+
+    stateMachine state;
 
     struct Constants
     {
@@ -100,7 +105,7 @@ class SpecificWorker : public GenericWorker
     bool startup_check_flag;
 
     AbstractGraphicViewer *viewer;
-
+    std::vector<GenericObject> genericObjectLista;
     std::vector<std::vector<Eigen::Vector2f>> get_multi_level_3d_points_omni(const cv::Mat &depth_frame);
     Eigen::Vector2f compute_repulsion_forces(vector<Eigen::Vector2f> &floor_line);
     cv::Mat read_depth_coppelia();
@@ -126,13 +131,13 @@ class SpecificWorker : public GenericWorker
     //Door Detector
     Door_detector door_detector;
 
-    // state machine
-    void state_machine(const RoboCompYoloObjects::TObjects &objects, const std::vector<Eigen::Vector2f> &line);
-    enum class State {IDLE, SEARCHING, APPROACHING, WAITING};
-    State state = State::SEARCHING;
-    void search_state(const RoboCompYoloObjects::TObjects &objects);
-    void approach_state(const RoboCompYoloObjects::TObjects &objects, const std::vector<Eigen::Vector2f> &line);
-    void wait_state();
+    // state machine . Ahora lo hemos sacado a una nueva clase.
+//    void state_machine(const RoboCompYoloObjects::TObjects &objects, const std::vector<Eigen::Vector2f> &line);
+//    enum class State {IDLE, SEARCHING, APPROACHING, WAITING};
+//    State state = State::SEARCHING;
+//    void search_state(const RoboCompYoloObjects::TObjects &objects);
+//    void approach_state(const RoboCompYoloObjects::TObjects &objects, const std::vector<Eigen::Vector2f> &line);
+//    void wait_state();
 
     float iou(const RoboCompYoloObjects::TBox &a, const RoboCompYoloObjects::TBox &b);
     float closest_distance_ahead(const vector<Eigen::Vector2f> &line);

@@ -1321,5 +1321,8 @@ src/CMakeFiles/forcefield.dir/forcefield_autogen/mocs_compilation.cpp.o: \
  /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/forcefield_autogen/EWIEGA46WW/../../camera.h \
  /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/forcefield_autogen/EWIEGA46WW/../../door_detector.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsItem \
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/forcefield_autogen/EWIEGA46WW/../../stateMachine.h \
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/door_detector.h \
+ /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/forcefield_autogen/EWIEGA46WW/../../GenericObject.h \
  /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/forcefield_autogen/WU3NUE3SBC/moc_abstract_graphic_viewer.cpp \
  /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/forcefield_autogen/WU3NUE3SBC/../../../../../../../../../../opt/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.h
