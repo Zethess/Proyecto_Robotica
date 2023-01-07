@@ -1,7 +1,7 @@
 src/CMakeFiles/forcefield.dir/dynamic_window.cpp.o: \
- /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/dynamic_window.cpp \
+ /home/manuel/Escritorio/ROBOTICA/Proyecto_Robotica/practica4/forcefield/src/dynamic_window.cpp \
  /usr/include/stdc-predef.h \
- /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/dynamic_window.h \
+ /home/manuel/Escritorio/ROBOTICA/Proyecto_Robotica/practica4/forcefield/src/dynamic_window.h \
  /usr/include/c++/11/iostream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -534,7 +534,7 @@ src/CMakeFiles/forcefield.dir/dynamic_window.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qbrush.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qfont.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpen.h \
- /opt/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.h \
+ /home/manuel/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpalette.h \
@@ -589,7 +589,7 @@ src/CMakeFiles/forcefield.dir/dynamic_window.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qboxlayout.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qgridlayout.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsPolygonItem \
- /opt/robocomp/classes/timer/timer.h \
+ /home/manuel/robocomp/classes/timer/timer.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QtCore \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QtCoreDepends \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qglobal.h \

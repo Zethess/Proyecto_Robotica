@@ -1,7 +1,7 @@
 src/CMakeFiles/forcefield.dir/forcefield_autogen/mocs_compilation.cpp.o: \
- /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/forcefield_autogen/mocs_compilation.cpp \
+ /home/manuel/Escritorio/ROBOTICA/Proyecto_Robotica/practica4/forcefield/src/forcefield_autogen/mocs_compilation.cpp \
  /usr/include/stdc-predef.h \
- /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/forcefield_autogen/EWIEGA46WW/moc_genericmonitor.cpp \
+ /home/manuel/Escritorio/ROBOTICA/Proyecto_Robotica/practica4/forcefield/src/forcefield_autogen/EWIEGA46WW/moc_genericmonitor.cpp \
  /usr/include/c++/11/memory /usr/include/c++/11/bits/stl_algobase.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -205,7 +205,7 @@ src/CMakeFiles/forcefield.dir/forcefield_autogen/mocs_compilation.cpp.o: \
  /usr/include/c++/11/bits/uses_allocator_args.h \
  /usr/include/c++/11/pstl/glue_memory_defs.h \
  /usr/include/c++/11/pstl/execution_defs.h \
- /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/forcefield_autogen/EWIEGA46WW/../../genericmonitor.h \
+ /home/manuel/Escritorio/ROBOTICA/Proyecto_Robotica/practica4/forcefield/src/forcefield_autogen/EWIEGA46WW/../../genericmonitor.h \
  /usr/include/Ice/Ice.h /usr/include/IceUtil/PushDisableWarnings.h \
  /usr/include/Ice/Config.h /usr/include/IceUtil/Config.h \
  /usr/include/c++/11/stdlib.h /usr/include/c++/11/cassert \
@@ -634,10 +634,10 @@ src/CMakeFiles/forcefield.dir/forcefield_autogen/mocs_compilation.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qwineventnotifier.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qxmlstream.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qtcoreversion.h \
- /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/forcefield_autogen/EWIEGA46WW/../../genericworker.h \
- /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/forcefield_autogen/EWIEGA46WW/../../config.h \
- /opt/robocomp/classes/qlog/qlog.h \
- /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/config.h \
+ /home/manuel/Escritorio/ROBOTICA/Proyecto_Robotica/practica4/forcefield/src/forcefield_autogen/EWIEGA46WW/../../genericworker.h \
+ /home/manuel/Escritorio/ROBOTICA/Proyecto_Robotica/practica4/forcefield/src/forcefield_autogen/EWIEGA46WW/../../config.h \
+ /home/manuel/robocomp/classes/qlog/qlog.h \
+ /home/manuel/Escritorio/ROBOTICA/Proyecto_Robotica/practica4/forcefield/src/config.h \
  /usr/include/boost/format.hpp /usr/include/boost/detail/workaround.hpp \
  /usr/include/boost/config/workaround.hpp /usr/include/boost/config.hpp \
  /usr/include/boost/config/user.hpp \
@@ -1030,7 +1030,7 @@ src/CMakeFiles/forcefield.dir/forcefield_autogen/mocs_compilation.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qvector4d.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qwindowdefs.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtguiversion.h \
- /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/ui_mainUI.h \
+ /home/manuel/Escritorio/ROBOTICA/Proyecto_Robotica/practica4/forcefield/src/ui_mainUI.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QVariant \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QApplication \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qapplication.h \
@@ -1052,22 +1052,22 @@ src/CMakeFiles/forcefield.dir/forcefield_autogen/mocs_compilation.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qgridlayout.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h \
- /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/CommonBehavior.h \
- /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/CameraRGBDSimple.h \
- /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/GenericBase.h \
- /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/JointMotorSimple.h \
- /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/JoystickAdapter.h \
- /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/OmniRobot.h \
- /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/YoloObjects.h \
- /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/forcefield_autogen/EWIEGA46WW/moc_genericworker.cpp \
- /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/forcefield_autogen/EWIEGA46WW/../../genericworker.h \
- /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/forcefield_autogen/EWIEGA46WW/moc_specificmonitor.cpp \
- /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/forcefield_autogen/EWIEGA46WW/../../specificmonitor.h \
- /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/forcefield_autogen/EWIEGA46WW/../../genericmonitor.h \
- /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/forcefield_autogen/EWIEGA46WW/moc_specificworker.cpp \
- /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/forcefield_autogen/EWIEGA46WW/../../specificworker.h \
- /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/genericworker.h \
- /opt/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.h \
+ /home/manuel/Escritorio/ROBOTICA/Proyecto_Robotica/practica4/forcefield/src/CommonBehavior.h \
+ /home/manuel/Escritorio/ROBOTICA/Proyecto_Robotica/practica4/forcefield/src/CameraRGBDSimple.h \
+ /home/manuel/Escritorio/ROBOTICA/Proyecto_Robotica/practica4/forcefield/src/GenericBase.h \
+ /home/manuel/Escritorio/ROBOTICA/Proyecto_Robotica/practica4/forcefield/src/JointMotorSimple.h \
+ /home/manuel/Escritorio/ROBOTICA/Proyecto_Robotica/practica4/forcefield/src/JoystickAdapter.h \
+ /home/manuel/Escritorio/ROBOTICA/Proyecto_Robotica/practica4/forcefield/src/OmniRobot.h \
+ /home/manuel/Escritorio/ROBOTICA/Proyecto_Robotica/practica4/forcefield/src/YoloObjects.h \
+ /home/manuel/Escritorio/ROBOTICA/Proyecto_Robotica/practica4/forcefield/src/forcefield_autogen/EWIEGA46WW/moc_genericworker.cpp \
+ /home/manuel/Escritorio/ROBOTICA/Proyecto_Robotica/practica4/forcefield/src/forcefield_autogen/EWIEGA46WW/../../genericworker.h \
+ /home/manuel/Escritorio/ROBOTICA/Proyecto_Robotica/practica4/forcefield/src/forcefield_autogen/EWIEGA46WW/moc_specificmonitor.cpp \
+ /home/manuel/Escritorio/ROBOTICA/Proyecto_Robotica/practica4/forcefield/src/forcefield_autogen/EWIEGA46WW/../../specificmonitor.h \
+ /home/manuel/Escritorio/ROBOTICA/Proyecto_Robotica/practica4/forcefield/src/forcefield_autogen/EWIEGA46WW/../../genericmonitor.h \
+ /home/manuel/Escritorio/ROBOTICA/Proyecto_Robotica/practica4/forcefield/src/forcefield_autogen/EWIEGA46WW/moc_specificworker.cpp \
+ /home/manuel/Escritorio/ROBOTICA/Proyecto_Robotica/practica4/forcefield/src/forcefield_autogen/EWIEGA46WW/../../specificworker.h \
+ /home/manuel/Escritorio/ROBOTICA/Proyecto_Robotica/practica4/forcefield/src/genericworker.h \
+ /home/manuel/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsScene \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qgraphicsscene.h \
@@ -1091,7 +1091,7 @@ src/CMakeFiles/forcefield.dir/forcefield_autogen/mocs_compilation.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsPolygonItem \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qgraphicsitem.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpainterpath.h \
- /opt/robocomp/classes/timer/timer.h /usr/include/Eigen/Dense \
+ /home/manuel/robocomp/classes/timer/timer.h /usr/include/Eigen/Dense \
  /usr/include/Eigen/Core \
  /usr/include/Eigen/src/Core/util/DisableStupidWarnings.h \
  /usr/include/Eigen/src/Core/util/Macros.h \
@@ -1310,19 +1310,20 @@ src/CMakeFiles/forcefield.dir/forcefield_autogen/mocs_compilation.cpp.o: \
  /usr/include/opencv4/opencv2/highgui.hpp \
  /usr/include/opencv4/opencv2/imgcodecs.hpp \
  /usr/include/opencv4/opencv2/videoio.hpp \
- /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/dynamic_window.h \
+ /home/manuel/Escritorio/ROBOTICA/Proyecto_Robotica/practica4/forcefield/src/dynamic_window.h \
  /usr/include/c++/11/optional \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/QPolygonF \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QPointF \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/QTransform \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsEllipseItem \
- /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/forcefield_autogen/EWIEGA46WW/../../robot.h \
+ /home/manuel/Escritorio/ROBOTICA/Proyecto_Robotica/practica4/forcefield/src/forcefield_autogen/EWIEGA46WW/../../robot.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/QColor \
- /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/forcefield_autogen/EWIEGA46WW/../../camera.h \
- /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/forcefield_autogen/EWIEGA46WW/../../door_detector.h \
+ /home/manuel/Escritorio/ROBOTICA/Proyecto_Robotica/practica4/forcefield/src/forcefield_autogen/EWIEGA46WW/../../camera.h \
+ /home/manuel/Escritorio/ROBOTICA/Proyecto_Robotica/practica4/forcefield/src/GenericObject.h \
+ /home/manuel/Escritorio/ROBOTICA/Proyecto_Robotica/practica4/forcefield/src/door_detector.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsItem \
- /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/forcefield_autogen/EWIEGA46WW/../../stateMachine.h \
- /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/door_detector.h \
- /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/forcefield_autogen/EWIEGA46WW/../../GenericObject.h \
- /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/forcefield_autogen/WU3NUE3SBC/moc_abstract_graphic_viewer.cpp \
- /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/forcefield_autogen/WU3NUE3SBC/../../../../../../../../../../opt/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.h
+ /home/manuel/Escritorio/ROBOTICA/Proyecto_Robotica/practica4/forcefield/src/forcefield_autogen/EWIEGA46WW/../../door_detector.h \
+ /home/manuel/Escritorio/ROBOTICA/Proyecto_Robotica/practica4/forcefield/src/forcefield_autogen/EWIEGA46WW/../../stateMachine.h \
+ /home/manuel/Escritorio/ROBOTICA/Proyecto_Robotica/practica4/forcefield/src/forcefield_autogen/EWIEGA46WW/../../GenericObject.h \
+ /home/manuel/Escritorio/ROBOTICA/Proyecto_Robotica/practica4/forcefield/src/forcefield_autogen/G6XYSPRKVB/moc_abstract_graphic_viewer.cpp \
+ /home/manuel/Escritorio/ROBOTICA/Proyecto_Robotica/practica4/forcefield/src/forcefield_autogen/G6XYSPRKVB/../../../../../../../../robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.h

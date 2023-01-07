@@ -1,7 +1,7 @@
 src/CMakeFiles/forcefield.dir/stateMachine.cpp.o: \
- /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/stateMachine.cpp \
+ /home/manuel/Escritorio/ROBOTICA/Proyecto_Robotica/practica4/forcefield/src/stateMachine.cpp \
  /usr/include/stdc-predef.h \
- /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/stateMachine.h \
+ /home/manuel/Escritorio/ROBOTICA/Proyecto_Robotica/practica4/forcefield/src/stateMachine.h \
  /usr/include/Eigen/Dense /usr/include/Eigen/Core \
  /usr/include/Eigen/src/Core/util/DisableStupidWarnings.h \
  /usr/include/Eigen/src/Core/util/Macros.h /usr/include/c++/11/cmath \
@@ -423,7 +423,7 @@ src/CMakeFiles/forcefield.dir/stateMachine.cpp.o: \
  /usr/include/Eigen/src/Eigenvalues/GeneralizedEigenSolver.h \
  /usr/include/Eigen/src/Eigenvalues/./RealQZ.h \
  /usr/include/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h \
- /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/YoloObjects.h \
+ /home/manuel/Escritorio/ROBOTICA/Proyecto_Robotica/practica4/forcefield/src/YoloObjects.h \
  /usr/include/IceUtil/PushDisableWarnings.h /usr/include/Ice/ProxyF.h \
  /usr/include/Ice/Config.h /usr/include/IceUtil/Config.h \
  /usr/include/c++/11/iostream /usr/include/c++/11/memory \
@@ -492,11 +492,11 @@ src/CMakeFiles/forcefield.dir/stateMachine.cpp.o: \
  /usr/include/c++/11/deque /usr/include/c++/11/bits/stl_deque.h \
  /usr/include/c++/11/bits/deque.tcc /usr/include/Ice/FactoryTableInit.h \
  /usr/include/Ice/DefaultValueFactory.h \
- /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/CameraRGBDSimple.h \
- /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/JointMotorSimple.h \
- /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/OmniRobot.h \
- /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/GenericBase.h \
- /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/door_detector.h \
+ /home/manuel/Escritorio/ROBOTICA/Proyecto_Robotica/practica4/forcefield/src/CameraRGBDSimple.h \
+ /home/manuel/Escritorio/ROBOTICA/Proyecto_Robotica/practica4/forcefield/src/JointMotorSimple.h \
+ /home/manuel/Escritorio/ROBOTICA/Proyecto_Robotica/practica4/forcefield/src/OmniRobot.h \
+ /home/manuel/Escritorio/ROBOTICA/Proyecto_Robotica/practica4/forcefield/src/GenericBase.h \
+ /home/manuel/Escritorio/ROBOTICA/Proyecto_Robotica/practica4/forcefield/src/door_detector.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/QtGui \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/QtGuiDepends \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QtCore \
@@ -990,7 +990,7 @@ src/CMakeFiles/forcefield.dir/stateMachine.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgetsglobal.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgets-config.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpainterpath.h \
- /opt/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.h \
+ /home/manuel/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qsizepolicy.h \
@@ -1023,10 +1023,10 @@ src/CMakeFiles/forcefield.dir/stateMachine.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qboxlayout.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qgridlayout.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsPolygonItem \
- /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/robot.h \
+ /home/manuel/Escritorio/ROBOTICA/Proyecto_Robotica/practica4/forcefield/src/robot.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QtCore \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/QColor \
- /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/camera.h \
+ /home/manuel/Escritorio/ROBOTICA/Proyecto_Robotica/practica4/forcefield/src/camera.h \
  /usr/include/opencv4/opencv2/core.hpp \
  /usr/include/opencv4/opencv2/core/cvdef.h \
  /usr/include/opencv4/opencv2/core/version.hpp \
@@ -1054,4 +1054,13 @@ src/CMakeFiles/forcefield.dir/stateMachine.cpp.o: \
  /usr/include/opencv4/opencv2/core/utility.hpp \
  /usr/include/opencv4/opencv2/core/optim.hpp \
  /usr/include/opencv4/opencv2/core/ovx.hpp \
- /usr/include/opencv4/opencv2/core/cvdef.h
+ /usr/include/opencv4/opencv2/core/cvdef.h \
+ /home/manuel/Escritorio/ROBOTICA/Proyecto_Robotica/practica4/forcefield/src/GenericObject.h \
+ /home/manuel/Escritorio/ROBOTICA/Proyecto_Robotica/practica4/forcefield/src/dynamic_window.h \
+ /usr/include/c++/11/optional \
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/QPolygonF \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QPointF \
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/QTransform \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsEllipseItem \
+ /home/manuel/robocomp/classes/timer/timer.h \
+ /home/manuel/Escritorio/ROBOTICA/Proyecto_Robotica/practica4/forcefield/src/GenericObject.h

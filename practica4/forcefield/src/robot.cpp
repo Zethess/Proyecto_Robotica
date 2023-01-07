@@ -55,10 +55,11 @@ namespace rc
     }
 
 
-    void Robot::set_current_target(const RoboCompYoloObjects::TBox &target)
+    void Robot::set_current_target(const rc::GenericObject &target)
     {
         current_target = target;
         has_target_flag = true;
+        pure_rotation = 0;
     }
     void Robot::set_has_target(bool val)
     {
@@ -87,7 +88,7 @@ namespace rc
     {
         return camera_pan_angle;
     }
-    RoboCompYoloObjects::TBox Robot::get_current_target() const
+    rc::GenericObject Robot::get_current_target() const
     {
         return current_target;
     }
@@ -230,6 +231,49 @@ namespace rc
         { std::cout << e.what() << " Error reading omnirobot_proxy::getBaseSpeed" << std::endl; }
     }
 
+    void Robot::stop()
+    {
+        set_has_target(false);
+        pure_rotation=0.0f;
+    }
+
+    void Robot::rotate(float vel_rotation)
+    {
+        pure_rotation = vel_rotation;
+    }
+
+    void Robot::goto_target(const std::vector<Eigen::Vector2f> &current_line, AbstractGraphicViewer *viewer)
+    {
+        float adv, rot, side;
+        if(pure_rotation > 0.0f)
+        {
+            adv = 0;
+            side = 0;
+            rot = pure_rotation;
+        }
+        else if (has_target_flag) //SI tenemos destino obtenemos las coordenadas, ya que de lo contrario las coordenadas se deberane stablecer en 0
+        {
+// DWA algorithm
+            auto [advAux, rotAux, sideAux] =  dwa.update(get_robot_target_coordinates(), current_line,
+                                                get_current_advance_speed(), get_current_rot_speed(), viewer);
+
+            adv=advAux;
+            rot=rotAux;
+            side=sideAux;
+
+
+        }
+        else
+        {
+            adv=0;
+            rot=0;
+            side=0;
+        }
+
+        qInfo() << __FUNCTION__ << adv <<  side << rot;
+        try{ omnirobot_proxy->setSpeedBase(side, adv, rot); }
+        catch(const Ice::Exception &e){ std::cout << e.what() << "Error connecting to omnirobot" << std::endl;}
+    }
 
 } // rc
 

@@ -17,10 +17,10 @@ class stateMachine {
 public:
     enum class State {IDLE, SEARCHING, APPROACHING, WAITING};
     State state = State::SEARCHING;
-    void state_machine(const std::vector<GenericObject> &objects, const std::vector<Eigen::Vector2f> &line, rc::Robot &robot);
+    void state_machine(const std::vector<rc::GenericObject> &objects, const std::vector<Eigen::Vector2f> &line, rc::Robot &robot);
 private:
-    void approach_state(const std::vector<GenericObject> &objects, const std::vector<Eigen::Vector2f> &line, rc::Robot &robot);
-    void search_state(const std::vector<GenericObject> &objects, rc::Robot &robot);
+    void approach_state(const std::vector<rc::GenericObject> &objects, const std::vector<Eigen::Vector2f> &line, rc::Robot &robot);
+    void search_state(const std::vector<rc::GenericObject> &objects, rc::Robot &robot);
 };
 
 

@@ -231,7 +231,7 @@ void SpecificWorker::compute()
     door_detector.draw_doors(doors, viewer);
 
 //    auto lista1;
-//    auto lista;
+//    auto lista;f
 //    for(const auto &l : lista1)
 //        lista.push_back(l);
 
@@ -241,22 +241,27 @@ void SpecificWorker::compute()
     /// draw yolo_objects on 2D view
     draw_objects_on_2dview(objects, RoboCompYoloObjects::TBox());
 
-    // state machine to activate basic behaviours. Returns a  target_coordinates vector
-    static GenericObject objAux;
-    genericObjectLista=objAux.createList(doors);
-    genericObjectLista.insert(genericObjectLista.end(), objAux.createList(objects).begin(),  objAux.createList(objects).end());
-    state.state_machine(genericObjectLista, current_line, robot);
-
     /// eye tracking: tracks  current selected object or  IOR if none
     //eye_track(robot);
     draw_top_camera_optic_ray();
 
+    // state machine to activate basic behaviours. Returns a  target_coordinates vector
+    std::vector<rc::GenericObject> genericObjectLista;
+    static rc::GenericObject objAux;
+    genericObjectLista=objAux.add_doors(doors);
+    genericObjectLista.insert(genericObjectLista.end(), objAux.add_yolo(objects, robot.get_tf_cam_to_base()).begin(),  objAux.add_yolo(objects, robot.get_tf_cam_to_base()).end());
+    state.state_machine(genericObjectLista, current_line, robot);
+
+    robot.goto_target(current_line, viewer);
     // DWA algorithm
-    auto [adv, rot, side] =  dwa.update(robot.get_robot_target_coordinates(), current_line, robot.get_current_advance_speed(), robot.get_current_rot_speed(), viewer);
+    //auto [adv, rot, side] =  dwa.update(robot.get_robot_target_coordinates(), current_line, robot.get_current_advance_speed(), robot.get_current_rot_speed(), viewer);
 
-    qInfo() << __FUNCTION__ << adv <<  side << rot;
-//
+    //qInfo() << __FUNCTION__ << adv <<  side << rot;
 
+    //try{ omnirobot_proxy->setSpeedBase(side, adv, rot); }
+    //catch(const Ice::Exception &e){ std::cout << e.what() << "Error connecting to omnirobot" << std::endl;}
+    //execute move commands
+    //move_robot(force);
 
     //robot.print();
 }

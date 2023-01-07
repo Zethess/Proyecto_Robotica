@@ -1,7 +1,7 @@
 src/CMakeFiles/forcefield.dir/door_detector.cpp.o: \
- /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/door_detector.cpp \
+ /home/manuel/Escritorio/ROBOTICA/Proyecto_Robotica/practica4/forcefield/src/door_detector.cpp \
  /usr/include/stdc-predef.h \
- /home/alumno/robocomp/components/Proyecto_Robotica/practica4/forcefield/src/door_detector.h \
+ /home/manuel/Escritorio/ROBOTICA/Proyecto_Robotica/practica4/forcefield/src/door_detector.h \
  /usr/include/Eigen/Dense /usr/include/Eigen/Core \
  /usr/include/Eigen/src/Core/util/DisableStupidWarnings.h \
  /usr/include/Eigen/src/Core/util/Macros.h /usr/include/c++/11/cmath \
@@ -942,7 +942,7 @@ src/CMakeFiles/forcefield.dir/door_detector.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgetsglobal.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgets-config.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpainterpath.h \
- /opt/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.h \
+ /home/manuel/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qsizepolicy.h \
