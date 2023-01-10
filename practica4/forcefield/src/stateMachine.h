@@ -21,6 +21,7 @@ public:
 private:
     void approach_state(const std::vector<rc::GenericObject> &objects, const std::vector<Eigen::Vector2f> &line, rc::Robot &robot);
     void search_state(const std::vector<rc::GenericObject> &objects, rc::Robot &robot);
+    void wait_state(const std::vector<rc::GenericObject> &objects, rc::Robot &robot);
 };
 
 

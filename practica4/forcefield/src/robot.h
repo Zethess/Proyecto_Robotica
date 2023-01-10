@@ -70,8 +70,11 @@ namespace rc
                 void stop();
                 void rotate(float vel_rotation);
                 void goto_target(const std::vector<Eigen::Vector2f> &current_line, AbstractGraphicViewer *viewer);
+                void resetearTarget();
 
                 Dynamic_Window dwa;
+
+                bool pasandoPuerta=false;
 
     private:
                 float current_adv_speed = 0;
@@ -89,6 +92,7 @@ namespace rc
                 Eigen::ArrayXf sector1, sector2, sector3,  sector4, sector5;
 
                 void recompute_bumper(float dynamic_offset);
+
 
     };
 } // rc

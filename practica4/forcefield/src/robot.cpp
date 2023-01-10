@@ -253,14 +253,25 @@ namespace rc
         }
         else if (has_target_flag) //SI tenemos destino obtenemos las coordenadas, ya que de lo contrario las coordenadas se deberane stablecer en 0
         {
-// DWA algorithm
-            auto [advAux, rotAux, sideAux] =  dwa.update(get_robot_target_coordinates(), current_line,
-                                                get_current_advance_speed(), get_current_rot_speed(), viewer);
+            if(pasandoPuerta==true)
+            {
+                auto [advAux, rotAux, sideAux] =  dwa.update(get_robot_target_coordinates(), current_line,
+                                                             get_current_advance_speed(), get_current_rot_speed(), viewer);
 
-            adv=advAux;
-            rot=rotAux;
-            side=sideAux;
+                adv=600;
+                rot=0;
+                side=sideAux;
+            }else
+            {
+                //DWA algorithm
+                auto [advAux, rotAux, sideAux] =  dwa.update(get_robot_target_coordinates(), current_line,
+                                                             get_current_advance_speed(), get_current_rot_speed(), viewer);
 
+                adv=advAux;
+                rot=rotAux;
+                side=sideAux;
+
+            }
 
         }
         else
@@ -273,6 +284,12 @@ namespace rc
         qInfo() << __FUNCTION__ << adv <<  side << rot;
         try{ omnirobot_proxy->setSpeedBase(side, adv, rot); }
         catch(const Ice::Exception &e){ std::cout << e.what() << "Error connecting to omnirobot" << std::endl;}
+    }
+
+
+    void Robot::resetearTarget()
+    {
+        current_target.type=-1;
     }
 
 } // rc

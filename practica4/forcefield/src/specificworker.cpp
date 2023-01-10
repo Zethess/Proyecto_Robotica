@@ -247,11 +247,20 @@ void SpecificWorker::compute()
 
     // state machine to activate basic behaviours. Returns a  target_coordinates vector
     std::vector<rc::GenericObject> genericObjectLista;
-    static rc::GenericObject objAux;
-    genericObjectLista=objAux.add_doors(doors);
-    genericObjectLista.insert(genericObjectLista.end(), objAux.add_yolo(objects, robot.get_tf_cam_to_base()).begin(),  objAux.add_yolo(objects, robot.get_tf_cam_to_base()).end());
-    state.state_machine(genericObjectLista, current_line, robot);
 
+    //Unir objetos yolo y doors en GenericObjects
+    genericObjectLista.clear();
+
+    //Creamos una lista de objetos genericos de yolo. El metodo add_yolo devuelve una lista casteada de los objetos de yolo a objetos genericos
+    auto pyolo= rc::GenericObject::add_yolo(objects, robot.get_tf_cam_to_base());
+    genericObjectLista.insert(genericObjectLista.end(), pyolo.begin(), pyolo.end()); //Una vez que los objetos de yolo estan como objetos genericos, ya es posible meter esos objetos a la lista genrica
+
+    //La lista de puerta para unirlas a objetos genericos se hace de la misma forma que la lista de yolo. EL modo de operar es el mismo
+    auto pdoor = rc::GenericObject::add_doors(doors);
+    genericObjectLista.insert(genericObjectLista.end(), pdoor.begin(), pdoor.end());
+
+
+    state.state_machine(genericObjectLista, current_line, robot);
     robot.goto_target(current_line, viewer);
     // DWA algorithm
     //auto [adv, rot, side] =  dwa.update(robot.get_robot_target_coordinates(), current_line, robot.get_current_advance_speed(), robot.get_current_rot_speed(), viewer);

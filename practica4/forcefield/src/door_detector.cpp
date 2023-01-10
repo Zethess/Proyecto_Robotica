@@ -42,7 +42,7 @@ std::vector<Door_detector::Door> Door_detector::detector(const std::vector<Eigen
         {
             Door door{.p0=v1, .p1=v2, .pcenter=(v1 + v2)/2};
             doors.push_back(door);
-            std::cout<<"Puerta detectada"<<std::endl;
+            //std::cout<<"Puerta detectada"<<std::endl;
         }
     }
 
